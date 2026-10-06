@@ -1,0 +1,2 @@
+import { sqliteTable, text, integer } from 'drizzle-orm/sqlite-core';
+export const progress = sqliteTable('lesson_progress', {userId:text('user_id').primaryKey(),name:text('name').notNull().default('Jenny'),step:integer('step').notNull().default(0),word:integer('word').notNull().default(0),quiz:integer('quiz').notNull().default(0),completed:integer('completed').notNull().default(0),homework:text('homework').notNull().default('[]'),updatedAt:text('updated_at').notNull()});
