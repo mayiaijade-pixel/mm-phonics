@@ -18,5 +18,16 @@
   "Jenny, Look at this lovely purple cape! Listen to cape, then say it with me!": "/audio/natural/mimi-16.wav",
   "Jenny, We can use tape to stick paper together. Listen to tape, then say it with me!": "/audio/natural/mimi-17.wav",
   "Jenny, Here is a cave in the rocks! Listen to cave, then say it with me!": "/audio/natural/mimi-18.wav",
-  "Jenny, A wave is curling in the sea! Listen to wave, then say it with me!": "/audio/natural/mimi-19.wav"
+  "Jenny, A wave is curling in the sea! Listen to wave, then say it with me!": "/audio/natural/mimi-19.wav",
+  "Cap meets magic e! Now cap plus e makes cape!": "/audio/natural/lesson-short-0.wav",
+  "Listen: ay! Now say cape. The final e is silent!": "/audio/natural/lesson-short-1.wav",
+  "Jenny, listen to bake. Say it with me!": "/audio/natural/lesson-short-2.wav",
+  "Jenny, listen to cake. Say it with me!": "/audio/natural/lesson-short-3.wav",
+  "Jenny, listen to lake. Say it with me!": "/audio/natural/lesson-short-4.wav",
+  "Jenny, listen to rake. Say it with me!": "/audio/natural/lesson-short-5.wav",
+  "Jenny, listen to cape. Say it with me!": "/audio/natural/lesson-short-6.wav",
+  "Jenny, listen to tape. Say it with me!": "/audio/natural/lesson-short-7.wav",
+  "Jenny, listen to cave. Say it with me!": "/audio/natural/lesson-short-8.wav",
+  "Jenny, listen to wave. Say it with me!": "/audio/natural/lesson-short-9.wav",
+  "ay": "/audio/natural/lesson-short-10.wav"
 }
