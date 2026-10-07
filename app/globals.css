@@ -29,3 +29,5 @@
 .record-controls .say-it-button{background:var(--purple);color:#fff;border-color:var(--purple);box-shadow:0 3px 0 #5732a3}.record-controls .say-it-button.recording{background:#bd416b;border-color:#bd416b}
 
 .scene-phonetic{display:flex;align-items:center;justify-content:center;gap:9px}.scene-word-meaning{font-size:13px;color:#857397}
+
+.large-mimi-card .word-dots{display:flex;justify-content:center;gap:7px;flex-wrap:wrap}.large-mimi-card .word-dots button{width:30px;height:30px;border-radius:50%;background:#fff;border:1px solid #c7afe9;color:var(--purple);font-size:13px;font-weight:800;padding:0}.large-mimi-card .word-dots button.active{background:var(--purple);color:#fff;border-color:var(--purple);box-shadow:0 2px 0 #5732a3}
