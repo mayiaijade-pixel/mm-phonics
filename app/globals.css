@@ -27,3 +27,5 @@
 .wave-only-mask{position:absolute;inset:0;clip-path:inset(14% 0 29% 74%);pointer-events:none}.wave-only-mask .wave-layer{position:absolute;inset:0;width:100%;height:100%;clip-path:none;object-fit:contain;transform-origin:90% 50%;animation:wave-water-only 3s ease-in-out infinite}.scene-wave .wave-foam{width:23%;right:0}.narrative-card .greeting-caption{background:#fff;border:1px solid #e6dbf5;border-radius:16px;padding:12px 13px;min-height:68px;box-shadow:0 2px 8px #7044a509}.narrative-card .greeting-caption h2{font-size:22px;line-height:1.4;margin:0}@keyframes wave-water-only{50%{transform:translate(-1%,1%) scale(1.02)}}@media(prefers-reduced-motion:reduce){.wave-only-mask .wave-layer{animation:none}}
 
 .record-controls .say-it-button{background:var(--purple);color:#fff;border-color:var(--purple);box-shadow:0 3px 0 #5732a3}.record-controls .say-it-button.recording{background:#bd416b;border-color:#bd416b}
+
+.scene-phonetic{display:flex;align-items:center;justify-content:center;gap:9px}.scene-word-meaning{font-size:13px;color:#857397}
