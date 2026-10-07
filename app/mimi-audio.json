@@ -1,13 +1,13 @@
 {
-  "cap": "/audio/fena/b96a075f87091671.mp3",
-  "bake": "/audio/fena/75f1cfd2ff3ad00e.mp3",
-  "cake": "/audio/fena/9f457d7b93bf526b.mp3",
-  "lake": "/audio/fena/4c9f89edae886e2b.mp3",
-  "rake": "/audio/fena/1e2c014bc0c8beda.mp3",
-  "cape": "/audio/fena/cape-long-a-v2.mp3",
-  "tape": "/audio/fena/42743b95a764d376.mp3",
-  "cave": "/audio/fena/38808112fcd2d5eb.mp3",
-  "wave": "/audio/fena/cf29197b7e2c53cc.mp3",
+  "cap": "/audio/fena/phonics-v3-74bf69b4cba826f1.mp3",
+  "bake": "/audio/fena/phonics-v3-5645576c62a1ee7d.mp3",
+  "cake": "/audio/fena/phonics-v3-fb2178da0b37aa36.mp3",
+  "lake": "/audio/fena/phonics-v3-c2e60b7fd7af9a9f.mp3",
+  "rake": "/audio/fena/phonics-v3-c63b3f1e3fc59a00.mp3",
+  "cape": "/audio/fena/phonics-v3-2d56290588542311.mp3",
+  "tape": "/audio/fena/phonics-v3-892fa3c339e40e25.mp3",
+  "cave": "/audio/fena/phonics-v3-92064ab87bba3d4a.mp3",
+  "wave": "/audio/fena/phonics-v3-eaf2c74571a421ea.mp3",
   "Hi, Jenny! I'm Mimi. Let's discover a little magic with the letter a!": "/audio/fena/f5a057b5e2c5d9fa.mp3",
   "Look, Jenny! This is a cap. Listen to the short a sound in cap. Now say cap with me!": "/audio/fena/f789a7c8d5baa9db.mp3",
   "Cap meets magic e! Now cap plus e makes cape!": "/audio/fena/6f0918cf8648dca1.mp3",
@@ -28,5 +28,5 @@
   "Jenny, listen to tape. Say it with me!": "/audio/fena/b077efb580d71ddc.mp3",
   "Jenny, listen to cave. Say it with me!": "/audio/fena/bb22413d8b03d0d0.mp3",
   "Jenny, listen to wave. Say it with me!": "/audio/fena/112928d6ed30a3cd.mp3",
-  "ay": "/audio/fena/f27d67077a01c8aa.mp3"
+  "ay": "/audio/fena/phonics-v3-d829ec43ade5b308.mp3"
 }

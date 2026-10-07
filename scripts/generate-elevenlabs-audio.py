@@ -24,6 +24,9 @@ for i,(text,spoken,speed) in enumerate(items):
   except Exception as e:print('Generation failed:',type(e).__name__,flush=True);sys.exit(1)
  lookup[text]='/audio/fena/'+filename
  print(str(i+1)+'/'+str(len(items))+' audio clips ready',flush=True)
+# Keep phoneme-corrected assets when refreshing the older narration library.
+existing=json.loads(Path('app/mimi-audio.json').read_text())
+lookup.update({k:v for k,v in existing.items() if 'phonics-v3-' in v or 'cape-long-a-v2' in v})
 Path('app/mimi-audio.json').write_text(json.dumps(lookup,ensure_ascii=False,indent=2)+'\n')
 Path('public/audio/fena/voice-info.json').write_text(json.dumps({'voice_id':voice,'voice_name':'Fena - Girly, Young and Sassy Hero','model':'eleven_multilingual_v2','word_speed':.75,'narration_speed':.86},indent=2)+'\n')
 print('All Fena clips ready',flush=True)

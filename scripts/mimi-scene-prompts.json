@@ -1,0 +1,16 @@
+{
+  "tool": "built-in image_gen",
+  "reference": "public/images/mimi.png",
+  "style": "Same white fluffy kitten with purple eyes, natural feline anatomy, soft 3D storybook render, no text. Square mobile lesson scene.",
+  "scenes": {
+    "cap": "sitting wearing a bright blue baseball cap on her head; no cape",
+    "cape": "sitting wearing a flowing purple cape around her shoulders; NO hat",
+    "bake": "on all four paws beside a low open toy-style oven with a tray of baked cookies, one paw guiding the tray, clearly baking",
+    "cake": "sitting beside a beautiful strawberry birthday cake on a low plate",
+    "lake": "sitting on a grassy bank beside a calm blue lake with distant hills",
+    "rake": "on four paws playfully pulling a small wooden rake through a pile of autumn leaves",
+    "tape": "sitting with one paw on a purple tape dispenser attaching paper, a clearly visible strip of sticky tape",
+    "cave": "sitting inside the entrance of a friendly stone cave, cave walls frame the kitten",
+    "wave": "sitting safely on sand beside a clearly curling turquoise ocean wave"
+  }
+}
