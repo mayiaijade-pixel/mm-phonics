@@ -30,9 +30,9 @@ export default function Page(){
  function speak(text:string,lang='en-US'){stopAudio();setSpokenCaption(text==='ay'?'/eɪ/':text);if(muted){setNotice('소리를 켜고 다시 눌러줘요.');return}const clipWords=text==='cap. cape!'?['cap','cape']:/^(bake|cake|lake|rake|cape|tape|cave|wave|cap)$/i.test(text.trim())?[text.trim().toLowerCase()]:[];const tutorClip=(mimiAudio as Record<string,string>)[text];if(clipWords.length||tutorClip){const generation=audioGeneration.current;let index=0;const playClip=()=>{if(generation!==audioGeneration.current)return;const clip=new Audio(tutorClip||'/audio/natural/'+clipWords[index]+'.wav');playing.current=clip;clip.preload='auto';clip.onplaying=()=>setSpeaking(true);clip.onended=()=>{if(generation!==audioGeneration.current)return;if(!tutorClip&&++index<clipWords.length)playClip();else setSpeaking(false)};clip.onerror=()=>{if(generation===audioGeneration.current){setSpeaking(false);setNotice('단어 음성을 불러오지 못했어요.')}};clip.play().catch(()=>{if(generation===audioGeneration.current){setSpeaking(false);setNotice('')}})};playClip();return;}const generation=audioGeneration.current;const previewName=text.match(/^Hello, (.+)!$/)?.[1]||p.name;sameVoice({text,name:previewName}).then(url=>{if(generation!==audioGeneration.current||!mounted.current)return;const clip=new Audio(url);playing.current=clip;clip.onplaying=()=>setSpeaking(true);clip.onended=()=>setSpeaking(false);return clip.play()}).catch(()=>{if(generation===audioGeneration.current){setSpeaking(false);setNotice('미미 음성을 준비하지 못했어요. 잠시 후 다시 시도해 주세요.')}})}
  const sceneKey=tab==='homework'?'homework':p.step===4?'4-'+WORDS[p.word].word:String(p.step);
  const sentenceClips=p.step===0&&tab==='lesson'?[
-  {text:`Hi, ${p.name}!`,audio:'/audio/fena/greeting-1.mp3'},
-  {text:"I'm Mimi!",audio:'/audio/fena/greeting-2.mp3'},
-  {text:"Let's discover a little magic with the letter a!",audio:'/audio/fena/greeting-3.mp3'}
+  {text:`Hi, ${p.name}!`,audio:'/audio/fena/greeting-natural-1.mp3'},
+  {text:"I'm Mimi!",audio:'/audio/fena/greeting-natural-2.mp3'},
+  {text:"Let's discover a little magic with the letter a!",audio:'/audio/fena/greeting-natural-3.mp3'}
  ]:((mimiSegments as Record<string,{text:string;audio:string}[]>)[sceneKey]||[]);
  function playGreeting(){
   stopAudio();setNotice('');setSpokenCaption('');setGreetingLine(0);if(muted||!sentenceClips.length)return;
@@ -47,8 +47,8 @@ export default function Page(){
     if(generation!==audioGeneration.current||!mounted.current)return;
    }
    const clip=greetingAudio.current||(greetingAudio.current=new Audio());clip.src=source;clip.preload='auto';playing.current=clip;
-   let started=performance.now();clip.onplaying=()=>{started=performance.now();setGreetingLine(index);greetingPending.current=false;setSpeaking(true)};
-   clip.onended=()=>{if(generation!==audioGeneration.current)return;const wait=p.step===0&&index<2?Math.max(0,2000-(performance.now()-started)):180;setTimeout(()=>playLine(index+1),wait)};
+   clip.onplaying=()=>{setGreetingLine(index);greetingPending.current=false;setSpeaking(true)};
+   clip.onended=()=>{if(generation!==audioGeneration.current)return;const wait=p.step===0?120:180;setTimeout(()=>playLine(index+1),wait)};
    clip.onerror=()=>{if(generation===audioGeneration.current)setSpeaking(false)};
    clip.play().catch(()=>{if(generation===audioGeneration.current){setSpeaking(false);greetingPending.current=true}});
   }
