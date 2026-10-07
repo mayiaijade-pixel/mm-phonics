@@ -25,6 +25,15 @@
     "paths": {
       "@/*": [
         "./*"
+      ],
+      "@platform/auth": [
+        "./platform/vercel/auth.ts"
+      ],
+      "@platform/progress": [
+        "./platform/vercel/progress.ts"
+      ],
+      "@platform/mimi-voice": [
+        "./platform/vercel/mimi-voice.ts"
       ]
     },
     "types": [
