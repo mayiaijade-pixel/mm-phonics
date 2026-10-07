@@ -45,3 +45,23 @@
 .lesson-view .workspace{padding-bottom:calc(125px + env(safe-area-inset-bottom))}.lesson-view .quiz-card .reward-star{margin:4px auto;height:45px;line-height:1}.lesson-view .quiz-card .reward-star svg{width:42px;height:42px}.lesson-view .quiz-card .audio-button{min-height:36px;padding:5px 12px;font-size:13px}.lesson-view .quiz-card .choice{padding:5px}.lesson-view .quiz-card .choice .animated-scene{max-height:90px}.lesson-view .quiz-card .subtitle{margin:3px 0}.lesson-view .quiz-card .feedback{line-height:1.4}.lesson-view .finish-card .sticker-label{margin:4px auto;padding:3px 7px;font-size:10px}
 .lesson-view .finish-card{position:relative}.lesson-view .finish-card>.pill{font-size:9px;line-height:1.3;padding:2px 6px;margin-bottom:2px}.lesson-view .finish-card .reward-star{position:absolute;right:10px;top:8px;width:28px;height:28px;margin:0}.lesson-view .finish-card .reward-star>svg:first-child{width:25px;height:25px}.lesson-view .finish-card .reward-spark{width:12px;height:12px}.lesson-view .finish-card>p{margin:2px 0;font-size:11px}.lesson-view .finish-card .mini-gallery{grid-template-columns:repeat(8,minmax(0,1fr));margin:5px 0;gap:2px}.lesson-view .finish-card .mini-gallery button{padding:2px;font-size:9px;line-height:1.3;min-width:0}.lesson-view .finish-card .mini-gallery .animated-scene{height:34px;max-height:34px;display:block}.lesson-view .finish-card .mini-gallery .word-picture{height:100%}.lesson-view .finish-card .homework-preview{margin:4px 0;padding:5px;gap:6px;font-size:10px}.lesson-view .finish-card .homework-preview p{font-size:10px;line-height:1.4}.lesson-view .finish-card .audio-button{min-height:32px;font-size:12px;padding:4px 10px}.lesson-view .finish-card .sticker-label{margin:2px 0;padding:2px 4px;font-size:9px}
 .lesson-view.stage-7 .mimi-center{display:none}
+
+/* Number navigation replaces the original decorative dot pseudo-elements. */
+.word-dots button::after,.word-dots button::before{content:none!important;display:none!important}
+.lesson-view .large-mimi-card{padding-bottom:calc(10px + var(--lesson-fill,0px))}
+.lesson-view.stage-3 .large-mimi-card .lesson-cat-scene,.lesson-view.stage-3 .large-mimi-card .lesson-cat-scene>.animated-scene{height:var(--lesson-art);width:var(--lesson-art)}
+.lesson-view.stage-5 .mimi-center{display:none}
+.lesson-view.stage-5 .quiz-card .choices{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:10px 0}
+.lesson-view.stage-5 .quiz-card .choice:last-child{grid-column:1/-1;width:calc(50% - 5px);justify-self:center}
+.lesson-view.stage-5 .quiz-card .choice{padding:6px;border-radius:18px}
+.lesson-view.stage-5 .quiz-card .choice .animated-scene{display:block;width:100%;height:var(--quiz-art,120px);max-height:none;aspect-ratio:auto}
+.lesson-view.stage-5 .quiz-card .choice .word-picture{height:100%!important;object-fit:contain}
+.lesson-view.stage-5 .quiz-card .choice>span{height:22px}
+.lesson-view.stage-5>.workspace>.large-mimi-card{display:none}
+.lesson-view.stage-5 .quiz-card{padding:14px 12px}
+.lesson-view.stage-5 .quiz-card h2{font-size:22px}
+.lesson-view.stage-5 .quiz-card .choices{gap:12px}
+.lesson-view.stage-5 .quiz-card .choice:last-child{width:calc(50% - 6px)}
+.lesson-view.stage-5 .quiz-card .choice .animated-scene{min-height:75px}
+@media(max-height:720px){.lesson-view.stage-5 .quiz-card .choices{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.lesson-view.stage-5 .quiz-card .choice:last-child{grid-column:auto;width:100%}.lesson-view.stage-5 .quiz-card{padding:9px}.lesson-view.stage-5 .quiz-card h2{font-size:19px}}
+.lesson-view.stage-5 .quiz-card{padding-bottom:calc(14px + var(--lesson-fill,0px))}

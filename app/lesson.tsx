@@ -62,6 +62,30 @@ export default function Page(){
   document.addEventListener('pointerdown',resume);document.addEventListener('keydown',resume);
   return()=>{document.removeEventListener('pointerdown',resume);document.removeEventListener('keydown',resume);stopAudio()};
  },[ready,tab,p.step,p.word,p.name,p.nameConfirmed,muted]);
+ useEffect(()=>{
+  if(!ready||!p.nameConfirmed||tab!=='lesson')return;
+  const main=document.querySelector<HTMLElement>('.lesson-view');if(!main)return;
+  let frame=0;
+  const fit=()=>{cancelAnimationFrame(frame);frame=requestAnimationFrame(()=>{
+   const actions=main.querySelector<HTMLElement>('.lesson-actions'),status=main.querySelector<HTMLElement>('.save-status');
+   if(!actions||!status)return;
+   const art=main.querySelector<HTMLElement>(p.step===5?'.choices .animated-scene':'.lesson-cat-scene');
+   if(!art||p.step===7)return;
+   const oldFill=parseFloat(main.style.getPropertyValue('--lesson-fill'))||0;
+   const spare=actions.getBoundingClientRect().top-status.getBoundingClientRect().bottom+oldFill-10;
+   const current=art.getBoundingClientRect().height;
+   const rows=p.step===5&&window.innerHeight>720?2:1;
+   const max=p.step===5?art.getBoundingClientRect().width:p.step===3?Math.min(190,main.clientWidth/2-30):main.clientWidth-52;
+   const target=Math.max(p.step===5?75:70,Math.min(max,current+spare/rows));
+   const variable=p.step===5?'--quiz-art':'--lesson-art';
+   if(Math.abs((parseFloat(main.style.getPropertyValue(variable))||current)-target)>.5)main.style.setProperty(variable,target+'px');
+   const fill=Math.max(0,spare-(target-current)*rows);
+   if(Math.abs(oldFill-fill)>.5)main.style.setProperty('--lesson-fill',fill+'px');
+  })};
+  main.style.removeProperty('--lesson-art');main.style.removeProperty('--quiz-art');main.style.removeProperty('--lesson-fill');
+  const observer=new ResizeObserver(fit);observer.observe(main.querySelector('.workspace')!);observer.observe(main.querySelector('.lesson-actions')!);window.addEventListener('resize',fit);fit();
+  return()=>{cancelAnimationFrame(frame);observer.disconnect();window.removeEventListener('resize',fit)};
+ },[ready,p.nameConfirmed,tab,p.step,p.word,p.quiz,showKorean,magic,audioUrl,notice]);
  function move(step:number){stopAudio();if(recording)stopRecord();setMagic(false);setCorrect(false);setAnswer('');setNotice('');setP(v=>({...v,step}));window.scrollTo({top:0,behavior:'smooth'})}
  const name=p.name;
  const narration=p.step===0?`${name}, 안녕! 나는 미미야. 오늘은 알파벳 a에게 생기는 신기한 일을 알아볼 거야!`:p.step===1?`${name}, 이건 cap, 모자야. cap에서 a는 짧은 소리가 나. 단어를 잘 듣고 따라 해볼까?`:p.step===2?`cap이 magic e를 만나 cape가 됐어! a는 ‘에이’ 소리, 끝의 e는 조용해.`:p.step===3?`‘에이’를 듣고 cape를 따라 말해봐. 끝의 e는 소리 내지 않아.`:p.step===4?`${name}, ${WORDS[p.word].word}를 듣고 따라 말해보자!`:p.step===5?`${name}, 단어를 듣고 맞는 그림을 골라줘!`:p.step===6?`${name}, magic e를 단어 끝에 붙여줘!`: `${name}, 잘했어! 오늘은 magic e를 만났어. 오늘 숙제는 Speed Phonics 2권 Unit 1, 4페이지부터 9페이지까지 엄마와 함께 풀어보기야!`;
