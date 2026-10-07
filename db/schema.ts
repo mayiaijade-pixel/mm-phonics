@@ -1,2 +1,3 @@
 import { sqliteTable, text, integer } from 'drizzle-orm/sqlite-core';
 export const progress = sqliteTable('lesson_progress', {userId:text('user_id').primaryKey(),name:text('name').notNull().default('Jenny'),nameConfirmed:integer('name_confirmed').notNull().default(0),step:integer('step').notNull().default(0),word:integer('word').notNull().default(0),quiz:integer('quiz').notNull().default(0),completed:integer('completed').notNull().default(0),homework:text('homework').notNull().default('[]'),updatedAt:text('updated_at').notNull()});
+export const voiceCache=sqliteTable('mimi_voice_cache',{id:text('id').primaryKey(),userId:text('user_id').notNull(),audio:text('audio').notNull().default(''),createdAt:integer('created_at').notNull()});
