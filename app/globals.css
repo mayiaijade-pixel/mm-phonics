@@ -83,3 +83,4 @@
 .lesson-view.stage-3 .pronunciation .pronunciation-actions button{height:48px;min-height:48px;padding:9px 10px;font-size:15px}
 
 .magic-attach{width:76px;height:76px;min-width:76px;padding:0;display:inline-flex;align-items:center;justify-content:center;border-radius:22px}.magic-attach>span{font-size:48px;line-height:1}
+.lesson-view .large-mimi-card .magic-attach{width:72px;height:64px;min-width:72px;background:#fff;border:2px solid #b99de8;border-radius:18px;box-shadow:0 4px 0 #d5bfee;padding:0;color:var(--purple)}.lesson-view .large-mimi-card .magic-attach>span{font-size:42px}
