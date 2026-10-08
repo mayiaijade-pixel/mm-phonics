@@ -1,7 +1,7 @@
 import type {NextConfig} from 'next';
 import path from 'node:path';
 const nextConfig:NextConfig={
- distDir:process.env.MM_HOSTING_TARGET==='sites'?'.next':'.next-vercel',
+ distDir:process.env.MM_HOSTING_TARGET==='sites'||process.env.VERCEL==='1'?'.next':'.next-vercel',
  env:{NEXT_PUBLIC_HOSTING_PLATFORM:process.env.MM_HOSTING_TARGET==='sites'?'sites':'vercel'},
  webpack(config){
   config.resolve.alias={...config.resolve.alias,
