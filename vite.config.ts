@@ -52,7 +52,7 @@ export default defineConfig(async ({ command }) => {
   const { cloudflare } = await import("@cloudflare/vite-plugin");
 
   return {
-    resolve: {alias: {"@platform/auth": new URL("./app/chatgpt-auth.ts",import.meta.url).pathname,"@platform/progress":new URL("./platform/sites/progress.ts",import.meta.url).pathname,"@platform/mimi-voice":new URL("./platform/sites/mimi-voice.ts",import.meta.url).pathname}},
+    resolve: {alias: {"@platform/key":new URL("./platform/sites/key.ts",import.meta.url).pathname,"@platform/auth": new URL("./app/chatgpt-auth.ts",import.meta.url).pathname,"@platform/progress":new URL("./platform/sites/progress.ts",import.meta.url).pathname,"@platform/mimi-voice":new URL("./platform/sites/mimi-voice.ts",import.meta.url).pathname}},
     server: {
       ...(managedLinux
         ? { host: "0.0.0.0", allowedHosts: ["terminal.local"] }

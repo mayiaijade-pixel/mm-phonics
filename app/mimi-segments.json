@@ -172,5 +172,167 @@
       "text": "Say it with me!",
       "audio": "/audio/fena/phonics-v3-94322755abc45f29.mp3"
     }
+  ],
+  "feedback-bake": [
+    {
+      "text": "I heard bake! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to bake, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to bake, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-cake": [
+    {
+      "text": "I heard cake! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to cake, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to cake, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-lake": [
+    {
+      "text": "I heard lake! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to lake, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to lake, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-rake": [
+    {
+      "text": "I heard rake! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to rake, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to rake, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-cape": [
+    {
+      "text": "I heard cape! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to cape, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to cape, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-tape": [
+    {
+      "text": "I heard tape! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to tape, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to tape, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-cave": [
+    {
+      "text": "I heard cave! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to cave, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to cave, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-wave": [
+    {
+      "text": "I heard wave! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to wave, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to wave, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-cap": [
+    {
+      "text": "I heard cap! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to cap, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to cap, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
   ]
 }

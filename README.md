@@ -62,3 +62,7 @@ npm run build:sites
 ```
 
 환경변수 파일, API 키, 로컬 DB, 생성된 빌드 폴더는 `.gitignore`로 제외합니다.
+
+## 녹음 피드백
+
+Say it으로 녹음하고 Stop을 누른 뒤 Check my voice를 누르면 녹음이 ElevenLabs Scribe v2에 전송됩니다. 목표 단어와 인식 결과를 비교하여 칭찬/연습 팁/다시 녹음을 제공합니다. 음소별 발음 정확도 채점은 아닙니다. 녹음을 이 앱의 DB에 저장하지 않으며, 외부 처리에는 ElevenLabs의 데이터 정책이 적용됩니다. 기존 ELEVENLABS_API_KEY에 Speech to Text 권한이 필요합니다. 요청당 2MB, 10분당 30건의 인스턴스 단위 제한을 적용합니다.

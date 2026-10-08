@@ -34,6 +34,9 @@
       ],
       "@platform/mimi-voice": [
         "./platform/vercel/mimi-voice.ts"
+      ],
+      "@platform/key": [
+        "./platform/vercel/key.ts"
       ]
     },
     "types": [
