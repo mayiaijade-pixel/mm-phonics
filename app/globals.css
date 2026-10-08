@@ -72,3 +72,7 @@
 .lesson-view.stage-3 .save-status{display:none}.lesson-view.stage-3 .pronunciation>.pill{display:none}
 
 .lesson-view.stage-3 .pronunciation-actions{display:flex;justify-content:center;align-items:flex-start;gap:10px;width:100%;margin:9px 0}.lesson-view.stage-3 .pronunciation-actions>.record-controls{display:flex;flex-wrap:wrap;width:auto;max-width:50%;margin:0}.lesson-view.stage-3 .pronunciation-actions .say-it-button{min-width:110px;min-height:42px}.lesson-view.stage-3 .pronunciation h2{font-size:16px;margin:4px 0}
+
+.quiz-pictures{position:relative}.lesson-view.stage-5 .quiz-card .choices{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:78px;column-gap:10px}.lesson-view.stage-5 .quiz-card .choice:last-child{grid-column:1/-1;width:calc(50% - 5px);justify-self:center}.quiz-listen{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:68px;height:68px;border-radius:50%;background:var(--purple);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;font-size:12px;font-weight:900;line-height:1.2;box-shadow:0 4px 0 #56339f;z-index:2}.quiz-listen:active:not(:disabled){transform:translate(-50%,-50%) scale(.96)}@media(max-height:720px){.lesson-view.stage-5 .quiz-card .choices{row-gap:70px}.quiz-listen{width:60px;height:60px}}
+
+.quiz-pictures .quiz-listen,.quiz-pictures .quiz-listen.guided-glow{position:absolute}
