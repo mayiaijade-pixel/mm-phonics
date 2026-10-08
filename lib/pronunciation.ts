@@ -1,5 +1,10 @@
-export const targets=['bake','cake','lake','rake','cape','tape','cave','wave','cap'] as const;
+export const targets=['bake','cake','lake','rake','cape','tape','cave','wave','cap','ay'] as const;
 export function feedbackFor(target:string,transcript:string){
+ if(target==='ay'){
+  const normalized=transcript.toLowerCase().replace(/[^a-z]/g,'');
+  const status=!normalized?'unclear':['a','ay'].includes(normalized)?'match':'retry';
+  return {target,transcript:transcript.slice(0,120),status,index:status==='match'?0:status==='unclear'?3:2,tip:'입을 살짝 벌려 ‘에’로 시작하고, 끊지 않고 ‘이’로 부드럽게 이어 /eɪ/ 소리를 내봐요.',english:status==='match'?"I heard ay! Great job!":status==='unclear'?"I couldn't hear clearly. Let's try again!":"Good try! Listen to ay, then say it again.",korean:status==='match'?'ei (에이) 소리로 인식됐어요! 잘했어요.':'좋은 시도예요! ei (에이) 소리를 듣고 다시 따라해봐요.'};
+ }
  const words=transcript.toLowerCase().match(/[a-z]+/g)||[];
  const heard=words.filter(w=>!['i','said','say','it','a','the'].includes(w));
  const short:Record<string,string>={bake:'back',cake:'cack',lake:'lack',rake:'rack',cape:'cap',tape:'tap',cave:'calve',wave:'wave'};

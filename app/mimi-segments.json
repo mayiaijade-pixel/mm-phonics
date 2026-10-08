@@ -29,16 +29,8 @@
   ],
   "3": [
     {
-      "text": "Listen: /eɪ/!",
-      "audio": "/audio/fena/phonics-v3-90c9b2343ff0e627.mp3"
-    },
-    {
-      "text": "Now say cape.",
-      "audio": "/audio/fena/phonics-v3-191a10e7d0653f6c.mp3"
-    },
-    {
-      "text": "The final e is silent!",
-      "audio": "/audio/fena/phonics-v3-4e09eecd13377ecd.mp3"
+      "text": "When short a meets magic e!?",
+      "audio": ""
     }
   ],
   "5": [
@@ -328,6 +320,24 @@
     },
     {
       "text": "Good try! Listen to cap, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-ay": [
+    {
+      "text": "I heard ay! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to ay, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to ay, then say it again.",
       "audio": ""
     },
     {
