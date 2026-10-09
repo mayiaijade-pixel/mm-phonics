@@ -1,4 +1,14 @@
 {
-  "story": {"title":"Story","src":"","duration":"30 sec"},
-  "song": {"title":"Song","src":"","duration":"30 sec"}
+  "story": {
+    "title": "Story",
+    "src": "/videos/story.mp4",
+    "poster": "/videos/story.jpg",
+    "duration": "30 sec"
+  },
+  "song": {
+    "title": "Song",
+    "src": "/videos/song.mp4",
+    "poster": "/videos/song.jpg",
+    "duration": "31 sec"
+  }
 }
