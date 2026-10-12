@@ -1,3 +1,4 @@
+import {letterNamesForSpeech} from '../../lib/voice-text';
 import {env} from 'cloudflare:workers';
 import {z} from 'zod';
 import {getChatGPTUser} from '../../app/chatgpt-auth';
@@ -18,7 +19,7 @@ export async function POST(request:Request){
  else if(scene)template=(segments as Record<string,{text:string}[]>)[scene]?.[index]?.text;
  else if(text)template=Object.keys(audio).find(key=>key.replaceAll('Jenny',name)===text);
  if(!template)return fail(400);
- const spoken=template.replaceAll('Jenny',name).replace('/eɪ/','ay');
+ const spoken=letterNamesForSpeech(template.replaceAll('Jenny',name).replace('/eɪ/','ay'));
  const runtime=env as unknown as Record<string,string>;
  const voice=runtime.ELEVENLABS_VOICE_ID||'BlgEcC0TfWpBak7FmvHW';
  if(!runtime.ELEVENLABS_API_KEY)return fail();

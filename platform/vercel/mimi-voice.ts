@@ -1,3 +1,4 @@
+import {letterNamesForSpeech} from '../../lib/voice-text';
 import {z} from 'zod';
 import {createHash} from 'node:crypto';
 import {getChatGPTUser} from './auth';
@@ -15,7 +16,7 @@ export async function POST(request:Request){
  const {scene,index,text,name}=parsed.data;
  const template=scene==='greeting'?['Hi, Jenny!',"I'm Mimi!","Let's discover a little magic with the letter a!"][index]:scene?(segments as Record<string,{text:string}[]>)[scene]?.[index]?.text:text?Object.keys(audio).find(key=>key.replaceAll('Jenny',name)===text):undefined;
  if(!template||!process.env.ELEVENLABS_API_KEY)return fail(template?503:400);
- const spoken=template.replaceAll('Jenny',name).replace('/eɪ/','ay');const speed=scene==='greeting'||scene==='u2-0'?1:.86;
+ const spoken=letterNamesForSpeech(template.replaceAll('Jenny',name).replace('/eɪ/','ay'));const speed=scene==='greeting'||scene==='u2-0'?1:.86;
  const voice=process.env.ELEVENLABS_VOICE_ID||'BlgEcC0TfWpBak7FmvHW';
  const id=createHash('sha256').update(JSON.stringify([user.userId,voice,spoken,speed])).digest('hex');
  const now=Date.now();for(const [key,v] of cache)if(now-v.created>3600000)cache.delete(key);for(const [key,v]of limits)if(v.until<now)limits.delete(key);

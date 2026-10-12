@@ -44,7 +44,7 @@ export default function Page(){
  const sentenceClips=!unitTwo&&p.step===0&&tab==='lesson'?[
   {text:`Hi, ${p.name}!`,audio:'/audio/fena/greeting-natural-1.mp3'},
   {text:"I'm Mimi!",audio:'/audio/fena/greeting-natural-2.mp3'},
-  {text:"Let's discover a little magic with the letter a!",audio:'/audio/fena/greeting-natural-3.mp3'}
+  {text:"Let's discover a little magic with the letter a!",audio:mimiAudio["Let's discover a little magic with the letter a!"]}
  ]:((mimiSegments as Record<string,{text:string;audio:string}[]>)[sceneKey]||[]);
  function playGreeting(){
   stopAudio();setNotice('');setSpokenCaption('');setGreetingLine(0);if(p.step===3)setNarrationDone(muted);if(muted||!sentenceClips.length)return;

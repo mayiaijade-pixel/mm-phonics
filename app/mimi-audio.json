@@ -8,8 +8,8 @@
   "tape": "/audio/fena/phonics-v3-892fa3c339e40e25.mp3",
   "cave": "/audio/fena/phonics-v3-92064ab87bba3d4a.mp3",
   "wave": "/audio/fena/phonics-v3-eaf2c74571a421ea.mp3",
-  "Hi, Jenny! I'm Mimi. Let's discover a little magic with the letter a!": "/audio/fena/f5a057b5e2c5d9fa.mp3",
-  "Look, Jenny! This is a cap. Listen to the short a sound in cap. Now say cap with me!": "/audio/fena/f789a7c8d5baa9db.mp3",
+  "Hi, Jenny! I'm Mimi. Let's discover a little magic with the letter a!": "/audio/letter-a/67687ea8e8bc64bc860f.mp3",
+  "Look, Jenny! This is a cap. Listen to the short a sound in cap. Now say cap with me!": "/audio/letter-a/959bdf6a4345afe9e96e.mp3",
   "Cap meets magic e! Now cap plus e makes cape!": "/audio/fena/6f0918cf8648dca1.mp3",
   "Listen: ay! Now say cape. The final e is silent!": "/audio/fena/af008d16dbe6844d.mp3",
   "Jenny, listen to the word. Then tap the matching picture!": "/audio/fena/aac5b84a3f9197bf.mp3",
@@ -37,5 +37,6 @@
   "vase": "/audio/unit2/58036c729415ec48e8aa.mp3",
   "date": "/audio/unit2/1f32c6f1f7531c6b5ceb.mp3",
   "gate": "/audio/unit2/0d1fc6bfde01d0af3014.mp3",
-  "can": "/audio/unit2/ea51410dab488223c919.mp3"
+  "can": "/audio/unit2/ea51410dab488223c919.mp3",
+  "Let's discover a little magic with the letter a!": "/audio/letter-a/a4d02d2eebbb23e50c4b.mp3"
 }
