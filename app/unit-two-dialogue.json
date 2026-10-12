@@ -1,0 +1,90 @@
+{
+  "words": {
+    "game": "Let's play a game!",
+    "name": "My name is Mimi!",
+    "cane": "This is a walking cane.",
+    "lane": "Let's walk down the lane!",
+    "case": "Open the case!",
+    "vase": "Put flowers in the vase!",
+    "date": "What's the date today?",
+    "gate": "Open the garden gate!"
+  },
+  "scenes": {
+    "u2-0": [
+      "Hi, Jenny!",
+      "Welcome back! Let's learn more long a words!"
+    ],
+    "u2-1": [
+      "Look, Jenny! This is a can.",
+      "Listen to the short a sound in can.",
+      "Now say can with me!"
+    ],
+    "u2-2": [
+      "Can meets magic e!",
+      "Now can plus e makes cane!",
+      "The a says ay, and the final e is silent."
+    ],
+    "u2-3": [
+      "When short a meets magic e!?",
+      "It makes the sound /eɪ/!"
+    ],
+    "u2-5": [
+      "Jenny, listen to the word.",
+      "Then tap the matching picture!"
+    ],
+    "u2-6": [
+      "Jenny, tap magic e.",
+      "Put it at the end of can.",
+      "Let’s make cane!"
+    ],
+    "u2-7": [
+      "Great job, Jenny!",
+      "You learned eight new long a words!",
+      "For homework, review Unit 2 in Speed Phonics Book 2 with your mom."
+    ],
+    "u2-homework": [
+      "Jenny, review Unit 2 in Speed Phonics Book 2 with your mom.",
+      "Listen to each word, then say it again!"
+    ],
+    "u2-4-game": [
+      "Jenny, listen to game.",
+      "Let's play a game!",
+      "Say it with me!"
+    ],
+    "u2-4-name": [
+      "Jenny, listen to name.",
+      "My name is Mimi!",
+      "Say it with me!"
+    ],
+    "u2-4-cane": [
+      "Jenny, listen to cane.",
+      "This is a walking cane.",
+      "Say it with me!"
+    ],
+    "u2-4-lane": [
+      "Jenny, listen to lane.",
+      "Let's walk down the lane!",
+      "Say it with me!"
+    ],
+    "u2-4-case": [
+      "Jenny, listen to case.",
+      "Open the case!",
+      "Say it with me!"
+    ],
+    "u2-4-vase": [
+      "Jenny, listen to vase.",
+      "Put flowers in the vase!",
+      "Say it with me!"
+    ],
+    "u2-4-date": [
+      "Jenny, listen to date.",
+      "What's the date today?",
+      "Say it with me!"
+    ],
+    "u2-4-gate": [
+      "Jenny, listen to gate.",
+      "Open the garden gate!",
+      "Say it with me!"
+    ]
+  }
+}

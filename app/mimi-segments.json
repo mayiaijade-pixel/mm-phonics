@@ -348,5 +348,375 @@
       "text": "I couldn't hear clearly. Let's try again!",
       "audio": ""
     }
+  ],
+  "feedback-game": [
+    {
+      "text": "I heard game! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to game, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to game, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-name": [
+    {
+      "text": "I heard name! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to name, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to name, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-cane": [
+    {
+      "text": "I heard cane! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to cane, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to cane, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-lane": [
+    {
+      "text": "I heard lane! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to lane, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to lane, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-case": [
+    {
+      "text": "I heard case! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to case, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to case, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-vase": [
+    {
+      "text": "I heard vase! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to vase, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to vase, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-date": [
+    {
+      "text": "I heard date! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to date, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to date, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-gate": [
+    {
+      "text": "I heard gate! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to gate, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to gate, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-can": [
+    {
+      "text": "I heard can! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to can, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to can, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "u2-0": [
+    {
+      "text": "Hi, Jenny!",
+      "audio": "/audio/unit2/31ac4e38e4f8aefaeac4.mp3"
+    },
+    {
+      "text": "Welcome back! Let's learn more long a words!",
+      "audio": "/audio/unit2/187a9935d94cb0b147b3.mp3"
+    }
+  ],
+  "u2-1": [
+    {
+      "text": "Look, Jenny! This is a can.",
+      "audio": "/audio/unit2/242b2c97084d77a822a9.mp3"
+    },
+    {
+      "text": "Listen to the short a sound in can.",
+      "audio": "/audio/unit2/54cef34010d2bbaa48af.mp3"
+    },
+    {
+      "text": "Now say can with me!",
+      "audio": "/audio/unit2/eee2a6fdf8f511916784.mp3"
+    }
+  ],
+  "u2-2": [
+    {
+      "text": "Can meets magic e!",
+      "audio": "/audio/unit2/562882312c347394582e.mp3"
+    },
+    {
+      "text": "Now can plus e makes cane!",
+      "audio": "/audio/unit2/e8d905828927bb235d56.mp3"
+    },
+    {
+      "text": "The a says ay, and the final e is silent.",
+      "audio": "/audio/unit2/d2d8abd6972f51d89de7.mp3"
+    }
+  ],
+  "u2-3": [
+    {
+      "text": "When short a meets magic e!?",
+      "audio": "/audio/unit2/976f74872c2f7c02e2cb.mp3"
+    },
+    {
+      "text": "It makes the sound /eɪ/!",
+      "audio": "/audio/unit2/d053a695f0c10f8a9ac1.mp3"
+    }
+  ],
+  "u2-5": [
+    {
+      "text": "Jenny, listen to the word.",
+      "audio": "/audio/unit2/51dfeb2037dd0c79a302.mp3"
+    },
+    {
+      "text": "Then tap the matching picture!",
+      "audio": "/audio/unit2/8d0498564c1d64846b21.mp3"
+    }
+  ],
+  "u2-6": [
+    {
+      "text": "Jenny, tap magic e.",
+      "audio": "/audio/unit2/0b66e80767a70859e25a.mp3"
+    },
+    {
+      "text": "Put it at the end of can.",
+      "audio": "/audio/unit2/6c3e3c75336f47c05966.mp3"
+    },
+    {
+      "text": "Let’s make cane!",
+      "audio": "/audio/unit2/62f985b397a68d627450.mp3"
+    }
+  ],
+  "u2-7": [
+    {
+      "text": "Great job, Jenny!",
+      "audio": "/audio/unit2/dfe672e44f689ac6eafa.mp3"
+    },
+    {
+      "text": "You learned eight new long a words!",
+      "audio": "/audio/unit2/2b50a53eb035ec3da489.mp3"
+    },
+    {
+      "text": "For homework, review Unit 2 in Speed Phonics Book 2 with your mom.",
+      "audio": "/audio/unit2/9a71db4e6d518843df25.mp3"
+    }
+  ],
+  "u2-homework": [
+    {
+      "text": "Jenny, review Unit 2 in Speed Phonics Book 2 with your mom.",
+      "audio": "/audio/unit2/581b431e67340c10b66b.mp3"
+    },
+    {
+      "text": "Listen to each word, then say it again!",
+      "audio": "/audio/unit2/8e2a81355a92faf6359f.mp3"
+    }
+  ],
+  "u2-4-game": [
+    {
+      "text": "Jenny, listen to game.",
+      "audio": "/audio/unit2/9525e87fa75432bb958c.mp3"
+    },
+    {
+      "text": "Let's play a game!",
+      "audio": "/audio/unit2/de0d61b60de4974fceee.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/unit2/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u2-4-name": [
+    {
+      "text": "Jenny, listen to name.",
+      "audio": "/audio/unit2/70be51a8c316e2e92e9d.mp3"
+    },
+    {
+      "text": "My name is Mimi!",
+      "audio": "/audio/unit2/ef3ce586a478eefd51c1.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/unit2/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u2-4-cane": [
+    {
+      "text": "Jenny, listen to cane.",
+      "audio": "/audio/unit2/def67d389d101b0455e5.mp3"
+    },
+    {
+      "text": "This is a walking cane.",
+      "audio": "/audio/unit2/3f8fcb2f39175569627f.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/unit2/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u2-4-lane": [
+    {
+      "text": "Jenny, listen to lane.",
+      "audio": "/audio/unit2/5c9f2172dcc706f97357.mp3"
+    },
+    {
+      "text": "Let's walk down the lane!",
+      "audio": "/audio/unit2/571dc79e7514cc464a7f.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/unit2/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u2-4-case": [
+    {
+      "text": "Jenny, listen to case.",
+      "audio": "/audio/unit2/4625d6d2839dea45ae97.mp3"
+    },
+    {
+      "text": "Open the case!",
+      "audio": "/audio/unit2/190650fdba19b7e71144.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/unit2/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u2-4-vase": [
+    {
+      "text": "Jenny, listen to vase.",
+      "audio": "/audio/unit2/a3c81fc1ec39f788cbae.mp3"
+    },
+    {
+      "text": "Put flowers in the vase!",
+      "audio": "/audio/unit2/ef24a869c7ae5e738181.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/unit2/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u2-4-date": [
+    {
+      "text": "Jenny, listen to date.",
+      "audio": "/audio/unit2/b28a0091dc317b6fde8b.mp3"
+    },
+    {
+      "text": "What's the date today?",
+      "audio": "/audio/unit2/441858105e4285ab4898.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/unit2/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u2-4-gate": [
+    {
+      "text": "Jenny, listen to gate.",
+      "audio": "/audio/unit2/bdd70ec0d927f8469f0d.mp3"
+    },
+    {
+      "text": "Open the garden gate!",
+      "audio": "/audio/unit2/0f140f047ccfe9c34600.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/unit2/dec90f9194c5a4cff958.mp3"
+    }
   ]
 }

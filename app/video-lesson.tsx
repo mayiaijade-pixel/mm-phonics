@@ -1,7 +1,7 @@
 'use client';
 import {BookOpen,ChevronLeft,ChevronRight,Film,Music} from 'lucide-react';
 import videos from './lesson-videos.json';
-export default function VideoLesson({kind,onPrevious,onNext,onMenu}:{kind:'story'|'song';onPrevious:()=>void;onNext:()=>void;onMenu:()=>void}){
- const selected=kind,clip=videos[kind];const isStory=kind==='story';
+export default function VideoLesson({kind,unit=1,onPrevious,onNext,onMenu}:{kind:'story'|'song';unit?:number;onPrevious:()=>void;onNext:()=>void;onMenu:()=>void}){
+ const selected=kind,clip=unit===2?{title:kind==='story'?'Story':'Song',src:'',poster:'',duration:'Coming soon'}:videos[kind];const isStory=kind==='story';
  return <section className="video-lesson"><div className="stage-line"><span>{isStory?'Story · 5 / 10':'Song · 7 / 10'}</span><button className="lesson-menu-button" onClick={onMenu}><BookOpen size={20}/> Lesson menu</button></div><h1>{isStory?'Long a (a+e) Story':'Long a Song'}</h1><p className="video-intro">{isStory?'미미의 이야기 속에서 long a를 만나봐요.':'배운 단어를 노래로 따라해요.'}</p><div className="video-corner-label">{isStory?<Film size={20}/>:<Music size={20}/>} {clip.duration}</div><div className="video-screen">{clip.src?<video key={selected} controls playsInline preload="metadata" poster={clip.poster} aria-label={clip.title+' video'}><source src={clip.src} type="video/mp4"/>Your browser does not support video playback.</video>:<div className="video-coming"><img src="/images/mimi.png" alt="고양이 미미"/><h2>{clip.title} · Coming soon</h2><p>{selected==='story'?'미미의 이야기가 곧 시작돼요!':'미미의 노래가 곧 시작돼요!'}</p></div>}</div><div className="video-lesson-actions"><button className="back-button" onClick={onPrevious}><ChevronLeft size={18}/> Previous</button><button className="primary-button" onClick={onNext}>{isStory?'Practice words':'Start quiz'} <ChevronRight size={18}/></button></div></section>
 }

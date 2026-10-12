@@ -1,0 +1,1 @@
+ALTER TABLE `lesson_progress` ADD `unit2` text;

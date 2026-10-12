@@ -6,7 +6,7 @@ import audio from '../../app/mimi-audio.json';
 const cache=new Map<string,{clip:Promise<Uint8Array>;created:number}>();
 const limits=new Map<string,{count:number;until:number}>();
 const fail=(status=503)=>Response.json({error:'미미 음성을 준비하지 못했어요. 잠시 후 다시 시도해 주세요.'},{status});
-const sounds:Record<string,string>={cap:'K AE1 P',bake:'B EY1 K',cake:'K EY1 K',lake:'L EY1 K',rake:'R EY1 K',cape:'K EY1 P',tape:'T EY1 P',cave:'K EY1 V',wave:'W EY1 V',ay:'EY1'};
+const sounds:Record<string,string>={cap:'K AE1 P',bake:'B EY1 K',cake:'K EY1 K',lake:'L EY1 K',rake:'R EY1 K',cape:'K EY1 P',tape:'T EY1 P',cave:'K EY1 V',wave:'W EY1 V',ay:'EY1',game:'G EY1 M',name:'N EY1 M',cane:'K EY1 N',lane:'L EY1 N',case:'K EY1 S',vase:'V EY1 S',date:'D EY1 T',gate:'G EY1 T',can:'K AE1 N'};
 const xml=(s:string)=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 export async function POST(request:Request){
  if(request.headers.get('origin')!==new URL(request.url).origin)return fail(403);
@@ -15,7 +15,7 @@ export async function POST(request:Request){
  const {scene,index,text,name}=parsed.data;
  const template=scene==='greeting'?['Hi, Jenny!',"I'm Mimi!","Let's discover a little magic with the letter a!"][index]:scene?(segments as Record<string,{text:string}[]>)[scene]?.[index]?.text:text?Object.keys(audio).find(key=>key.replaceAll('Jenny',name)===text):undefined;
  if(!template||!process.env.ELEVENLABS_API_KEY)return fail(template?503:400);
- const spoken=template.replaceAll('Jenny',name).replace('/eɪ/','ay');const speed=scene==='greeting'?1:.86;
+ const spoken=template.replaceAll('Jenny',name).replace('/eɪ/','ay');const speed=scene==='greeting'||scene==='u2-0'?1:.86;
  const voice=process.env.ELEVENLABS_VOICE_ID||'BlgEcC0TfWpBak7FmvHW';
  const id=createHash('sha256').update(JSON.stringify([user.userId,voice,spoken,speed])).digest('hex');
  const now=Date.now();for(const [key,v] of cache)if(now-v.created>3600000)cache.delete(key);for(const [key,v]of limits)if(v.until<now)limits.delete(key);
@@ -25,7 +25,7 @@ export async function POST(request:Request){
   const limit=limits.get(ip)||{count:0,until:now+600000};if(limit.count>=30)return fail(429);limit.count++;limits.set(ip,limit);
   if(cache.size>=200)cache.delete(cache.keys().next().value!);
   const clip=(async()=>{
-   const tagged=xml(spoken).replace(/\b(cap|bake|cake|lake|rake|cape|tape|cave|wave|ay)\b/gi,w=>`<phoneme alphabet="cmu-arpabet" ph="${sounds[w.toLowerCase()]}">${w}</phoneme>`);
+   const tagged=xml(spoken).replace(/\b(cap|bake|cake|lake|rake|cape|tape|cave|wave|ay|game|name|cane|lane|case|vase|date|gate|can)\b/gi,w=>`<phoneme alphabet="cmu-arpabet" ph="${sounds[w.toLowerCase()]}">${w}</phoneme>`);
    const r=await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${encodeURIComponent(voice)}?output_format=mp3_44100_128`,{method:'POST',headers:{'xi-api-key':process.env.ELEVENLABS_API_KEY!,'Content-Type':'application/json'},body:JSON.stringify({text:tagged,model_id:'eleven_flash_v2',voice_settings:{stability:.75,similarity_boost:.75,style:0,use_speaker_boost:true,speed}}),signal:AbortSignal.timeout(45000)});
    if(!r.ok)throw Error('Voice unavailable');return new Uint8Array(await r.arrayBuffer());
   })();cached={clip,created:now};cache.set(id,cached);

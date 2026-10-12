@@ -28,5 +28,14 @@
   "Jenny, listen to tape. Say it with me!": "/audio/fena/b077efb580d71ddc.mp3",
   "Jenny, listen to cave. Say it with me!": "/audio/fena/bb22413d8b03d0d0.mp3",
   "Jenny, listen to wave. Say it with me!": "/audio/fena/112928d6ed30a3cd.mp3",
-  "ay": "/audio/fena/ay-slow-20261008.mp3"
+  "ay": "/audio/fena/ay-slow-20261008.mp3",
+  "game": "/audio/unit2/756666f2225b8c9a93a8.mp3",
+  "name": "/audio/unit2/da9db41b9de4bc0a72c4.mp3",
+  "cane": "/audio/unit2/a23536c4d839273f3b3f.mp3",
+  "lane": "/audio/unit2/4f1dba929b0ddb692637.mp3",
+  "case": "/audio/unit2/5b24bbd148ff7feac322.mp3",
+  "vase": "/audio/unit2/58036c729415ec48e8aa.mp3",
+  "date": "/audio/unit2/1f32c6f1f7531c6b5ceb.mp3",
+  "gate": "/audio/unit2/0d1fc6bfde01d0af3014.mp3",
+  "can": "/audio/unit2/ea51410dab488223c919.mp3"
 }

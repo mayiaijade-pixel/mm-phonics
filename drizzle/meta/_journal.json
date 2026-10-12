@@ -29,6 +29,13 @@
       "when": 1791413567683,
       "tag": "0003_reset_lesson_progress",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1791845767375,
+      "tag": "0004_simple_killraven",
+      "breakpoints": true
     }
   ]
 }

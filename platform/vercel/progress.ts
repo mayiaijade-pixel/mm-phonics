@@ -1,6 +1,6 @@
 import {cookies} from 'next/headers';
 import {z} from 'zod';
-const schema=z.object({resetVersion:z.literal(1),nameConfirmed:z.boolean(),name:z.string().trim().min(1).max(30),step:z.number().int().min(0).max(7),word:z.number().int().min(0).max(7),quiz:z.number().int().min(0).max(3),completed:z.boolean(),homework:z.array(z.enum(['cake','lake','cape','book-unit1'])).max(4)});
+const schema=z.object({unit2:z.object({step:z.number().int().min(0).max(7),word:z.number().int().min(0).max(7),quiz:z.number().int().min(0).max(3),completed:z.boolean(),homework:z.array(z.literal('book-unit2')).max(1)}).optional(),resetVersion:z.literal(1),nameConfirmed:z.boolean(),name:z.string().trim().min(1).max(30),step:z.number().int().min(0).max(7),word:z.number().int().min(0).max(7),quiz:z.number().int().min(0).max(3),completed:z.boolean(),homework:z.array(z.enum(['cake','lake','cape','book-unit1'])).max(4)});
 export async function GET(){
  const value=(await cookies()).get('mimi-progress-v1')?.value;
  try{const parsed=schema.safeParse(JSON.parse(Buffer.from(value||'','base64url').toString('utf8')));return Response.json({progress:parsed.success?parsed.data:null},{headers:{'Cache-Control':'no-store'}})}catch{return Response.json({progress:null},{headers:{'Cache-Control':'no-store'}})}
