@@ -10,7 +10,9 @@ export function feedbackFor(target:string,transcript:string){
   const status=!normalized?'unclear':['a','ay'].includes(normalized)?'match':'retry';
   return {target,transcript:transcript.slice(0,120),status,index:status==='match'?0:status==='unclear'?3:2,tip:'입을 살짝 벌려 ‘에’로 시작하고, 끊지 않고 ‘이’로 부드럽게 이어 /eɪ/ 소리를 내봐요.',english:status==='match'?"I heard ay! Great job!":status==='unclear'?"I couldn't hear clearly. Let's try again!":"Good try! Listen to ay, then say it again.",korean:status==='match'?'ei (에이) 소리로 인식됐어요! 잘했어요.':'좋은 시도예요! ei (에이) 소리를 듣고 다시 따라해봐요.'};
  }
- const words=transcript.toLowerCase().match(/[a-z]+/g)||[];
+ const numeric:Record<string,string>={nine:'9',five:'5'};
+ const recognized=numeric[target]&&new RegExp('^'+numeric[target]+'[.!?]?$').test(transcript.trim())?target:transcript;
+ const words=recognized.toLowerCase().match(/[a-z]+/g)||[];
  const heard=words.filter(w=>!['i','said','say','it','a','the'].includes(w));
  const short:Record<string,string>={bake:'back',cake:'cack',lake:'lack',rake:'rack',cape:'cap',tape:'tap',cave:'calve',wave:'wave',game:'gam',name:'nam',cane:'can',lane:'lan',case:'cass',vase:'vas',date:'dat',gate:'gat',line:'lin',nine:'nin',pine:'pin',vine:'vin',bike:'bick',hike:'hick',lime:'lim',time:'tim',pipe:'pip',wipe:'whip',hide:'hid',ride:'rid',bite:'bit',kite:'kit',dive:'div',five:'fiv'};
  const status=heard.length===1&&(heard[0]===target||(target==='vase'&&heard[0]==='vaz'))?'match':heard.length===0?'unclear':target!=='wave'&&heard.length===1&&heard[0]===short[target]?'vowel':'retry';
