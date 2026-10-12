@@ -1,0 +1,176 @@
+{
+  "words": {
+    "line": "Let's draw a line!",
+    "nine": "Count with me. Nine!",
+    "pine": "Look at the green pine tree!",
+    "vine": "The vine grows up and up!",
+    "bike": "Look at this bike!",
+    "hike": "Let's hike up the hill!",
+    "lime": "This is a green lime.",
+    "time": "What time is it?",
+    "pipe": "Water goes through a pipe.",
+    "wipe": "Let's wipe the window!",
+    "hide": "Let's hide behind the bush!",
+    "ride": "Let's ride in the wagon!",
+    "bite": "Take a little bite!",
+    "kite": "The kite flies in the sky!",
+    "dive": "Let's dive into the water!",
+    "five": "Count with me. Five!"
+  },
+  "scenes": {
+    "u3-0": [
+      "Hi, Jenny!",
+      "Let's discover magic with the letter i!"
+    ],
+    "u3-1": [
+      "Look, Jenny!",
+      "This is a pin.",
+      "Listen to the short i sound in pin.",
+      "Now say pin with me!"
+    ],
+    "u3-2": [
+      "Pin meets magic e!",
+      "Now pin plus e makes pine!",
+      "The i says eye, and the final e is silent."
+    ],
+    "u3-3": [
+      "When short i meets magic e!?",
+      "It makes the sound /aɪ/!"
+    ],
+    "u3-5": [
+      "Jenny, listen to the word.",
+      "Then tap the matching picture!"
+    ],
+    "u3-6": [
+      "Jenny, tap magic e.",
+      "Put it at the end of pin.",
+      "Let’s make pine!"
+    ],
+    "u3-7": [
+      "Great job, Jenny!",
+      "You learned eight new long i words!",
+      "For homework, review Unit 3 in Speed Phonics Book 2 with your mom."
+    ],
+    "u3-homework": [
+      "Jenny, review Unit 3 in Speed Phonics Book 2 with your mom.",
+      "Listen to each word, then say it again!"
+    ],
+    "u3-4-line": [
+      "Jenny, listen to line.",
+      "Let's draw a line!",
+      "Say it with me!"
+    ],
+    "u3-4-nine": [
+      "Jenny, listen to nine.",
+      "Count with me. Nine!",
+      "Say it with me!"
+    ],
+    "u3-4-pine": [
+      "Jenny, listen to pine.",
+      "Look at the green pine tree!",
+      "Say it with me!"
+    ],
+    "u3-4-vine": [
+      "Jenny, listen to vine.",
+      "The vine grows up and up!",
+      "Say it with me!"
+    ],
+    "u3-4-bike": [
+      "Jenny, listen to bike.",
+      "Look at this bike!",
+      "Say it with me!"
+    ],
+    "u3-4-hike": [
+      "Jenny, listen to hike.",
+      "Let's hike up the hill!",
+      "Say it with me!"
+    ],
+    "u3-4-lime": [
+      "Jenny, listen to lime.",
+      "This is a green lime.",
+      "Say it with me!"
+    ],
+    "u3-4-time": [
+      "Jenny, listen to time.",
+      "What time is it?",
+      "Say it with me!"
+    ],
+    "u4-0": [
+      "Hi, Jenny!",
+      "Welcome back! Let's learn more long i words!"
+    ],
+    "u4-1": [
+      "Look, Jenny!",
+      "This is a kit.",
+      "Listen to the short i sound in kit.",
+      "Now say kit with me!"
+    ],
+    "u4-2": [
+      "Kit meets magic e!",
+      "Now kit plus e makes kite!",
+      "The i says eye, and the final e is silent."
+    ],
+    "u4-3": [
+      "When short i meets magic e!?",
+      "It makes the sound /aɪ/!"
+    ],
+    "u4-5": [
+      "Jenny, listen to the word.",
+      "Then tap the matching picture!"
+    ],
+    "u4-6": [
+      "Jenny, tap magic e.",
+      "Put it at the end of kit.",
+      "Let’s make kite!"
+    ],
+    "u4-7": [
+      "Great job, Jenny!",
+      "You learned eight new long i words!",
+      "For homework, review Unit 4 in Speed Phonics Book 2 with your mom."
+    ],
+    "u4-homework": [
+      "Jenny, review Unit 4 in Speed Phonics Book 2 with your mom.",
+      "Listen to each word, then say it again!"
+    ],
+    "u4-4-pipe": [
+      "Jenny, listen to pipe.",
+      "Water goes through a pipe.",
+      "Say it with me!"
+    ],
+    "u4-4-wipe": [
+      "Jenny, listen to wipe.",
+      "Let's wipe the window!",
+      "Say it with me!"
+    ],
+    "u4-4-hide": [
+      "Jenny, listen to hide.",
+      "Let's hide behind the bush!",
+      "Say it with me!"
+    ],
+    "u4-4-ride": [
+      "Jenny, listen to ride.",
+      "Let's ride in the wagon!",
+      "Say it with me!"
+    ],
+    "u4-4-bite": [
+      "Jenny, listen to bite.",
+      "Take a little bite!",
+      "Say it with me!"
+    ],
+    "u4-4-kite": [
+      "Jenny, listen to kite.",
+      "The kite flies in the sky!",
+      "Say it with me!"
+    ],
+    "u4-4-dive": [
+      "Jenny, listen to dive.",
+      "Let's dive into the water!",
+      "Say it with me!"
+    ],
+    "u4-4-five": [
+      "Jenny, listen to five.",
+      "Count with me. Five!",
+      "Say it with me!"
+    ]
+  }
+}

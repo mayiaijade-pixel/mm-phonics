@@ -718,5 +718,771 @@
       "text": "Say it with me!",
       "audio": "/audio/unit2/dec90f9194c5a4cff958.mp3"
     }
+  ],
+  "feedback-line": [
+    {
+      "text": "I heard line! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to line, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to line, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-nine": [
+    {
+      "text": "I heard nine! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to nine, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to nine, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-pine": [
+    {
+      "text": "I heard pine! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to pine, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to pine, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-vine": [
+    {
+      "text": "I heard vine! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to vine, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to vine, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-bike": [
+    {
+      "text": "I heard bike! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to bike, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to bike, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-hike": [
+    {
+      "text": "I heard hike! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to hike, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to hike, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-lime": [
+    {
+      "text": "I heard lime! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to lime, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to lime, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-time": [
+    {
+      "text": "I heard time! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to time, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to time, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-pipe": [
+    {
+      "text": "I heard pipe! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to pipe, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to pipe, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-wipe": [
+    {
+      "text": "I heard wipe! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to wipe, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to wipe, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-hide": [
+    {
+      "text": "I heard hide! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to hide, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to hide, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-ride": [
+    {
+      "text": "I heard ride! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to ride, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to ride, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-bite": [
+    {
+      "text": "I heard bite! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to bite, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to bite, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-kite": [
+    {
+      "text": "I heard kite! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to kite, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to kite, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-dive": [
+    {
+      "text": "I heard dive! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to dive, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to dive, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-five": [
+    {
+      "text": "I heard five! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to five, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to five, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-pin": [
+    {
+      "text": "I heard pin! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to pin, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to pin, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-kit": [
+    {
+      "text": "I heard kit! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to kit, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to kit, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "feedback-eye": [
+    {
+      "text": "I heard the long i sound! Great job!",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to the long i sound, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "Good try! Listen to the long i sound, then say it again.",
+      "audio": ""
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": ""
+    }
+  ],
+  "u3-0": [
+    {
+      "text": "Hi, Jenny!",
+      "audio": "/audio/long-i/31ac4e38e4f8aefaeac4.mp3"
+    },
+    {
+      "text": "Let's discover magic with the letter i!",
+      "audio": "/audio/long-i/c275f7cbbe542a6c9812.mp3"
+    }
+  ],
+  "u3-1": [
+    {
+      "text": "Look, Jenny!",
+      "audio": "/audio/long-i/7c5c9fc520dc30c93ad4.mp3"
+    },
+    {
+      "text": "This is a pin.",
+      "audio": "/audio/long-i/16759a083060822b6358.mp3"
+    },
+    {
+      "text": "Listen to the short i sound in pin.",
+      "audio": "/audio/long-i/e6bc551c296bdd4d9107.mp3"
+    },
+    {
+      "text": "Now say pin with me!",
+      "audio": "/audio/long-i/5b74b5a42c7003fd5efc.mp3"
+    }
+  ],
+  "u3-2": [
+    {
+      "text": "Pin meets magic e!",
+      "audio": "/audio/long-i/04e3b6d32b38e844584d.mp3"
+    },
+    {
+      "text": "Now pin plus e makes pine!",
+      "audio": "/audio/long-i/40ee41e51297cef74c73.mp3"
+    },
+    {
+      "text": "The i says eye, and the final e is silent.",
+      "audio": "/audio/long-i/7a1d026115f703cfac8a.mp3"
+    }
+  ],
+  "u3-3": [
+    {
+      "text": "When short i meets magic e!?",
+      "audio": "/audio/long-i/3e6e559ef1a4d4b734ec.mp3"
+    },
+    {
+      "text": "It makes the sound /aɪ/!",
+      "audio": "/audio/long-i/75aea43e237ec73c5ab7.mp3"
+    }
+  ],
+  "u3-5": [
+    {
+      "text": "Jenny, listen to the word.",
+      "audio": "/audio/long-i/51dfeb2037dd0c79a302.mp3"
+    },
+    {
+      "text": "Then tap the matching picture!",
+      "audio": "/audio/long-i/8d0498564c1d64846b21.mp3"
+    }
+  ],
+  "u3-6": [
+    {
+      "text": "Jenny, tap magic e.",
+      "audio": "/audio/long-i/0b66e80767a70859e25a.mp3"
+    },
+    {
+      "text": "Put it at the end of pin.",
+      "audio": "/audio/long-i/ada5f93e531ad0d5612a.mp3"
+    },
+    {
+      "text": "Let’s make pine!",
+      "audio": "/audio/long-i/1c1b736e10621b28c676.mp3"
+    }
+  ],
+  "u3-7": [
+    {
+      "text": "Great job, Jenny!",
+      "audio": "/audio/long-i/dfe672e44f689ac6eafa.mp3"
+    },
+    {
+      "text": "You learned eight new long i words!",
+      "audio": "/audio/long-i/be9b54c6d0c43c672117.mp3"
+    },
+    {
+      "text": "For homework, review Unit 3 in Speed Phonics Book 2 with your mom.",
+      "audio": "/audio/long-i/58e5e7952b8aeea86ca9.mp3"
+    }
+  ],
+  "u3-homework": [
+    {
+      "text": "Jenny, review Unit 3 in Speed Phonics Book 2 with your mom.",
+      "audio": "/audio/long-i/c5e5ff7488aad626b5ad.mp3"
+    },
+    {
+      "text": "Listen to each word, then say it again!",
+      "audio": "/audio/long-i/8e2a81355a92faf6359f.mp3"
+    }
+  ],
+  "u3-4-line": [
+    {
+      "text": "Jenny, listen to line.",
+      "audio": "/audio/long-i/9c1b166a7df0889965ca.mp3"
+    },
+    {
+      "text": "Let's draw a line!",
+      "audio": "/audio/long-i/544a23e8d6fbca5f9837.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/long-i/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u3-4-nine": [
+    {
+      "text": "Jenny, listen to nine.",
+      "audio": "/audio/long-i/2df941e3ed001e5a6db0.mp3"
+    },
+    {
+      "text": "Count with me. Nine!",
+      "audio": "/audio/long-i/0495b627412db163512a.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/long-i/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u3-4-pine": [
+    {
+      "text": "Jenny, listen to pine.",
+      "audio": "/audio/long-i/96180cd96dc93fa54c35.mp3"
+    },
+    {
+      "text": "Look at the green pine tree!",
+      "audio": "/audio/long-i/d9929945ccc25c5a0249.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/long-i/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u3-4-vine": [
+    {
+      "text": "Jenny, listen to vine.",
+      "audio": "/audio/long-i/d591abb9e3651bcb37ea.mp3"
+    },
+    {
+      "text": "The vine grows up and up!",
+      "audio": "/audio/long-i/f75fc8b272f5df780b49.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/long-i/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u3-4-bike": [
+    {
+      "text": "Jenny, listen to bike.",
+      "audio": "/audio/long-i/786e3eb4ebcb519ed781.mp3"
+    },
+    {
+      "text": "Look at this bike!",
+      "audio": "/audio/long-i/f103884503b27ceb0a67.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/long-i/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u3-4-hike": [
+    {
+      "text": "Jenny, listen to hike.",
+      "audio": "/audio/long-i/920e0c03a77feaeef741.mp3"
+    },
+    {
+      "text": "Let's hike up the hill!",
+      "audio": "/audio/long-i/bc5a7e84db603d996c0c.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/long-i/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u3-4-lime": [
+    {
+      "text": "Jenny, listen to lime.",
+      "audio": "/audio/long-i/72f40bfe43e249a5fe52.mp3"
+    },
+    {
+      "text": "This is a green lime.",
+      "audio": "/audio/long-i/7dc46fd16aaa9fa1f8f6.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/long-i/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u3-4-time": [
+    {
+      "text": "Jenny, listen to time.",
+      "audio": "/audio/long-i/c4670f58a63d0900f81b.mp3"
+    },
+    {
+      "text": "What time is it?",
+      "audio": "/audio/long-i/899f2818bbfbd0942f50.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/long-i/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u4-0": [
+    {
+      "text": "Hi, Jenny!",
+      "audio": "/audio/long-i/31ac4e38e4f8aefaeac4.mp3"
+    },
+    {
+      "text": "Welcome back! Let's learn more long i words!",
+      "audio": "/audio/long-i/d6c25098b229d710878d.mp3"
+    }
+  ],
+  "u4-1": [
+    {
+      "text": "Look, Jenny!",
+      "audio": "/audio/long-i/7c5c9fc520dc30c93ad4.mp3"
+    },
+    {
+      "text": "This is a kit.",
+      "audio": "/audio/long-i/33198770548f87d89eca.mp3"
+    },
+    {
+      "text": "Listen to the short i sound in kit.",
+      "audio": "/audio/long-i/e4f68886bdcb6283bbf8.mp3"
+    },
+    {
+      "text": "Now say kit with me!",
+      "audio": "/audio/long-i/fa3a1fcacb94689b5059.mp3"
+    }
+  ],
+  "u4-2": [
+    {
+      "text": "Kit meets magic e!",
+      "audio": "/audio/long-i/4a2537e97a9bdf3c4044.mp3"
+    },
+    {
+      "text": "Now kit plus e makes kite!",
+      "audio": "/audio/long-i/7794e156b550fed3cecf.mp3"
+    },
+    {
+      "text": "The i says eye, and the final e is silent.",
+      "audio": "/audio/long-i/7a1d026115f703cfac8a.mp3"
+    }
+  ],
+  "u4-3": [
+    {
+      "text": "When short i meets magic e!?",
+      "audio": "/audio/long-i/3e6e559ef1a4d4b734ec.mp3"
+    },
+    {
+      "text": "It makes the sound /aɪ/!",
+      "audio": "/audio/long-i/75aea43e237ec73c5ab7.mp3"
+    }
+  ],
+  "u4-5": [
+    {
+      "text": "Jenny, listen to the word.",
+      "audio": "/audio/long-i/51dfeb2037dd0c79a302.mp3"
+    },
+    {
+      "text": "Then tap the matching picture!",
+      "audio": "/audio/long-i/8d0498564c1d64846b21.mp3"
+    }
+  ],
+  "u4-6": [
+    {
+      "text": "Jenny, tap magic e.",
+      "audio": "/audio/long-i/0b66e80767a70859e25a.mp3"
+    },
+    {
+      "text": "Put it at the end of kit.",
+      "audio": "/audio/long-i/dec6fdda03bdbafb54ae.mp3"
+    },
+    {
+      "text": "Let’s make kite!",
+      "audio": "/audio/long-i/563935fd9727e02ab4ce.mp3"
+    }
+  ],
+  "u4-7": [
+    {
+      "text": "Great job, Jenny!",
+      "audio": "/audio/long-i/dfe672e44f689ac6eafa.mp3"
+    },
+    {
+      "text": "You learned eight new long i words!",
+      "audio": "/audio/long-i/be9b54c6d0c43c672117.mp3"
+    },
+    {
+      "text": "For homework, review Unit 4 in Speed Phonics Book 2 with your mom.",
+      "audio": "/audio/long-i/c70e66da8cdacd0bf474.mp3"
+    }
+  ],
+  "u4-homework": [
+    {
+      "text": "Jenny, review Unit 4 in Speed Phonics Book 2 with your mom.",
+      "audio": "/audio/long-i/4ae94b1fe3f3c741e2b5.mp3"
+    },
+    {
+      "text": "Listen to each word, then say it again!",
+      "audio": "/audio/long-i/8e2a81355a92faf6359f.mp3"
+    }
+  ],
+  "u4-4-pipe": [
+    {
+      "text": "Jenny, listen to pipe.",
+      "audio": "/audio/long-i/d34a534969f11a9a9388.mp3"
+    },
+    {
+      "text": "Water goes through a pipe.",
+      "audio": "/audio/long-i/b1249778095b4077b583.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/long-i/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u4-4-wipe": [
+    {
+      "text": "Jenny, listen to wipe.",
+      "audio": "/audio/long-i/bbdace5dabb71011906b.mp3"
+    },
+    {
+      "text": "Let's wipe the window!",
+      "audio": "/audio/long-i/497f792d8460a89e892f.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/long-i/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u4-4-hide": [
+    {
+      "text": "Jenny, listen to hide.",
+      "audio": "/audio/long-i/3203aa5a31182b723ca7.mp3"
+    },
+    {
+      "text": "Let's hide behind the bush!",
+      "audio": "/audio/long-i/2c7507f7aecf6ab21a06.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/long-i/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u4-4-ride": [
+    {
+      "text": "Jenny, listen to ride.",
+      "audio": "/audio/long-i/dd46c37a5258ff073206.mp3"
+    },
+    {
+      "text": "Let's ride in the wagon!",
+      "audio": "/audio/long-i/a16390d53462a52a0db3.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/long-i/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u4-4-bite": [
+    {
+      "text": "Jenny, listen to bite.",
+      "audio": "/audio/long-i/22022580f42bc57bb472.mp3"
+    },
+    {
+      "text": "Take a little bite!",
+      "audio": "/audio/long-i/b5bde84f40d2e8d8342e.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/long-i/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u4-4-kite": [
+    {
+      "text": "Jenny, listen to kite.",
+      "audio": "/audio/long-i/6aed1ce3fb9572a89c8e.mp3"
+    },
+    {
+      "text": "The kite flies in the sky!",
+      "audio": "/audio/long-i/85c1f492a703dbf9550a.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/long-i/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u4-4-dive": [
+    {
+      "text": "Jenny, listen to dive.",
+      "audio": "/audio/long-i/9121cb021e758b0883d1.mp3"
+    },
+    {
+      "text": "Let's dive into the water!",
+      "audio": "/audio/long-i/391f41a612e6fcb942a9.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/long-i/dec90f9194c5a4cff958.mp3"
+    }
+  ],
+  "u4-4-five": [
+    {
+      "text": "Jenny, listen to five.",
+      "audio": "/audio/long-i/a2f43c8be31b750cc622.mp3"
+    },
+    {
+      "text": "Count with me. Five!",
+      "audio": "/audio/long-i/38802708c68207865d71.mp3"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/long-i/dec90f9194c5a4cff958.mp3"
+    }
   ]
 }
