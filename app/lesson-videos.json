@@ -10,5 +10,19 @@
     "src": "/videos/song.mp4",
     "poster": "/videos/song.jpg",
     "duration": "31 sec"
+  },
+  "unit2": {
+    "story": {
+      "title": "Story",
+      "src": "/videos/unit2-story.mp4",
+      "poster": "/videos/unit2-story.jpg",
+      "duration": "29 sec"
+    },
+    "song": {
+      "title": "Song",
+      "src": "/videos/unit2-song.mp4",
+      "poster": "/videos/unit2-song.jpg",
+      "duration": "29 sec"
+    }
   }
 }

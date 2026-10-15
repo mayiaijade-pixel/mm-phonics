@@ -49,3 +49,6 @@ next-env.d.ts
 !.env.example
 
 /.next-vercel/
+
+# Generated video prompts and reference exports
+/output/
