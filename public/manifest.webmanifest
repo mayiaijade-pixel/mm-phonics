@@ -1,0 +1,16 @@
+{
+  "id": "/",
+  "name": "Mimi’s Phonics",
+  "short_name": "Mimi Phonics",
+  "description": "미미와 함께 배우고, 이야기를 보고, 노래하는 영어 파닉스",
+  "lang": "ko",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fcf9ff",
+  "theme_color": "#7845cf",
+  "icons": [
+    {"src": "/icons/mimi-192-v1.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "/icons/mimi-512-v1.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}
+  ]
+}
