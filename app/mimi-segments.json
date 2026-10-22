@@ -1484,5 +1484,11 @@
       "text": "Say it with me!",
       "audio": "/audio/long-i/dec90f9194c5a4cff958.mp3"
     }
+  ],
+  "feedback-success": [
+    {
+      "text": "Good job! You did it!",
+      "audio": ""
+    }
   ]
 }
