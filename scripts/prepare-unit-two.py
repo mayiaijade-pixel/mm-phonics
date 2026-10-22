@@ -33,7 +33,7 @@ out=Path('public/audio/unit2');out.mkdir(parents=True,exist_ok=True)
 import re
 pattern=re.compile(r'\b('+'|'.join(words)+r'|ay)\b',re.I);sounds['ay']='EY1'
 def generate(item):
- text,speed=item;spoken=text.replace('/eɪ/','ay');spoken=re.sub(r'\b(long|short|letter)\s+a\b',lambda m:m[1]+' ay',spoken,flags=re.I);spoken=re.sub(r'\bthe\s+a\s+says\b','The ay says',spoken,flags=re.I);tagged=pattern.sub(lambda m:f'<phoneme alphabet="cmu-arpabet" ph="{sounds[m[0].lower()]}">{m[0]}</phoneme>',spoken)
+ text,speed=item;spoken=text.replace('/eɪ/','ay');spoken=re.sub(r'\b(long|short|letter)\s+a\b',lambda m:m[1]+' A',spoken,flags=re.I);spoken=re.sub(r'\bthe\s+a\s+says\b','The A says',spoken,flags=re.I);letter='<phoneme alphabet="cmu-arpabet" ph="EY1">A</phoneme>';spoken=re.sub(r'\b(long|short|letter)\s+A\b',lambda m:m[1]+' '+letter,spoken,flags=re.I);spoken=re.sub(r'\bthe\s+A\s+says\b','The '+letter+' says',spoken,flags=re.I);tagged=pattern.sub(lambda m:f'<phoneme alphabet="cmu-arpabet" ph="{sounds[m[0].lower()]}">{m[0]}</phoneme>',spoken)
  filename=hashlib.sha256((voice+tagged+str(speed)).encode()).hexdigest()[:20]+'.mp3';p=out/filename
  if not p.exists():
   data={'text':tagged,'model_id':'eleven_flash_v2','voice_settings':{'stability':.75,'similarity_boost':.75,'style':0,'use_speaker_boost':True,'speed':speed}}

@@ -1,4 +1,4 @@
-import {letterNamesForSpeech} from '../../lib/voice-text';
+import {letterNamesForSpeech,letterNamesWithPhonemes} from '../../lib/voice-text';
 import {z} from 'zod';
 import {createHash} from 'node:crypto';
 import {getChatGPTUser} from './auth';
@@ -26,7 +26,7 @@ export async function POST(request:Request){
   const limit=limits.get(ip)||{count:0,until:now+600000};if(limit.count>=30)return fail(429);limit.count++;limits.set(ip,limit);
   if(cache.size>=200)cache.delete(cache.keys().next().value!);
   const clip=(async()=>{
-   const tagged=xml(spoken).replace(/\b(cap|bake|cake|lake|rake|cape|tape|cave|wave|ay|game|name|cane|lane|case|vase|date|gate|can|line|nine|pine|vine|bike|hike|lime|time|pipe|wipe|hide|ride|bite|kite|dive|five|pin|kit|eye)\b/gi,w=>`<phoneme alphabet="cmu-arpabet" ph="${sounds[w.toLowerCase()]}">${w}</phoneme>`);
+   const tagged=letterNamesWithPhonemes(xml(spoken)).replace(/\b(cap|bake|cake|lake|rake|cape|tape|cave|wave|ay|game|name|cane|lane|case|vase|date|gate|can|line|nine|pine|vine|bike|hike|lime|time|pipe|wipe|hide|ride|bite|kite|dive|five|pin|kit|eye)\b/gi,w=>`<phoneme alphabet="cmu-arpabet" ph="${sounds[w.toLowerCase()]}">${w}</phoneme>`);
    const r=await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${encodeURIComponent(voice)}?output_format=mp3_44100_128`,{method:'POST',headers:{'xi-api-key':process.env.ELEVENLABS_API_KEY!,'Content-Type':'application/json'},body:JSON.stringify({text:tagged,model_id:'eleven_flash_v2',voice_settings:{stability:.75,similarity_boost:.75,style:0,use_speaker_boost:true,speed}}),signal:AbortSignal.timeout(45000)});
    if(!r.ok)throw Error('Voice unavailable');return new Uint8Array(await r.arrayBuffer());
   })();cached={clip,created:now};cache.set(id,cached);

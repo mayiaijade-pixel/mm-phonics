@@ -5,7 +5,7 @@ export const UNIT_THREE_WORDS=[
  {word:'pine',meaning:'소나무',ipa:'/paɪn/',family:'-ine'},
  {word:'vine',meaning:'덩굴',ipa:'/vaɪn/',family:'-ine'},
  {word:'bike',meaning:'자전거',ipa:'/baɪk/',family:'-ike'},
- {word:'hike',meaning:'하이킹하다',ipa:'/haɪk/',family:'-ike'},
+ {word:'hike',meaning:'등산하다',ipa:'/haɪk/',family:'-ike'},
  {word:'lime',meaning:'라임',ipa:'/laɪm/',family:'-ime'},
  {word:'time',meaning:'시간',ipa:'/taɪm/',family:'-ime'}
 ];

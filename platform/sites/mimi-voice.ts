@@ -1,4 +1,4 @@
-import {letterNamesForSpeech} from '../../lib/voice-text';
+import {letterNamesForSpeech,letterNamesWithPhonemes} from '../../lib/voice-text';
 import {env} from 'cloudflare:workers';
 import {z} from 'zod';
 import {getChatGPTUser} from '../../app/chatgpt-auth';
@@ -31,7 +31,7 @@ export async function POST(request:Request){
   if(cached)return fail(409);
   const recent=await db.prepare('SELECT COUNT(*) AS count FROM mimi_voice_cache WHERE user_id=? AND created_at>?').bind(user.userId,now-600000).first<{count:number}>();if((recent?.count||0)>=30)return fail(429);
   const reservation=await db.prepare('INSERT OR IGNORE INTO mimi_voice_cache (id,user_id,audio,created_at) VALUES (?,?,?,?)').bind(id,user.userId,'',now).run();if(!reservation.meta.changes)return fail(409);
-  const tagged=xml(spoken).replace(/\b(cap|bake|cake|lake|rake|cape|tape|cave|wave|ay|game|name|cane|lane|case|vase|date|gate|can|line|nine|pine|vine|bike|hike|lime|time|pipe|wipe|hide|ride|bite|kite|dive|five|pin|kit|eye)\b/gi,w=>`<phoneme alphabet="cmu-arpabet" ph="${sounds[w.toLowerCase()]}">${w}</phoneme>`);
+  const tagged=letterNamesWithPhonemes(xml(spoken)).replace(/\b(cap|bake|cake|lake|rake|cape|tape|cave|wave|ay|game|name|cane|lane|case|vase|date|gate|can|line|nine|pine|vine|bike|hike|lime|time|pipe|wipe|hide|ride|bite|kite|dive|five|pin|kit|eye)\b/gi,w=>`<phoneme alphabet="cmu-arpabet" ph="${sounds[w.toLowerCase()]}">${w}</phoneme>`);
   const generated=await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${encodeURIComponent(voice)}?output_format=mp3_44100_128`,{method:'POST',headers:{'xi-api-key':runtime.ELEVENLABS_API_KEY,'Content-Type':'application/json'},body:JSON.stringify({text:tagged,model_id:'eleven_flash_v2',voice_settings:{stability:.75,similarity_boost:.75,style:0,use_speaker_boost:true,speed}}),signal:AbortSignal.timeout(45000)});
   if(!generated.ok)throw Error('voice unavailable');
   const bytes=new Uint8Array(await generated.arrayBuffer());let binary='';for(const b of bytes)binary+=String.fromCharCode(b);const base64=btoa(binary);

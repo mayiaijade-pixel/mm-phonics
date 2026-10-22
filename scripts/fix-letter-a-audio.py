@@ -14,7 +14,10 @@ items={(t,.86) for t in audio if pattern.search(t)}|{(c['text'],.9 if scene.star
 items.add((greeting,1))
 folder=Path('public/audio/letter-a');folder.mkdir(parents=True,exist_ok=True)
 def make(item):
- text,speed=item;spoken=re.sub(r'\b(long|short|letter)\s+a\b',lambda m:m[1]+' ay',text,flags=re.I);spoken=re.sub(r'\bthe\s+a\s+says\b','The ay says',spoken,flags=re.I);spoken=spoken.replace('/eɪ/','ay')
+ text,speed=item;spoken=re.sub(r'\b(long|short|letter)\s+a\b',lambda m:m[1]+' A',text,flags=re.I);spoken=re.sub(r'\bthe\s+a\s+says\b','The A says',spoken,flags=re.I);spoken=spoken.replace('/eɪ/','ay')
+ letter='<phoneme alphabet="cmu-arpabet" ph="EY1">A</phoneme>'
+ spoken=re.sub(r'\b(long|short|letter)\s+A\b',lambda m:m[1]+' '+letter,spoken,flags=re.I)
+ spoken=re.sub(r'\bthe\s+A\s+says\b','The '+letter+' says',spoken,flags=re.I)
  spoken=re.sub(r'\b(ay|cap|cape|can|cane)\b',lambda m:f'<phoneme alphabet="cmu-arpabet" ph="{sounds[m[0].lower()]}">{m[0]}</phoneme>',spoken,flags=re.I)
  filename=hashlib.sha256((voice+spoken+str(speed)).encode()).hexdigest()[:20]+'.mp3';p=folder/filename
  if not p.exists():
