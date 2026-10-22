@@ -43,6 +43,13 @@
       "when": 1791848016855,
       "tag": "0005_optimal_blizzard",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1792710377187,
+      "tag": "0006_sturdy_sentinels",
+      "breakpoints": true
     }
   ]
 }

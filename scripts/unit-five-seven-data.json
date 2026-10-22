@@ -1,0 +1,257 @@
+{
+  "sounds": {
+    "hose": "HH OW1 Z",
+    "nose": "N OW1 Z",
+    "pose": "P OW1 Z",
+    "rose": "R OW1 Z",
+    "hope": "HH OW1 P",
+    "rope": "R OW1 P",
+    "note": "N OW1 T",
+    "vote": "V OW1 T",
+    "hop": "HH AA1 P",
+    "oh": "OW1",
+    "hole": "HH OW1 L",
+    "mole": "M OW1 L",
+    "pole": "P OW1 L",
+    "sole": "S OW1 L",
+    "dome": "D OW1 M",
+    "home": "HH OW1 M",
+    "bone": "B OW1 N",
+    "cone": "K OW1 N",
+    "not": "N AA1 T",
+    "cube": "K Y UW1 B",
+    "tube": "T UW1 B",
+    "cute": "K Y UW1 T",
+    "mute": "M Y UW1 T",
+    "dune": "D UW1 N",
+    "june": "JH UW1 N",
+    "tune": "T UW1 N",
+    "mule": "M Y UW1 L",
+    "cub": "K AH1 B",
+    "you": "Y UW1"
+  },
+  "scenes": {
+    "u5-0": [
+      "Hi, Jenny!",
+      "I'm Mimi! Today we will learn long o words!"
+    ],
+    "u5-1": [
+      "This is hop.",
+      "Listen to the short o sound.",
+      "Say hop with me!"
+    ],
+    "u5-2": [
+      "Hop meets magic e!",
+      "Now hop plus e makes hope!",
+      "The final e is silent."
+    ],
+    "u5-3": [
+      "When short o meets magic e!",
+      "It makes the sound oh!"
+    ],
+    "u5-5": [
+      "Jenny, listen to the word.",
+      "Tap the matching picture!"
+    ],
+    "u5-7": [
+      "Great job, Jenny!",
+      "You earned your star!",
+      "For homework, review Unit 5 in Speed Phonics Book 2 with your mom."
+    ],
+    "u5-homework": [
+      "Review Unit 5 in Speed Phonics Book 2 with your mom.",
+      "Listen and say each word!"
+    ],
+    "u5-4-hose": [
+      "Jenny, listen to hose.",
+      "Say it with me!"
+    ],
+    "u5-4-nose": [
+      "Jenny, listen to nose.",
+      "Say it with me!"
+    ],
+    "u5-4-pose": [
+      "Jenny, listen to pose.",
+      "Say it with me!"
+    ],
+    "u5-4-rose": [
+      "Jenny, listen to rose.",
+      "Say it with me!"
+    ],
+    "u5-4-hope": [
+      "Jenny, listen to hope.",
+      "Say it with me!"
+    ],
+    "u5-4-rope": [
+      "Jenny, listen to rope.",
+      "Say it with me!"
+    ],
+    "u5-4-note": [
+      "Jenny, listen to note.",
+      "Say it with me!"
+    ],
+    "u5-4-vote": [
+      "Jenny, listen to vote.",
+      "Say it with me!"
+    ],
+    "u6-0": [
+      "Hi, Jenny!",
+      "I'm Mimi! Today we will learn long o words!"
+    ],
+    "u6-1": [
+      "This is not.",
+      "Listen to the short o sound.",
+      "Say not with me!"
+    ],
+    "u6-2": [
+      "Not meets magic e!",
+      "Now not plus e makes note!",
+      "The final e is silent."
+    ],
+    "u6-3": [
+      "When short o meets magic e!",
+      "It makes the sound oh!"
+    ],
+    "u6-5": [
+      "Jenny, listen to the word.",
+      "Tap the matching picture!"
+    ],
+    "u6-7": [
+      "Great job, Jenny!",
+      "You earned your star!",
+      "For homework, review Unit 6 in Speed Phonics Book 2 with your mom."
+    ],
+    "u6-homework": [
+      "Review Unit 6 in Speed Phonics Book 2 with your mom.",
+      "Listen and say each word!"
+    ],
+    "u6-4-hole": [
+      "Jenny, listen to hole.",
+      "Say it with me!"
+    ],
+    "u6-4-mole": [
+      "Jenny, listen to mole.",
+      "Say it with me!"
+    ],
+    "u6-4-pole": [
+      "Jenny, listen to pole.",
+      "Say it with me!"
+    ],
+    "u6-4-sole": [
+      "Jenny, listen to sole.",
+      "Say it with me!"
+    ],
+    "u6-4-dome": [
+      "Jenny, listen to dome.",
+      "Say it with me!"
+    ],
+    "u6-4-home": [
+      "Jenny, listen to home.",
+      "Say it with me!"
+    ],
+    "u6-4-bone": [
+      "Jenny, listen to bone.",
+      "Say it with me!"
+    ],
+    "u6-4-cone": [
+      "Jenny, listen to cone.",
+      "Say it with me!"
+    ],
+    "u7-0": [
+      "Hi, Jenny!",
+      "I'm Mimi! Today we will learn long u words!"
+    ],
+    "u7-1": [
+      "This is cub.",
+      "Listen to the short u sound.",
+      "Say cub with me!"
+    ],
+    "u7-2": [
+      "Cub meets magic e!",
+      "Now cub plus e makes cube!",
+      "The final e is silent."
+    ],
+    "u7-3": [
+      "When short u meets magic e!",
+      "It makes the sound you!",
+      "Sometimes long u sounds like oo, as in tube."
+    ],
+    "u7-5": [
+      "Jenny, listen to the word.",
+      "Tap the matching picture!"
+    ],
+    "u7-7": [
+      "Great job, Jenny!",
+      "You earned your star!",
+      "For homework, review Unit 7 in Speed Phonics Book 2 with your mom."
+    ],
+    "u7-homework": [
+      "Review Unit 7 in Speed Phonics Book 2 with your mom.",
+      "Listen and say each word!"
+    ],
+    "u7-4-cube": [
+      "Jenny, listen to cube.",
+      "Say it with me!"
+    ],
+    "u7-4-tube": [
+      "Jenny, listen to tube.",
+      "Say it with me!"
+    ],
+    "u7-4-cute": [
+      "Jenny, listen to cute.",
+      "Say it with me!"
+    ],
+    "u7-4-mute": [
+      "Jenny, listen to mute.",
+      "Say it with me!"
+    ],
+    "u7-4-dune": [
+      "Jenny, listen to dune.",
+      "Say it with me!"
+    ],
+    "u7-4-june": [
+      "Jenny, listen to june.",
+      "Say it with me!"
+    ],
+    "u7-4-tune": [
+      "Jenny, listen to tune.",
+      "Say it with me!"
+    ],
+    "u7-4-mule": [
+      "Jenny, listen to mule.",
+      "Say it with me!"
+    ]
+  },
+  "words": {
+    "5": [
+      "hose",
+      "nose",
+      "pose",
+      "rose",
+      "hope",
+      "rope",
+      "note",
+      "vote"
+    ],
+    "6": [
+      "hole",
+      "mole",
+      "pole",
+      "sole",
+      "dome",
+      "home",
+      "bone",
+      "cone"
+    ],
+    "7": [
+      "cube",
+      "tube",
+      "cute",
+      "mute",
+      "dune",
+      "june",
+      "tune",
+      "mule"
+    ]
+  }
+}

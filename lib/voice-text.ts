@@ -1,6 +1,6 @@
 // Read the alphabet's name as /eɪ/, while keeping the article in “a game” intact.
 export function letterNamesForSpeech(text:string){
- return text.replace(/\b(long|short|letter)\s+a\b/gi,(_,context:string)=>context+' A').replace(/\bthe\s+a\s+says\b/gi,'The A says').replace(/\b(long|short|letter)\s+i\b/gi,(_,context:string)=>context+' eye').replace(/\bthe\s+i\s+says\b/gi,'The eye says');
+ return text.replace(/\b(long|short|letter)\s+o\b/gi,(_,c:string)=>c+' oh').replace(/\b(long|short|letter)\s+u\b/gi,(_,c:string)=>c+' you').replace(/\b(long|short|letter)\s+a\b/gi,(_,context:string)=>context+' A').replace(/\bthe\s+a\s+says\b/gi,'The A says').replace(/\b(long|short|letter)\s+i\b/gi,(_,context:string)=>context+' eye').replace(/\bthe\s+i\s+says\b/gi,'The eye says');
 }
 
 // Apply after XML escaping. Only letter-name contexts receive /eɪ/;
