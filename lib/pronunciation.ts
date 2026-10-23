@@ -1,5 +1,6 @@
+import {UNIT_8_WORDS,UNIT_9_WORDS} from './blend-units';
 import {pronunciationSimilarity,initialSoundMatches} from './pronunciation-similarity';
-export const targets=['hose','nose','pose','rose','hope','rope','note','vote','hop','oh','hole','mole','pole','sole','dome','home','bone','cone','not','cube','tube','cute','mute','dune','june','tune','mule','cub','you','bake','cake','lake','rake','cape','tape','cave','wave','cap','ay','game','name','cane','lane','case','vase','date','gate','can','line','nine','pine','vine','bike','hike','lime','time','pipe','wipe','hide','ride','bite','kite','dive','five','pin','kit','eye'] as const;
+export const targets=[...UNIT_8_WORDS.map(w=>w.word),...UNIT_9_WORDS.map(w=>w.word),'hose','nose','pose','rose','hope','rope','note','vote','hop','oh','hole','mole','pole','sole','dome','home','bone','cone','not','cube','tube','cute','mute','dune','june','tune','mule','cub','you','bake','cake','lake','rake','cape','tape','cave','wave','cap','ay','game','name','cane','lane','case','vase','date','gate','can','line','nine','pine','vine','bike','hike','lime','time','pipe','wipe','hide','ride','bite','kite','dive','five','pin','kit','eye'] as const;
 export function feedbackFor(target:string,transcript:string,unit?:number){
  if(target==='oh'||target==='you'){
   const normalized=transcript.toLowerCase().replace(/[^a-z]/g,'');
@@ -16,6 +17,7 @@ export function feedbackFor(target:string,transcript:string,unit?:number){
   const status=!normalized?'unclear':(['a','ay'].includes(normalized)||pronunciationSimilarity(target,normalized)>=.5)?'match':'retry';
   return {target,status,index:status==='match'?0:status==='unclear'?3:2,tip:'입을 살짝 벌려 ‘에’로 시작하고, 끊지 않고 ‘이’로 부드럽게 이어 /eɪ/ 소리를 내봐요.',english:status==='match'?"Good job! You did it!":status==='unclear'?"I couldn't hear clearly. Let's try again!":"Good try! Listen to ay, then say it again.",korean:status==='match'?'잘했어요! 다음으로 가볼까요?':'좋은 시도예요! ei (에이) 소리를 듣고 다시 따라해봐요.'};
  }
+ if([...UNIT_8_WORDS,...UNIT_9_WORDS].some(w=>w.word===target)){const heard=(transcript.toLowerCase().match(/[a-z]+/g)||[]).filter(w=>!['i','said','say','it','a','the'].includes(w));const status=heard.length===0?'unclear':heard.length===1&&pronunciationSimilarity(target,heard[0])>=.5?'match':'retry';return {target,status,index:status==='match'?0:status==='unclear'?3:2,tip:`첫 두 자음 ${target.slice(0,2)}의 소리를 모두 내고 자연스럽게 이어 말해봐요.`,english:status==='match'?'Good job! You did it!':status==='unclear'?"I couldn't hear clearly. Let's try again!":`Good try! Listen to ${target}, then say it again.`,korean:status==='match'?'잘했어요! 다음으로 가볼까요?':'좋은 시도예요! 코기의 발음을 듣고 다시 말해봐요.'};}
  const numeric:Record<string,string>={nine:'9',five:'5'};
  const recognized=numeric[target]&&new RegExp('^'+numeric[target]+'[.!?]?$').test(transcript.trim())?target:transcript;
  const words=recognized.toLowerCase().match(/[a-z]+/g)||[];

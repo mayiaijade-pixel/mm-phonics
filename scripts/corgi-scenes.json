@@ -1,0 +1,268 @@
+{
+  "voice": "nLxulrrbRg9nJamIJY8Z",
+  "scenes": {
+    "u8-0": [
+      "Hi, Jenny!",
+      "I'm Kogi!",
+      "Two letters, two sounds! We can blend them together!"
+    ],
+    "u8-1": [
+      "Look at black!",
+      "Listen to the first two sounds in black.",
+      "Now say black with me!"
+    ],
+    "u8-2": [
+      "Keep both sounds. Blend them smoothly!"
+    ],
+    "u8-3": [
+      "Listen to black.",
+      "Blend the first two sounds, then say black with me!"
+    ],
+    "u8-5": [
+      "Listen carefully. Which picture matches the word?"
+    ],
+    "u8-7": [
+      "Great job, Jenny!",
+      "You earned three stars!",
+      "For homework, complete Unit 8, pages 50 to 55, in Speed Phonics Book 2!"
+    ],
+    "u8-homework": [
+      "For homework, complete Unit 8, pages 50 to 55, in Speed Phonics Book 2!"
+    ],
+    "u8-blend-bl": [
+      "Listen: black, block, blue.",
+      "Keep both beginning sounds together!"
+    ],
+    "u8-blend-cl": [
+      "Listen: clap, cliff, clock.",
+      "Keep both beginning sounds together!"
+    ],
+    "u8-blend-fl": [
+      "Listen: flag, flap, flute.",
+      "Keep both beginning sounds together!"
+    ],
+    "u8-4-black": [
+      "Jenny, listen to black.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-black": [
+      "Good job! You did it!",
+      "Listen to black. Blend both beginning sounds.",
+      "Good try! Listen to black, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u8-4-block": [
+      "Jenny, listen to block.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-block": [
+      "Good job! You did it!",
+      "Listen to block. Blend both beginning sounds.",
+      "Good try! Listen to block, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u8-4-blue": [
+      "Jenny, listen to blue.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-blue": [
+      "Good job! You did it!",
+      "Listen to blue. Blend both beginning sounds.",
+      "Good try! Listen to blue, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u8-4-clap": [
+      "Jenny, listen to clap.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-clap": [
+      "Good job! You did it!",
+      "Listen to clap. Blend both beginning sounds.",
+      "Good try! Listen to clap, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u8-4-cliff": [
+      "Jenny, listen to cliff.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-cliff": [
+      "Good job! You did it!",
+      "Listen to cliff. Blend both beginning sounds.",
+      "Good try! Listen to cliff, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u8-4-clock": [
+      "Jenny, listen to clock.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-clock": [
+      "Good job! You did it!",
+      "Listen to clock. Blend both beginning sounds.",
+      "Good try! Listen to clock, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u8-4-flag": [
+      "Jenny, listen to flag.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-flag": [
+      "Good job! You did it!",
+      "Listen to flag. Blend both beginning sounds.",
+      "Good try! Listen to flag, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u8-4-flap": [
+      "Jenny, listen to flap.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-flap": [
+      "Good job! You did it!",
+      "Listen to flap. Blend both beginning sounds.",
+      "Good try! Listen to flap, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u8-4-flute": [
+      "Jenny, listen to flute.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-flute": [
+      "Good job! You did it!",
+      "Listen to flute. Blend both beginning sounds.",
+      "Good try! Listen to flute, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u9-0": [
+      "Hi, Jenny!",
+      "I'm Kogi!",
+      "Two letters, two sounds! We can blend them together!"
+    ],
+    "u9-1": [
+      "Look at glass!",
+      "Listen to the first two sounds in glass.",
+      "Now say glass with me!"
+    ],
+    "u9-2": [
+      "Keep both sounds. Blend them smoothly!"
+    ],
+    "u9-3": [
+      "Listen to glass.",
+      "Blend the first two sounds, then say glass with me!"
+    ],
+    "u9-5": [
+      "Listen carefully. Which picture matches the word?"
+    ],
+    "u9-7": [
+      "Great job, Jenny!",
+      "You earned three stars!",
+      "For homework, complete Unit 9, pages 56 to 61, in Speed Phonics Book 2!"
+    ],
+    "u9-homework": [
+      "For homework, complete Unit 9, pages 56 to 61, in Speed Phonics Book 2!"
+    ],
+    "u9-blend-gl": [
+      "Listen: glass, globe, glue.",
+      "Keep both beginning sounds together!"
+    ],
+    "u9-blend-pl": [
+      "Listen: plane, plate, plum.",
+      "Keep both beginning sounds together!"
+    ],
+    "u9-blend-sl": [
+      "Listen: sled, slide, slim.",
+      "Keep both beginning sounds together!"
+    ],
+    "u9-4-glass": [
+      "Jenny, listen to glass.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-glass": [
+      "Good job! You did it!",
+      "Listen to glass. Blend both beginning sounds.",
+      "Good try! Listen to glass, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u9-4-globe": [
+      "Jenny, listen to globe.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-globe": [
+      "Good job! You did it!",
+      "Listen to globe. Blend both beginning sounds.",
+      "Good try! Listen to globe, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u9-4-glue": [
+      "Jenny, listen to glue.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-glue": [
+      "Good job! You did it!",
+      "Listen to glue. Blend both beginning sounds.",
+      "Good try! Listen to glue, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u9-4-plane": [
+      "Jenny, listen to plane.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-plane": [
+      "Good job! You did it!",
+      "Listen to plane. Blend both beginning sounds.",
+      "Good try! Listen to plane, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u9-4-plate": [
+      "Jenny, listen to plate.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-plate": [
+      "Good job! You did it!",
+      "Listen to plate. Blend both beginning sounds.",
+      "Good try! Listen to plate, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u9-4-plum": [
+      "Jenny, listen to plum.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-plum": [
+      "Good job! You did it!",
+      "Listen to plum. Blend both beginning sounds.",
+      "Good try! Listen to plum, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u9-4-sled": [
+      "Jenny, listen to sled.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-sled": [
+      "Good job! You did it!",
+      "Listen to sled. Blend both beginning sounds.",
+      "Good try! Listen to sled, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u9-4-slide": [
+      "Jenny, listen to slide.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-slide": [
+      "Good job! You did it!",
+      "Listen to slide. Blend both beginning sounds.",
+      "Good try! Listen to slide, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u9-4-slim": [
+      "Jenny, listen to slim.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-slim": [
+      "Good job! You did it!",
+      "Listen to slim. Blend both beginning sounds.",
+      "Good try! Listen to slim, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "corgi-feedback-success": [
+      "Good job! You did it!"
+    ]
+  }
+}

@@ -72,3 +72,11 @@ Say it으로 녹음하고 Stop을 누른 뒤 Review를 누르면 녹음이 Eleve
 My Page lets a parent set an 8+ character password, edit star reward milestones, and view progress. Each workbook unit earns 3 extra homework stars once, after password approval; repeating lessons still earns quiz stars separately. Homework page ranges follow the book contents, excluding review sections.
 
 Vercel needs a stable server-only `MIMI_PARENT_SECRET` (32+ random characters). Parent password verifiers, approvals and rewards are encrypted in an HTTP-only cookie; ordinary progress writes cannot change them. This is a shared-browser family gate, not an account identity system: clearing browser data resets Vercel progress and parent settings, and devices do not sync. Sites stores parent settings per signed-in user in D1. Passwords are salted PBKDF2 hashes, never returned to the client. Five failed attempts trigger a five-minute cooldown. Keep the password safe; there is no email-based password recovery in this name-only app.
+
+### Kogi blend units
+
+Units 8 and 9 use the existing Kogi character and ElevenLabs voice `nLxulrrbRg9nJamIJY8Z`. Each includes nine vocabulary cards, beginning-consonant blends, pronunciation practice, three picture questions, stars and workbook homework. Units 1–7 retain Mimi; Units 10–12 remain upcoming. Story and Song are not populated for these units.
+
+Static Kogi audio is generated with `scripts/prepare-corgi-units.py`; personalized voice requests select the tutor on the server and include the voice in the cache key. Word artwork uses 3×3 atlases clipped by `app/blend-picture.tsx`. `scripts/test-corgi-units.mjs` checks voice routing, media, progress storage and rewards.
+
+Tutor playback uses 80% of the original speed for Kogi and 90% for Mimi, with pitch preserved. Inter-sentence gaps and measured silent intervals are 10% shorter. `scripts/analyse-tutor-pauses.py` measures leading/inter-word silence without rewriting recordings; `lib/tutor-audio.ts` preserves consonant release margins and applies the timing profile during playback. Personalized greeting audio is prepared ahead when a student name changes. Student recordings and Story/Song playback keep their original speeds.

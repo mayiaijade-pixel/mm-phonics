@@ -5,7 +5,7 @@ export function unitReward(course:RewardSource,unit:number):RewardEntry{
  const progress=unit===1?course:course['unit'+unit] as {completed?:boolean}|undefined;
  return {stars:progress?.completed?3:0,completions:progress?.completed?1:0,awarded:!!progress?.completed};
 }
-export function totalStars(course:RewardSource){return Array.from({length:7},(_,i)=>unitReward(course,i+1).stars).reduce((a,b)=>a+b,0)}
+export function totalStars(course:RewardSource){return Array.from({length:9},(_,i)=>unitReward(course,i+1).stars).reduce((a,b)=>a+b,0)}
 export function awardQuiz<T extends RewardSource>(course:T,unit:number,count:number):T{
  const previous=unitReward(course,unit),earned=Math.max(0,Math.min(3,Math.trunc(count)));
  const reward=previous.awarded?previous:{stars:previous.stars+earned,completions:previous.completions+1,awarded:true};
