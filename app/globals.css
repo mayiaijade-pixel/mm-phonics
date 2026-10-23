@@ -161,3 +161,24 @@
 @media(prefers-reduced-motion:reduce){.word-motion-window>.word-motion-frames{animation:none;transform:translate(-66.666667%,-50%);will-change:auto}.action-clap .word-motion-frames,.action-flap .word-motion-frames{transform:translate(-66.666667%,0)}}
 .action-slide .word-motion-frames,.action-sled .word-motion-frames{animation-duration:4.2s}
 .action-slide .word-motion-window{clip-path:inset(1.2% round 12px)}
+/* Uppercase letter props visually demonstrate the lowercase blends learned in words. */
+.duo-letter-scene .duo-character{bottom:44px;height:calc(100% - 70px);width:54%}
+.duo-letter-scene .duo-mimi{left:0}
+.duo-letter-scene .duo-kogi{right:0}
+.duo-letter-window{position:relative;overflow:hidden;height:100%;width:auto;aspect-ratio:2/3;max-width:100%;margin-inline:auto}
+.duo-letter-window>.mimi-letter-atlas{position:absolute;top:0;width:300%;height:100%;max-width:none;object-fit:fill}
+.duo-blend-label{position:absolute;top:0;left:50%;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;gap:10px;padding:3px 16px;border-radius:18px;background:#fffdfd;box-shadow:0 3px 0 #ddcbed;color:#7b47ca;white-space:nowrap;font-size:clamp(21px,5vw,34px);font-weight:900;transition:opacity .4s}
+.duo-blend-label>span:nth-of-type(2){color:#258f9b}.duo-blend-label>i{font-size:.65em;font-style:normal;color:#a38db7}.duo-blend-label>strong{color:#49306b}
+.duo-letter-choices{position:absolute;bottom:0;left:0;right:0;display:flex;align-items:center;justify-content:center;gap:9px;transition:opacity .4s}
+.duo-letter-choices button{display:flex;align-items:center;justify-content:center;min-width:56px;min-height:35px;padding:3px 14px;border:2px solid #d7c5f0;border-radius:13px;background:#fff;color:#7947c8;font-size:18px;font-weight:900;line-height:1;box-shadow:0 2px 0 #dfd0f2}
+.duo-letter-choices button>span{color:#258f9b}.duo-letter-choices button[aria-pressed=true]{background:#eee3ff;border-color:#9663db;box-shadow:0 2px 0 #a780d7}
+.duo-waiting .duo-blend-label,.duo-waiting .duo-letter-choices{opacity:0;pointer-events:none}
+@media(max-height:650px){.duo-letter-scene .duo-character{bottom:37px;height:calc(100% - 60px)}.duo-blend-label{font-size:20px;gap:7px}.duo-letter-choices button{min-height:30px;font-size:16px}}
+@media(prefers-reduced-motion:reduce){.duo-blend-label,.duo-letter-choices{transition:none}}
+.duo-letter-scene.duo-joined .duo-mimi{transform:translateX(7%) rotate(-2deg)}
+.duo-letter-scene.duo-intro.duo-joined .duo-kogi{animation:letter-kogi-join .95s cubic-bezier(.2,.7,.3,1) both}
+@keyframes letter-kogi-join{0%{opacity:0;transform:translateX(-45%) translateY(8%) scale(.7)}60%{opacity:1;transform:translateX(-3%) translateY(-3%) rotate(3deg)}100%{opacity:1;transform:translateX(-7%) rotate(2deg)}}
+@media(prefers-reduced-motion:reduce){.duo-letter-scene.duo-intro.duo-joined .duo-kogi{animation:none;transform:translateX(-7%) rotate(2deg)}}
+.duo-letter-scene .duo-character{height:calc(100% - 85px)}
+.duo-blend-label{font-size:clamp(21px,5vw,30px);line-height:1.15;padding:4px 14px}
+@media(max-height:650px){.duo-letter-scene .duo-character{height:calc(100% - 72px)}}
