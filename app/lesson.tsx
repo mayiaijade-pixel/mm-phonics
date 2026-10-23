@@ -139,7 +139,7 @@ export default function Page(){
  async function checkVoice(){
   if(!recordingBlob.current||checking)return;
   stopAudio();setChecking(true);setAssessmentError('');const controller=new AbortController();assessmentAbort.current=controller;
-  const form=new FormData();const blob=recordingBlob.current;form.set('audio',blob,blob.type.includes('mp4')?'practice.m4a':'practice.webm');form.set('target',recordTarget.current);
+  const form=new FormData();const blob=recordingBlob.current;form.set('audio',blob,blob.type.includes('mp4')?'practice.m4a':'practice.webm');form.set('target',recordTarget.current);form.set('unit',String(activeUnit));
   try{const r=await fetch('/api/assess-pronunciation',{method:'POST',body:form,signal:controller.signal});const d=await r.json() as ReturnType<typeof feedbackFor>&{error?:string};if(!r.ok)throw Error(d.error||'음성을 확인하지 못했어요.');if(!controller.signal.aborted){if(d.status==='match'&&p.step===3)setPracticeDone(true);setAssessment(d);hearFeedback(d)}}catch(e){if(!controller.signal.aborted)setAssessmentError(e instanceof Error?e.message:'다시 시도해 주세요.')}finally{if(!controller.signal.aborted)setChecking(false)}
  }
  function stopRecord(){if(recTimer.current)clearTimeout(recTimer.current);if(recorder.current?.state==='recording')recorder.current.stop();stream.current?.getTracks().forEach(t=>t.stop());setRecording(false);setNotice('내 목소리를 다시 들어볼까?')}

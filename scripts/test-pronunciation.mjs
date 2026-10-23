@@ -7,7 +7,7 @@ import {createRequire} from 'node:module';
 const output=mkdtempSync(join(tmpdir(),'mimi-review-tests-'));
 try{
  const result=spawnSync(process.execPath,['node_modules/typescript/bin/tsc','lib/pronunciation.ts','lib/pronunciation-similarity.ts','--outDir',output,'--module','commonjs','--target','es2022','--esModuleInterop','--resolveJsonModule','--skipLibCheck'],{stdio:'inherit'});assert.equal(result.status,0);
- const require=createRequire(import.meta.url),{feedbackFor,targets}=require(join(output,'pronunciation.js')),{phonemeSimilarity,pronunciationSimilarity}=require(join(output,'pronunciation-similarity.js'));
+ const require=createRequire(import.meta.url),{feedbackFor,targets}=require(join(output,'pronunciation.js')),{phonemeSimilarity,pronunciationSimilarity,initialSoundMatches}=require(join(output,'pronunciation-similarity.js'));
  for(const target of targets){assert.equal(feedbackFor(target,target).status,'match',target);assert.equal(feedbackFor(target,'').status,'unclear',target);assert.equal('transcript' in feedbackFor(target,'unrelated'),false)}
  const cases=[['bike','bite','match'],['bike','bicker','match'],['bake','back','match'],['cape','cap','match'],['lake','rake','match'],['bike','banana','retry'],['cake','cat','retry'],['bike','constructor','retry'],['bike','zzzzzz','retry'],['bike','I said bite.','match'],['bike','a banana','retry'],['nine','9','match'],['five','5!','match'],['eye','I','match'],['eye','aye','match'],['ay','A','match'],['ay','hey','match'],['eye','hi','match'],['ay','cat','retry']];
  for(const [target,heard,status]of cases)assert.equal(feedbackFor(target,heard).status,status,`${target} / ${heard}`);
@@ -16,5 +16,11 @@ try{
  assert.equal(phonemeSimilarity(['B','AY','K'],['B','AY','T']),1-1/3);
  assert.equal(phonemeSimilarity([],['K']),0);
  assert.equal(feedbackFor('bike','bite').english,'Good job! You did it!');
+ const unit6Cases=[['hole','hat'],['mole','me'],['pole','pen'],['sole','sun'],['dome','dog'],['home','hi'],['bone','bee'],['cone','cat'],['hole','h'],['mole','I said me.']];
+ for(const [target,heard] of unit6Cases){assert.equal(feedbackFor(target,heard,6).status,'match',`Unit 6: ${target}/${heard}`);assert.equal(feedbackFor(target,heard,6).english,'Good job! You did it!')}
+ assert.notEqual(feedbackFor('hole','hat',5).status,'match','relaxation is scoped to Unit 6');
+ assert.equal(initialSoundMatches('pole','phone'),false,'initial-sound rule checks pronunciation, not spelling alone');
+ assert.equal(feedbackFor('hole','',6).status,'unclear','silence still requests another try');
+ assert.notEqual(feedbackFor('hole','cat',6).status,'match','unrelated initial sound is not accepted');
  console.log(`PASS: ${targets.length} targets, empty speech/privacy checks, ${cases.length} recognition cases, 50% boundary and sound similarity`);
 }finally{rmSync(output,{recursive:true,force:true})}
