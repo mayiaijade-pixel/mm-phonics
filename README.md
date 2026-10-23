@@ -66,3 +66,9 @@ npm run build:sites
 ## 녹음 피드백
 
 Say it으로 녹음하고 Stop을 누른 뒤 Review를 누르면 녹음이 ElevenLabs Scribe v2에 전송됩니다. 목표 단어와 인식 결과를 비교하여 칭찬/연습 팁/다시 녹음을 제공합니다. 음소별 발음 정확도 채점은 아닙니다. 녹음을 이 앱의 DB에 저장하지 않으며, 외부 처리에는 ElevenLabs의 데이터 정책이 적용됩니다. 기존 ELEVENLABS_API_KEY에 Speech to Text 권한이 필요합니다. 요청당 2MB, 10분당 30건의 인스턴스 단위 제한을 적용합니다.
+
+### Parent settings and homework
+
+My Page lets a parent set an 8+ character password, edit star reward milestones, and view progress. Each workbook unit earns 3 extra homework stars once, after password approval; repeating lessons still earns quiz stars separately. Homework page ranges follow the book contents, excluding review sections.
+
+Vercel needs a stable server-only `MIMI_PARENT_SECRET` (32+ random characters). Parent password verifiers, approvals and rewards are encrypted in an HTTP-only cookie; ordinary progress writes cannot change them. This is a shared-browser family gate, not an account identity system: clearing browser data resets Vercel progress and parent settings, and devices do not sync. Sites stores parent settings per signed-in user in D1. Passwords are salted PBKDF2 hashes, never returned to the client. Five failed attempts trigger a five-minute cooldown. Keep the password safe; there is no email-based password recovery in this name-only app.

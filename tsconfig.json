@@ -35,6 +35,7 @@
       "@platform/mimi-voice": [
         "./platform/vercel/mimi-voice.ts"
       ],
+      "@platform/parent": ["./platform/vercel/parent.ts"],
       "@platform/key": [
         "./platform/vercel/key.ts"
       ]
