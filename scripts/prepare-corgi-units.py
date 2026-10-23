@@ -6,11 +6,11 @@ SOUNDS={'black':'B L AE1 K','block':'B L AA1 K','blue':'B L UW1','clap':'K L AE1
 scenes={}
 for unit,words,families,start,end in [(8,list(SOUNDS)[:9],['bl','cl','fl'],50,55),(9,list(SOUNDS)[9:],['gl','pl','sl'],56,61)]:
  prefix=f'u{unit}-';first=words[0]
- scenes[prefix+'0']=['Hi, Jenny!',"I'm Kogi!",'Two letters, two sounds! We can blend them together!']
+ scenes[prefix+'0']=['Hi, Jenny!',"I'm Kogi!",'Two letters, two sounds!','We can blend them together!']
  scenes[prefix+'1']=[f'Look at {first}!',f'Listen to the first two sounds in {first}.',f'Now say {first} with me!']
- scenes[prefix+'2']=['Keep both sounds. Blend them smoothly!']
- scenes[prefix+'3']=[f'Listen to {first}.',f'Blend the first two sounds, then say {first} with me!']
- scenes[prefix+'5']=['Listen carefully. Which picture matches the word?']
+ scenes[prefix+'2']=['Keep both sounds.','Blend them smoothly!']
+ scenes[prefix+'3']=[f'Listen to {first}.','Blend the first two sounds.',f'Now say {first} with me!']
+ scenes[prefix+'5']=['Listen carefully.','Which picture matches the word?']
  scenes[prefix+'7']=['Great job, Jenny!','You earned three stars!',f'For homework, complete Unit {unit}, pages {start} to {end}, in Speed Phonics Book 2!']
  scenes[prefix+'homework']=[f'For homework, complete Unit {unit}, pages {start} to {end}, in Speed Phonics Book 2!']
  for group in range(3):

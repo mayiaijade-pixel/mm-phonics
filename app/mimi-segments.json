@@ -2523,8 +2523,12 @@
       "audio": "/audio/corgi/a5bba0753cc3314629f1.mp3"
     },
     {
-      "text": "Two letters, two sounds! We can blend them together!",
-      "audio": "/audio/corgi/cbdf15f5d137e0e8aecd.mp3"
+      "text": "Two letters, two sounds!",
+      "audio": "/audio/corgi/a4245633dbc0b3adfdd0.mp3"
+    },
+    {
+      "text": "We can blend them together!",
+      "audio": "/audio/corgi/00bde9e7bbfd8c10d738.mp3"
     }
   ],
   "u8-1": [
@@ -2543,8 +2547,12 @@
   ],
   "u8-2": [
     {
-      "text": "Keep both sounds. Blend them smoothly!",
-      "audio": "/audio/corgi/91579500b8c1c1397fab.mp3"
+      "text": "Keep both sounds.",
+      "audio": "/audio/corgi/7971ea867e0d0ced8316.mp3"
+    },
+    {
+      "text": "Blend them smoothly!",
+      "audio": "/audio/corgi/7e303d2ad08c064c33ca.mp3"
     }
   ],
   "u8-3": [
@@ -2553,14 +2561,22 @@
       "audio": "/audio/corgi/c3ff9a989b1c6e01c88f.mp3"
     },
     {
-      "text": "Blend the first two sounds, then say black with me!",
-      "audio": "/audio/corgi/9d41f2ea5071f3f79042.mp3"
+      "text": "Blend the first two sounds.",
+      "audio": "/audio/corgi/aab4894db8c33e190486.mp3"
+    },
+    {
+      "text": "Now say black with me!",
+      "audio": "/audio/corgi/829016be69fce75fb42f.mp3"
     }
   ],
   "u8-5": [
     {
-      "text": "Listen carefully. Which picture matches the word?",
-      "audio": "/audio/corgi/d199fb26c0a0ca2f90bb.mp3"
+      "text": "Listen carefully.",
+      "audio": "/audio/corgi/0e242bfdda21aa8e1ee1.mp3"
+    },
+    {
+      "text": "Which picture matches the word?",
+      "audio": "/audio/corgi/cd4dfb130313006f0556.mp3"
     }
   ],
   "u8-7": [
@@ -2875,8 +2891,12 @@
       "audio": "/audio/corgi/a5bba0753cc3314629f1.mp3"
     },
     {
-      "text": "Two letters, two sounds! We can blend them together!",
-      "audio": "/audio/corgi/cbdf15f5d137e0e8aecd.mp3"
+      "text": "Two letters, two sounds!",
+      "audio": "/audio/corgi/a4245633dbc0b3adfdd0.mp3"
+    },
+    {
+      "text": "We can blend them together!",
+      "audio": "/audio/corgi/00bde9e7bbfd8c10d738.mp3"
     }
   ],
   "u9-1": [
@@ -2895,8 +2915,12 @@
   ],
   "u9-2": [
     {
-      "text": "Keep both sounds. Blend them smoothly!",
-      "audio": "/audio/corgi/91579500b8c1c1397fab.mp3"
+      "text": "Keep both sounds.",
+      "audio": "/audio/corgi/7971ea867e0d0ced8316.mp3"
+    },
+    {
+      "text": "Blend them smoothly!",
+      "audio": "/audio/corgi/7e303d2ad08c064c33ca.mp3"
     }
   ],
   "u9-3": [
@@ -2905,14 +2929,22 @@
       "audio": "/audio/corgi/a8a3eeadbf19ff2c6045.mp3"
     },
     {
-      "text": "Blend the first two sounds, then say glass with me!",
-      "audio": "/audio/corgi/ecc0db067517b4eb9e1b.mp3"
+      "text": "Blend the first two sounds.",
+      "audio": "/audio/corgi/aab4894db8c33e190486.mp3"
+    },
+    {
+      "text": "Now say glass with me!",
+      "audio": "/audio/corgi/ce75ce28cd9ae938253a.mp3"
     }
   ],
   "u9-5": [
     {
-      "text": "Listen carefully. Which picture matches the word?",
-      "audio": "/audio/corgi/d199fb26c0a0ca2f90bb.mp3"
+      "text": "Listen carefully.",
+      "audio": "/audio/corgi/0e242bfdda21aa8e1ee1.mp3"
+    },
+    {
+      "text": "Which picture matches the word?",
+      "audio": "/audio/corgi/cd4dfb130313006f0556.mp3"
     }
   ],
   "u9-7": [
