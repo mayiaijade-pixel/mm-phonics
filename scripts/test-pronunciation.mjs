@@ -18,9 +18,18 @@ try{
  assert.equal(feedbackFor('bike','bite').english,'Good job! You did it!');
  const unit6Cases=[['hole','hat'],['mole','me'],['pole','pen'],['sole','sun'],['dome','dog'],['home','hi'],['bone','bee'],['cone','cat'],['hole','h'],['mole','I said me.']];
  for(const [target,heard] of unit6Cases){assert.equal(feedbackFor(target,heard,6).status,'match',`Unit 6: ${target}/${heard}`);assert.equal(feedbackFor(target,heard,6).english,'Good job! You did it!')}
- assert.notEqual(feedbackFor('hole','hat',5).status,'match','relaxation is scoped to Unit 6');
+ assert.notEqual(feedbackFor('dome','dog',5).status,'match','non-le relaxation remains scoped to Unit 6');
  assert.equal(initialSoundMatches('pole','phone'),false,'initial-sound rule checks pronunciation, not spelling alone');
  assert.equal(feedbackFor('hole','',6).status,'unclear','silence still requests another try');
  assert.notEqual(feedbackFor('hole','cat',6).status,'match','unrelated initial sound is not accepted');
+ const leTargets=targets.filter(target=>target.endsWith('le'));
+ for(const target of leTargets){
+  for(const unit of [undefined,1,6,7])assert.equal(feedbackFor(target,target[0],unit).status,'match',`${target}: initial letter across units`);
+  assert.equal(feedbackFor(target,'',7).status,'unclear');
+ }
+ for(const heard of ['me','man','m','I said me.'])assert.equal(feedbackFor('mule',heard,7).status,'match',`mule / ${heard}`);
+ assert.notEqual(feedbackFor('mule','cat',7).status,'match');
+ assert.notEqual(feedbackFor('cube','cat',7).status,'match','other Unit 7 words retain existing criteria');
+ console.log(`PASS: -le first-sound rule (${leTargets.join(', ')}), wrong-initial and silence checks`);
  console.log(`PASS: ${targets.length} targets, empty speech/privacy checks, ${cases.length} recognition cases, 50% boundary and sound similarity`);
 }finally{rmSync(output,{recursive:true,force:true})}

@@ -16,7 +16,7 @@ export function pronunciationSimilarity(target:string,heard:string){
  return Math.max(0,...(Object.hasOwn(pronunciations,heard)?pronunciations[heard]:[]).map(sound=>phonemeSimilarity(expected.split(' '),sound.split(' '))));
 }
 
-// Unit 6's beginner review accepts a recognizable initial consonant.
+// Beginner review can accept a recognizable initial consonant.
 // This compares ASR words/letter labels, not the raw acoustic signal.
 export function initialSoundMatches(target:string,heard:string){
  const expected=Object.hasOwn(targetSounds,target)?targetSounds[target].split(' ')[0]:undefined;
