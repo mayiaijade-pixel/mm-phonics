@@ -48,3 +48,12 @@ for(const unit of [8,9])for(const [index,speaker] of [[0,'mimi'],[1,'mimi'],[2,'
  assert.equal(r.status,200);assert.ok(calls.at(-1).url.includes(speaker==='mimi'?'mimi-test-voice':blends.CORGI_VOICE_ID));
 }
 console.log('PASS: Sites personalizes each greeting line with the correct Mimi/Kogi voice');
+for(const unit of [10,11,12]){
+ const fresh=load('platform/vercel/mimi-voice.ts',dependencies);
+ const freshVoice=async body=>{const r=await fresh.POST(new Request('http://localhost/api/mimi-voice',{method:'POST',headers:{Origin:'http://localhost','Content-Type':'application/json'},body:JSON.stringify(body)}));assert.equal(r.status,200)};
+ await freshVoice({scene:`u${unit}-0`,index:0,name:`Learner${unit}`,unit});assert.ok(calls.at(-1).url.includes('mimi-test-voice'));
+ await freshVoice({scene:`u${unit}-0`,index:2,name:`Learner${unit}`,unit});assert.ok(calls.at(-1).url.includes(blends.CORGI_VOICE_ID));
+ const first=blends.BLEND_UNITS[unit].words[0].word;
+ await freshVoice({scene:`u${unit}-4-${first}`,index:0,name:`Learner${unit}`,unit});assert.ok(calls.at(-1).url.includes(unit===11?blends.CORGI_VOICE_ID:'mimi-test-voice'));
+}
+console.log('PASS: Unit 10–12 personalized introductions and first-card voice match');

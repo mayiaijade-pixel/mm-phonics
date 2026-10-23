@@ -1,0 +1,132 @@
+{
+  "brave": {
+    "unit": 10,
+    "actor": "Mimi",
+    "description": "미미가 작은 다리를 용감하게 건너요"
+  },
+  "brick": {
+    "unit": 10,
+    "actor": "Kogi",
+    "description": "코기가 벽돌을 차곡차곡 쌓아요"
+  },
+  "bride": {
+    "unit": 10,
+    "actor": "Mimi",
+    "description": "미미가 신부 드레스를 입고 꽃다발을 들어요"
+  },
+  "crab": {
+    "unit": 10,
+    "actor": "Kogi",
+    "description": "코기가 옆으로 걷는 게를 따라봐요"
+  },
+  "crack": {
+    "unit": 10,
+    "actor": "Mimi",
+    "description": "미미가 달걀을 두드려 금을 내요"
+  },
+  "crane": {
+    "unit": 10,
+    "actor": "Kogi",
+    "description": "코기가 기중기로 벽돌을 들어 올려요"
+  },
+  "frame": {
+    "unit": 10,
+    "actor": "Mimi",
+    "description": "미미가 액자를 들어 사진을 보여줘요"
+  },
+  "frog": {
+    "unit": 10,
+    "actor": "Kogi",
+    "description": "코기가 뛰어오르는 개구리를 지켜봐요"
+  },
+  "frost": {
+    "unit": 10,
+    "actor": "Mimi",
+    "description": "미미가 창문에 낀 서리를 살펴봐요"
+  },
+  "dragon": {
+    "unit": 11,
+    "actor": "Kogi",
+    "description": "코기가 날갯짓하는 귀여운 용을 만나요"
+  },
+  "dress": {
+    "unit": 11,
+    "actor": "Mimi",
+    "description": "미미가 드레스를 펼쳐 보여줘요"
+  },
+  "drum": {
+    "unit": 11,
+    "actor": "Kogi",
+    "description": "코기가 북채로 북을 두드려요"
+  },
+  "press": {
+    "unit": 11,
+    "actor": "Mimi",
+    "description": "미미가 버튼을 눌러요"
+  },
+  "print": {
+    "unit": 11,
+    "actor": "Kogi",
+    "description": "코기가 프린터로 그림을 인쇄해요"
+  },
+  "prize": {
+    "unit": 11,
+    "actor": "Mimi",
+    "description": "미미가 상을 받고 기뻐해요"
+  },
+  "track": {
+    "unit": 11,
+    "actor": "Kogi",
+    "description": "코기가 선로 위 장난감 기차를 움직여요"
+  },
+  "truck": {
+    "unit": 11,
+    "actor": "Mimi",
+    "description": "미미가 트럭을 움직여요"
+  },
+  "trumpet": {
+    "unit": 11,
+    "actor": "Kogi",
+    "description": "코기가 트럼펫을 불어요"
+  },
+  "smell": {
+    "unit": 12,
+    "actor": "Mimi",
+    "description": "미미가 꽃향기를 맡아요"
+  },
+  "smile": {
+    "unit": 12,
+    "actor": "Kogi",
+    "description": "코기가 활짝 미소 지어요"
+  },
+  "snack": {
+    "unit": 12,
+    "actor": "Mimi",
+    "description": "미미가 간식을 먹어요"
+  },
+  "snake": {
+    "unit": 12,
+    "actor": "Kogi",
+    "description": "코기가 움직이는 뱀을 바라봐요"
+  },
+  "stone": {
+    "unit": 12,
+    "actor": "Mimi",
+    "description": "미미가 돌을 집어 살펴봐요"
+  },
+  "stop": {
+    "unit": 12,
+    "actor": "Kogi",
+    "description": "코기가 멈춤 신호를 보고 멈춰요"
+  },
+  "swan": {
+    "unit": 12,
+    "actor": "Mimi",
+    "description": "미미가 물 위를 헤엄치는 백조를 바라봐요"
+  },
+  "swim": {
+    "unit": 12,
+    "actor": "Kogi",
+    "description": "코기가 물속에서 수영해요"
+  }
+}

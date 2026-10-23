@@ -3411,5 +3411,1321 @@
       "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
       "speaker": "corgi"
     }
+  ],
+  "u10-0": [
+    {
+      "text": "Hi, Jenny!",
+      "audio": "/audio/corgi/31ac4e38e4f8aefaeac4.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "I'm Mimi!",
+      "audio": "/audio/corgi/4945f6700bf1a18e6809.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "I'm Kogi!",
+      "audio": "/audio/corgi/a5bba0753cc3314629f1.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "We'll blend two letters and two sounds!",
+      "audio": "/audio/corgi/f0c14485f121112952b6.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "u10-1": [
+    {
+      "text": "Look at brave!",
+      "audio": "/audio/corgi/cea6f6771a7d52e6162b.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Listen to the first two sounds in brave.",
+      "audio": "/audio/corgi/590d34bf7823ce026121.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Now say brave with me!",
+      "audio": "/audio/corgi/dd60faed687524ab6d43.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "u10-2": [
+    {
+      "text": "Keep both sounds.",
+      "audio": "/audio/corgi/b56df366eef37b90a8eb.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Blend them smoothly!",
+      "audio": "/audio/corgi/7e303d2ad08c064c33ca.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u10-3": [
+    {
+      "text": "Listen to brave.",
+      "audio": "/audio/corgi/5e98fac2714fb210fa8d.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Blend the first two sounds.",
+      "audio": "/audio/corgi/aab4894db8c33e190486.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Now say brave with me!",
+      "audio": "/audio/corgi/dd60faed687524ab6d43.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "u10-5": [
+    {
+      "text": "Listen carefully.",
+      "audio": "/audio/corgi/a6e911d6eee6259f03fc.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Which picture matches the word?",
+      "audio": "/audio/corgi/cd4dfb130313006f0556.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u10-7": [
+    {
+      "text": "Great job, Jenny!",
+      "audio": "/audio/corgi/2418125f8f47fe161e28.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "You earned three stars!",
+      "audio": "/audio/corgi/17ae0d5c5e8aaf335056.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "For homework, complete Unit 10, pages 62 to 67, in Speed Phonics Book 2!",
+      "audio": "/audio/corgi/50eba7220e07b5c278c0.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "u10-homework": [
+    {
+      "text": "For homework, complete Unit 10, pages 62 to 67, in Speed Phonics Book 2!",
+      "audio": "/audio/corgi/50eba7220e07b5c278c0.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "u10-blend-br": [
+    {
+      "text": "Listen: brave, brick, bride.",
+      "audio": "/audio/corgi/b00372b196e4d3940db5.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Keep both beginning sounds together!",
+      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u10-blend-cr": [
+    {
+      "text": "Listen: crab, crack, crane.",
+      "audio": "/audio/corgi/564b1070a5ca60401687.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Keep both beginning sounds together!",
+      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u10-blend-fr": [
+    {
+      "text": "Listen: frame, frog, frost.",
+      "audio": "/audio/corgi/454b71d5907a7ea6683c.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Keep both beginning sounds together!",
+      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u10-4-brave": [
+    {
+      "text": "Jenny, listen to brave.",
+      "audio": "/audio/corgi/b389d3af04e11eb7410b.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/c69efb5ed88d4621a9a4.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "corgi-feedback-brave": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to brave. Blend both beginning sounds.",
+      "audio": "/audio/corgi/42a928c98a3964ddf851.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to brave, then say it again.",
+      "audio": "/audio/corgi/23e2df93fdb471b1d800.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u10-4-brick": [
+    {
+      "text": "Jenny, listen to brick.",
+      "audio": "/audio/corgi/ac5e76f089e3c910f74e.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/feefc8cde1b5e465665b.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "corgi-feedback-brick": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to brick. Blend both beginning sounds.",
+      "audio": "/audio/corgi/da049ba7410f7cddf6e9.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to brick, then say it again.",
+      "audio": "/audio/corgi/cf195da46f4e59308dac.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u10-4-bride": [
+    {
+      "text": "Jenny, listen to bride.",
+      "audio": "/audio/corgi/4ddf077e6b61a4eb3e96.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/c69efb5ed88d4621a9a4.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "corgi-feedback-bride": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to bride. Blend both beginning sounds.",
+      "audio": "/audio/corgi/0e3fcb0bbdd1bdc81c43.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to bride, then say it again.",
+      "audio": "/audio/corgi/85dc24fbb77740d2f921.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u10-4-crab": [
+    {
+      "text": "Jenny, listen to crab.",
+      "audio": "/audio/corgi/04c66c0f795bd814db3a.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/feefc8cde1b5e465665b.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "corgi-feedback-crab": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to crab. Blend both beginning sounds.",
+      "audio": "/audio/corgi/a06e882d854013d37b02.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to crab, then say it again.",
+      "audio": "/audio/corgi/e02102d31600e341f259.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u10-4-crack": [
+    {
+      "text": "Jenny, listen to crack.",
+      "audio": "/audio/corgi/6876eaf6e6edf15c1a3b.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/c69efb5ed88d4621a9a4.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "corgi-feedback-crack": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to crack. Blend both beginning sounds.",
+      "audio": "/audio/corgi/e0e9fff2f401a472c7a0.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to crack, then say it again.",
+      "audio": "/audio/corgi/4a35f8c1f157fe01effc.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u10-4-crane": [
+    {
+      "text": "Jenny, listen to crane.",
+      "audio": "/audio/corgi/071f0e28f339a596bbbe.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/feefc8cde1b5e465665b.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "corgi-feedback-crane": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to crane. Blend both beginning sounds.",
+      "audio": "/audio/corgi/7523615ff3f232fb7191.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to crane, then say it again.",
+      "audio": "/audio/corgi/1baa2664ff0af781c060.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u10-4-frame": [
+    {
+      "text": "Jenny, listen to frame.",
+      "audio": "/audio/corgi/afb07e7aa5d2ffade926.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/c69efb5ed88d4621a9a4.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "corgi-feedback-frame": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to frame. Blend both beginning sounds.",
+      "audio": "/audio/corgi/15f0269a17f79f5cb368.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to frame, then say it again.",
+      "audio": "/audio/corgi/c2fe32e6f1a64c9f11a7.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u10-4-frog": [
+    {
+      "text": "Jenny, listen to frog.",
+      "audio": "/audio/corgi/1f1fe235a2f863ba9fc4.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/feefc8cde1b5e465665b.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "corgi-feedback-frog": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to frog. Blend both beginning sounds.",
+      "audio": "/audio/corgi/7ed0a909aca0dd7a5ac6.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to frog, then say it again.",
+      "audio": "/audio/corgi/b4fcbded1085483f39fb.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u10-4-frost": [
+    {
+      "text": "Jenny, listen to frost.",
+      "audio": "/audio/corgi/0875b1dc304ab577b5a3.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/c69efb5ed88d4621a9a4.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "corgi-feedback-frost": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to frost. Blend both beginning sounds.",
+      "audio": "/audio/corgi/1ed06fcbf48363d23c31.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to frost, then say it again.",
+      "audio": "/audio/corgi/b84757cd1aea23b42d5c.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u11-0": [
+    {
+      "text": "Hi, Jenny!",
+      "audio": "/audio/corgi/31ac4e38e4f8aefaeac4.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "I'm Mimi!",
+      "audio": "/audio/corgi/4945f6700bf1a18e6809.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "I'm Kogi!",
+      "audio": "/audio/corgi/a5bba0753cc3314629f1.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "We'll blend two letters and two sounds!",
+      "audio": "/audio/corgi/f0c14485f121112952b6.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "u11-1": [
+    {
+      "text": "Look at dragon!",
+      "audio": "/audio/corgi/c474edba37741ae7679f.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Listen to the first two sounds in dragon.",
+      "audio": "/audio/corgi/0ff9c297e70736ae22f4.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Now say dragon with me!",
+      "audio": "/audio/corgi/5b45fb0689df40dba5a2.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "u11-2": [
+    {
+      "text": "Keep both sounds.",
+      "audio": "/audio/corgi/b56df366eef37b90a8eb.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Blend them smoothly!",
+      "audio": "/audio/corgi/7e303d2ad08c064c33ca.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u11-3": [
+    {
+      "text": "Listen to dragon.",
+      "audio": "/audio/corgi/2635c2fc78a24d8ebf4a.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Blend the first two sounds.",
+      "audio": "/audio/corgi/aab4894db8c33e190486.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Now say dragon with me!",
+      "audio": "/audio/corgi/5b45fb0689df40dba5a2.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "u11-5": [
+    {
+      "text": "Listen carefully.",
+      "audio": "/audio/corgi/a6e911d6eee6259f03fc.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Which picture matches the word?",
+      "audio": "/audio/corgi/cd4dfb130313006f0556.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u11-7": [
+    {
+      "text": "Great job, Jenny!",
+      "audio": "/audio/corgi/2418125f8f47fe161e28.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "You earned three stars!",
+      "audio": "/audio/corgi/17ae0d5c5e8aaf335056.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "For homework, complete Unit 11, pages 68 to 73, in Speed Phonics Book 2!",
+      "audio": "/audio/corgi/b751389dfd51c696d992.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "u11-homework": [
+    {
+      "text": "For homework, complete Unit 11, pages 68 to 73, in Speed Phonics Book 2!",
+      "audio": "/audio/corgi/b751389dfd51c696d992.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "u11-blend-dr": [
+    {
+      "text": "Listen: dragon, dress, drum.",
+      "audio": "/audio/corgi/392d7d7cea120f898f40.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Keep both beginning sounds together!",
+      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u11-blend-pr": [
+    {
+      "text": "Listen: press, print, prize.",
+      "audio": "/audio/corgi/3e7d6c7ff44dc399bf21.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Keep both beginning sounds together!",
+      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u11-blend-tr": [
+    {
+      "text": "Listen: track, truck, trumpet.",
+      "audio": "/audio/corgi/36b27e64ae4438ff39c8.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Keep both beginning sounds together!",
+      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u11-4-dragon": [
+    {
+      "text": "Jenny, listen to dragon.",
+      "audio": "/audio/corgi/bd399ee4e9bf8e9f555e.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/feefc8cde1b5e465665b.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "corgi-feedback-dragon": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to dragon. Blend both beginning sounds.",
+      "audio": "/audio/corgi/881bf17228cab9d4d681.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to dragon, then say it again.",
+      "audio": "/audio/corgi/b6656da888bfef3c5d29.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u11-4-dress": [
+    {
+      "text": "Jenny, listen to dress.",
+      "audio": "/audio/corgi/70b49b8bf37fb60571be.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/c69efb5ed88d4621a9a4.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "corgi-feedback-dress": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to dress. Blend both beginning sounds.",
+      "audio": "/audio/corgi/e550f5a4b0e5e0ec2298.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to dress, then say it again.",
+      "audio": "/audio/corgi/12df888401eace28d077.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u11-4-drum": [
+    {
+      "text": "Jenny, listen to drum.",
+      "audio": "/audio/corgi/cfe9cfef481df02cbad7.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/feefc8cde1b5e465665b.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "corgi-feedback-drum": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to drum. Blend both beginning sounds.",
+      "audio": "/audio/corgi/c86604226ea7721cfdfb.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to drum, then say it again.",
+      "audio": "/audio/corgi/7a007b2c0fa29e4963b0.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u11-4-press": [
+    {
+      "text": "Jenny, listen to press.",
+      "audio": "/audio/corgi/56e46c40dbc20759ffbf.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/c69efb5ed88d4621a9a4.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "corgi-feedback-press": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to press. Blend both beginning sounds.",
+      "audio": "/audio/corgi/158d4bc8eaaf7041f372.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to press, then say it again.",
+      "audio": "/audio/corgi/feef50b577c4cdb370e3.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u11-4-print": [
+    {
+      "text": "Jenny, listen to print.",
+      "audio": "/audio/corgi/4b8f8e0aa6f4488f89b4.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/feefc8cde1b5e465665b.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "corgi-feedback-print": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to print. Blend both beginning sounds.",
+      "audio": "/audio/corgi/6109458e335f26bbc448.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to print, then say it again.",
+      "audio": "/audio/corgi/20183c2bdc67b845f9d2.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u11-4-prize": [
+    {
+      "text": "Jenny, listen to prize.",
+      "audio": "/audio/corgi/9cb44627e2e2f4bd7b12.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/c69efb5ed88d4621a9a4.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "corgi-feedback-prize": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to prize. Blend both beginning sounds.",
+      "audio": "/audio/corgi/401b03fc5a16a5e059bc.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to prize, then say it again.",
+      "audio": "/audio/corgi/5e4190ea16134fc14e96.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u11-4-track": [
+    {
+      "text": "Jenny, listen to track.",
+      "audio": "/audio/corgi/2163fa8b0de86687f1c0.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/feefc8cde1b5e465665b.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "corgi-feedback-track": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to track. Blend both beginning sounds.",
+      "audio": "/audio/corgi/75fe5d3cf3fa9132c42c.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to track, then say it again.",
+      "audio": "/audio/corgi/7d9fd35d207eff27a9d1.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u11-4-truck": [
+    {
+      "text": "Jenny, listen to truck.",
+      "audio": "/audio/corgi/2f71f528503eb3a5fad7.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/c69efb5ed88d4621a9a4.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "corgi-feedback-truck": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to truck. Blend both beginning sounds.",
+      "audio": "/audio/corgi/ce2892755ffc1b1b455b.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to truck, then say it again.",
+      "audio": "/audio/corgi/988421f86fd781b6b49f.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u11-4-trumpet": [
+    {
+      "text": "Jenny, listen to trumpet.",
+      "audio": "/audio/corgi/ce15770b0f57eb91511c.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/feefc8cde1b5e465665b.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "corgi-feedback-trumpet": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to trumpet. Blend both beginning sounds.",
+      "audio": "/audio/corgi/9b3f52ddbf4611f6477f.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to trumpet, then say it again.",
+      "audio": "/audio/corgi/8a67341a5b889f6e1ec8.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u12-0": [
+    {
+      "text": "Hi, Jenny!",
+      "audio": "/audio/corgi/31ac4e38e4f8aefaeac4.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "I'm Mimi!",
+      "audio": "/audio/corgi/4945f6700bf1a18e6809.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "I'm Kogi!",
+      "audio": "/audio/corgi/a5bba0753cc3314629f1.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "We'll blend two letters and two sounds!",
+      "audio": "/audio/corgi/f0c14485f121112952b6.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "u12-1": [
+    {
+      "text": "Look at smell!",
+      "audio": "/audio/corgi/66abe2d993f3e03110cd.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Listen to the first two sounds in smell.",
+      "audio": "/audio/corgi/398f7967457e709f68c6.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Now say smell with me!",
+      "audio": "/audio/corgi/6ca482a5370e0ea7a165.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "u12-2": [
+    {
+      "text": "Keep both sounds.",
+      "audio": "/audio/corgi/b56df366eef37b90a8eb.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Blend them smoothly!",
+      "audio": "/audio/corgi/7e303d2ad08c064c33ca.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u12-3": [
+    {
+      "text": "Listen to smell.",
+      "audio": "/audio/corgi/e0d88524c41b075ae134.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Blend the first two sounds.",
+      "audio": "/audio/corgi/aab4894db8c33e190486.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Now say smell with me!",
+      "audio": "/audio/corgi/6ca482a5370e0ea7a165.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "u12-5": [
+    {
+      "text": "Listen carefully.",
+      "audio": "/audio/corgi/a6e911d6eee6259f03fc.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Which picture matches the word?",
+      "audio": "/audio/corgi/cd4dfb130313006f0556.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u12-7": [
+    {
+      "text": "Great job, Jenny!",
+      "audio": "/audio/corgi/2418125f8f47fe161e28.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "You earned three stars!",
+      "audio": "/audio/corgi/17ae0d5c5e8aaf335056.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "For homework, complete Unit 12, pages 74 to 79, in Speed Phonics Book 2!",
+      "audio": "/audio/corgi/0e608096b7ad30dbecd9.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "u12-homework": [
+    {
+      "text": "For homework, complete Unit 12, pages 74 to 79, in Speed Phonics Book 2!",
+      "audio": "/audio/corgi/0e608096b7ad30dbecd9.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "u12-blend-sm": [
+    {
+      "text": "Listen: smell, smile.",
+      "audio": "/audio/corgi/daf4a66ff7c9b2088718.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Keep both beginning sounds together!",
+      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u12-blend-sn": [
+    {
+      "text": "Listen: snack, snake.",
+      "audio": "/audio/corgi/baf722b2d91d42e7dd8b.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Keep both beginning sounds together!",
+      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u12-blend-st": [
+    {
+      "text": "Listen: stone, stop.",
+      "audio": "/audio/corgi/d1a98bbf5beacc09b908.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Keep both beginning sounds together!",
+      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u12-blend-sw": [
+    {
+      "text": "Listen: swan, swim.",
+      "audio": "/audio/corgi/4f21c11380531a4ef57f.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Keep both beginning sounds together!",
+      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u12-4-smell": [
+    {
+      "text": "Jenny, listen to smell.",
+      "audio": "/audio/corgi/d556da3febcdeeb7adfb.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/c69efb5ed88d4621a9a4.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "corgi-feedback-smell": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to smell. Blend both beginning sounds.",
+      "audio": "/audio/corgi/d1ffbc9356dade00e8d8.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to smell, then say it again.",
+      "audio": "/audio/corgi/25ee7ff53ffaab547094.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u12-4-smile": [
+    {
+      "text": "Jenny, listen to smile.",
+      "audio": "/audio/corgi/d0270b42c9a03b47d971.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/feefc8cde1b5e465665b.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "corgi-feedback-smile": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to smile. Blend both beginning sounds.",
+      "audio": "/audio/corgi/25ef9e65879e9d205061.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to smile, then say it again.",
+      "audio": "/audio/corgi/bfe991ed6c9bbdf9d472.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u12-4-snack": [
+    {
+      "text": "Jenny, listen to snack.",
+      "audio": "/audio/corgi/e6f34c17c8033cdeb65d.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/c69efb5ed88d4621a9a4.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "corgi-feedback-snack": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to snack. Blend both beginning sounds.",
+      "audio": "/audio/corgi/5945338ffddbf4f9bec6.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to snack, then say it again.",
+      "audio": "/audio/corgi/6fdea924eb03b302dd00.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u12-4-snake": [
+    {
+      "text": "Jenny, listen to snake.",
+      "audio": "/audio/corgi/8c28a2b1b2c7f8deb179.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/feefc8cde1b5e465665b.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "corgi-feedback-snake": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to snake. Blend both beginning sounds.",
+      "audio": "/audio/corgi/087e1b61b9bb0e4ee86c.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to snake, then say it again.",
+      "audio": "/audio/corgi/d88a7e113d0e71d3653c.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u12-4-stone": [
+    {
+      "text": "Jenny, listen to stone.",
+      "audio": "/audio/corgi/79bb8c04b9735a42612d.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/c69efb5ed88d4621a9a4.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "corgi-feedback-stone": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to stone. Blend both beginning sounds.",
+      "audio": "/audio/corgi/1b6d9d1c88b8c6705f2a.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to stone, then say it again.",
+      "audio": "/audio/corgi/35d398223a38254f93e6.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u12-4-stop": [
+    {
+      "text": "Jenny, listen to stop.",
+      "audio": "/audio/corgi/8a72067590087fded64b.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/feefc8cde1b5e465665b.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "corgi-feedback-stop": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to stop. Blend both beginning sounds.",
+      "audio": "/audio/corgi/300bd309a4b81c5e521e.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to stop, then say it again.",
+      "audio": "/audio/corgi/2a128ea563d398fce882.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u12-4-swan": [
+    {
+      "text": "Jenny, listen to swan.",
+      "audio": "/audio/corgi/3a5286bd7088ac1e8218.mp3",
+      "speaker": "mimi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/c69efb5ed88d4621a9a4.mp3",
+      "speaker": "mimi"
+    }
+  ],
+  "corgi-feedback-swan": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to swan. Blend both beginning sounds.",
+      "audio": "/audio/corgi/3b72d819080d4ece3a5b.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to swan, then say it again.",
+      "audio": "/audio/corgi/258b3a122ecef7975c2e.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "u12-4-swim": [
+    {
+      "text": "Jenny, listen to swim.",
+      "audio": "/audio/corgi/f17783aa9e7ca1aa9266.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Say it with me!",
+      "audio": "/audio/corgi/feefc8cde1b5e465665b.mp3",
+      "speaker": "corgi"
+    }
+  ],
+  "corgi-feedback-swim": [
+    {
+      "text": "Good job! You did it!",
+      "audio": "/audio/corgi/d4832d233fa36f424bea.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Listen to swim. Blend both beginning sounds.",
+      "audio": "/audio/corgi/bd547e8657117d322d92.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "Good try! Listen to swim, then say it again.",
+      "audio": "/audio/corgi/405b295278e6ce16c66b.mp3",
+      "speaker": "corgi"
+    },
+    {
+      "text": "I couldn't hear clearly. Let's try again!",
+      "audio": "/audio/corgi/2101c6dfbd398e607ff6.mp3",
+      "speaker": "corgi"
+    }
   ]
 }

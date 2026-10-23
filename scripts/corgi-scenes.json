@@ -269,6 +269,402 @@
       "Good try! Listen to slim, then say it again.",
       "I couldn't hear clearly. Let's try again!"
     ],
+    "u10-0": [
+      "Hi, Jenny!",
+      "I'm Mimi!",
+      "I'm Kogi!",
+      "We'll blend two letters and two sounds!"
+    ],
+    "u10-1": [
+      "Look at brave!",
+      "Listen to the first two sounds in brave.",
+      "Now say brave with me!"
+    ],
+    "u10-2": [
+      "Keep both sounds.",
+      "Blend them smoothly!"
+    ],
+    "u10-3": [
+      "Listen to brave.",
+      "Blend the first two sounds.",
+      "Now say brave with me!"
+    ],
+    "u10-5": [
+      "Listen carefully.",
+      "Which picture matches the word?"
+    ],
+    "u10-7": [
+      "Great job, Jenny!",
+      "You earned three stars!",
+      "For homework, complete Unit 10, pages 62 to 67, in Speed Phonics Book 2!"
+    ],
+    "u10-homework": [
+      "For homework, complete Unit 10, pages 62 to 67, in Speed Phonics Book 2!"
+    ],
+    "u10-blend-br": [
+      "Listen: brave, brick, bride.",
+      "Keep both beginning sounds together!"
+    ],
+    "u10-blend-cr": [
+      "Listen: crab, crack, crane.",
+      "Keep both beginning sounds together!"
+    ],
+    "u10-blend-fr": [
+      "Listen: frame, frog, frost.",
+      "Keep both beginning sounds together!"
+    ],
+    "u10-4-brave": [
+      "Jenny, listen to brave.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-brave": [
+      "Good job! You did it!",
+      "Listen to brave. Blend both beginning sounds.",
+      "Good try! Listen to brave, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u10-4-brick": [
+      "Jenny, listen to brick.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-brick": [
+      "Good job! You did it!",
+      "Listen to brick. Blend both beginning sounds.",
+      "Good try! Listen to brick, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u10-4-bride": [
+      "Jenny, listen to bride.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-bride": [
+      "Good job! You did it!",
+      "Listen to bride. Blend both beginning sounds.",
+      "Good try! Listen to bride, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u10-4-crab": [
+      "Jenny, listen to crab.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-crab": [
+      "Good job! You did it!",
+      "Listen to crab. Blend both beginning sounds.",
+      "Good try! Listen to crab, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u10-4-crack": [
+      "Jenny, listen to crack.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-crack": [
+      "Good job! You did it!",
+      "Listen to crack. Blend both beginning sounds.",
+      "Good try! Listen to crack, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u10-4-crane": [
+      "Jenny, listen to crane.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-crane": [
+      "Good job! You did it!",
+      "Listen to crane. Blend both beginning sounds.",
+      "Good try! Listen to crane, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u10-4-frame": [
+      "Jenny, listen to frame.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-frame": [
+      "Good job! You did it!",
+      "Listen to frame. Blend both beginning sounds.",
+      "Good try! Listen to frame, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u10-4-frog": [
+      "Jenny, listen to frog.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-frog": [
+      "Good job! You did it!",
+      "Listen to frog. Blend both beginning sounds.",
+      "Good try! Listen to frog, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u10-4-frost": [
+      "Jenny, listen to frost.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-frost": [
+      "Good job! You did it!",
+      "Listen to frost. Blend both beginning sounds.",
+      "Good try! Listen to frost, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u11-0": [
+      "Hi, Jenny!",
+      "I'm Mimi!",
+      "I'm Kogi!",
+      "We'll blend two letters and two sounds!"
+    ],
+    "u11-1": [
+      "Look at dragon!",
+      "Listen to the first two sounds in dragon.",
+      "Now say dragon with me!"
+    ],
+    "u11-2": [
+      "Keep both sounds.",
+      "Blend them smoothly!"
+    ],
+    "u11-3": [
+      "Listen to dragon.",
+      "Blend the first two sounds.",
+      "Now say dragon with me!"
+    ],
+    "u11-5": [
+      "Listen carefully.",
+      "Which picture matches the word?"
+    ],
+    "u11-7": [
+      "Great job, Jenny!",
+      "You earned three stars!",
+      "For homework, complete Unit 11, pages 68 to 73, in Speed Phonics Book 2!"
+    ],
+    "u11-homework": [
+      "For homework, complete Unit 11, pages 68 to 73, in Speed Phonics Book 2!"
+    ],
+    "u11-blend-dr": [
+      "Listen: dragon, dress, drum.",
+      "Keep both beginning sounds together!"
+    ],
+    "u11-blend-pr": [
+      "Listen: press, print, prize.",
+      "Keep both beginning sounds together!"
+    ],
+    "u11-blend-tr": [
+      "Listen: track, truck, trumpet.",
+      "Keep both beginning sounds together!"
+    ],
+    "u11-4-dragon": [
+      "Jenny, listen to dragon.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-dragon": [
+      "Good job! You did it!",
+      "Listen to dragon. Blend both beginning sounds.",
+      "Good try! Listen to dragon, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u11-4-dress": [
+      "Jenny, listen to dress.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-dress": [
+      "Good job! You did it!",
+      "Listen to dress. Blend both beginning sounds.",
+      "Good try! Listen to dress, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u11-4-drum": [
+      "Jenny, listen to drum.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-drum": [
+      "Good job! You did it!",
+      "Listen to drum. Blend both beginning sounds.",
+      "Good try! Listen to drum, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u11-4-press": [
+      "Jenny, listen to press.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-press": [
+      "Good job! You did it!",
+      "Listen to press. Blend both beginning sounds.",
+      "Good try! Listen to press, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u11-4-print": [
+      "Jenny, listen to print.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-print": [
+      "Good job! You did it!",
+      "Listen to print. Blend both beginning sounds.",
+      "Good try! Listen to print, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u11-4-prize": [
+      "Jenny, listen to prize.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-prize": [
+      "Good job! You did it!",
+      "Listen to prize. Blend both beginning sounds.",
+      "Good try! Listen to prize, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u11-4-track": [
+      "Jenny, listen to track.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-track": [
+      "Good job! You did it!",
+      "Listen to track. Blend both beginning sounds.",
+      "Good try! Listen to track, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u11-4-truck": [
+      "Jenny, listen to truck.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-truck": [
+      "Good job! You did it!",
+      "Listen to truck. Blend both beginning sounds.",
+      "Good try! Listen to truck, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u11-4-trumpet": [
+      "Jenny, listen to trumpet.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-trumpet": [
+      "Good job! You did it!",
+      "Listen to trumpet. Blend both beginning sounds.",
+      "Good try! Listen to trumpet, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u12-0": [
+      "Hi, Jenny!",
+      "I'm Mimi!",
+      "I'm Kogi!",
+      "We'll blend two letters and two sounds!"
+    ],
+    "u12-1": [
+      "Look at smell!",
+      "Listen to the first two sounds in smell.",
+      "Now say smell with me!"
+    ],
+    "u12-2": [
+      "Keep both sounds.",
+      "Blend them smoothly!"
+    ],
+    "u12-3": [
+      "Listen to smell.",
+      "Blend the first two sounds.",
+      "Now say smell with me!"
+    ],
+    "u12-5": [
+      "Listen carefully.",
+      "Which picture matches the word?"
+    ],
+    "u12-7": [
+      "Great job, Jenny!",
+      "You earned three stars!",
+      "For homework, complete Unit 12, pages 74 to 79, in Speed Phonics Book 2!"
+    ],
+    "u12-homework": [
+      "For homework, complete Unit 12, pages 74 to 79, in Speed Phonics Book 2!"
+    ],
+    "u12-blend-sm": [
+      "Listen: smell, smile.",
+      "Keep both beginning sounds together!"
+    ],
+    "u12-blend-sn": [
+      "Listen: snack, snake.",
+      "Keep both beginning sounds together!"
+    ],
+    "u12-blend-st": [
+      "Listen: stone, stop.",
+      "Keep both beginning sounds together!"
+    ],
+    "u12-blend-sw": [
+      "Listen: swan, swim.",
+      "Keep both beginning sounds together!"
+    ],
+    "u12-4-smell": [
+      "Jenny, listen to smell.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-smell": [
+      "Good job! You did it!",
+      "Listen to smell. Blend both beginning sounds.",
+      "Good try! Listen to smell, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u12-4-smile": [
+      "Jenny, listen to smile.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-smile": [
+      "Good job! You did it!",
+      "Listen to smile. Blend both beginning sounds.",
+      "Good try! Listen to smile, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u12-4-snack": [
+      "Jenny, listen to snack.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-snack": [
+      "Good job! You did it!",
+      "Listen to snack. Blend both beginning sounds.",
+      "Good try! Listen to snack, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u12-4-snake": [
+      "Jenny, listen to snake.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-snake": [
+      "Good job! You did it!",
+      "Listen to snake. Blend both beginning sounds.",
+      "Good try! Listen to snake, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u12-4-stone": [
+      "Jenny, listen to stone.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-stone": [
+      "Good job! You did it!",
+      "Listen to stone. Blend both beginning sounds.",
+      "Good try! Listen to stone, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u12-4-stop": [
+      "Jenny, listen to stop.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-stop": [
+      "Good job! You did it!",
+      "Listen to stop. Blend both beginning sounds.",
+      "Good try! Listen to stop, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u12-4-swan": [
+      "Jenny, listen to swan.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-swan": [
+      "Good job! You did it!",
+      "Listen to swan. Blend both beginning sounds.",
+      "Good try! Listen to swan, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
+    "u12-4-swim": [
+      "Jenny, listen to swim.",
+      "Say it with me!"
+    ],
+    "corgi-feedback-swim": [
+      "Good job! You did it!",
+      "Listen to swim. Blend both beginning sounds.",
+      "Good try! Listen to swim, then say it again.",
+      "I couldn't hear clearly. Let's try again!"
+    ],
     "corgi-feedback-success": [
       "Good job! You did it!"
     ]

@@ -1,11 +1,14 @@
-"""Generate Unit 8/9 Kogi narration and reusable word recordings. Secrets stay in .env.local."""
+"""Generate Units 8–12 Kogi narration and reusable word recordings. Secrets stay in .env.local."""
 from pathlib import Path
 import json,urllib.request,hashlib,concurrent.futures,re,time
 VOICE='nLxulrrbRg9nJamIJY8Z'
 MIMI='BlgEcC0TfWpBak7FmvHW'
 SOUNDS={'black':'B L AE1 K','block':'B L AA1 K','blue':'B L UW1','clap':'K L AE1 P','cliff':'K L IH1 F','clock':'K L AA1 K','flag':'F L AE1 G','flap':'F L AE1 P','flute':'F L UW1 T','glass':'G L AE1 S','globe':'G L OW1 B','glue':'G L UW1','plane':'P L EY1 N','plate':'P L EY1 T','plum':'P L AH1 M','sled':'S L EH1 D','slide':'S L AY1 D','slim':'S L IH1 M'}
+NEW_UNITS=json.loads(Path("scripts/blend-unit-data.json").read_text())
+SOUNDS.update({r[0]:r[4] for rows in NEW_UNITS.values() for r in rows})
+MOTIONS=json.loads(Path("lib/new-word-motions.json").read_text())
 scenes={}
-for unit,words,families,start,end in [(8,list(SOUNDS)[:9],['bl','cl','fl'],50,55),(9,list(SOUNDS)[9:],['gl','pl','sl'],56,61)]:
+for unit,words,families,start,end in [(8,list(SOUNDS)[:9],['bl','cl','fl'],50,55),(9,list(SOUNDS)[9:18],['gl','pl','sl'],56,61),*[(int(u),[r[0] for r in rows],list(dict.fromkeys(r[3] for r in rows)),62+(int(u)-10)*6,67+(int(u)-10)*6) for u,rows in NEW_UNITS.items()]]:
  prefix=f'u{unit}-';first=words[0]
  scenes[prefix+'0']=['Hi, Jenny!',"I'm Mimi!","I'm Kogi!","We'll blend two letters and two sounds!"]
  scenes[prefix+'1']=[f'Look at {first}!',f'Listen to the first two sounds in {first}.',f'Now say {first} with me!']
@@ -14,17 +17,20 @@ for unit,words,families,start,end in [(8,list(SOUNDS)[:9],['bl','cl','fl'],50,55
  scenes[prefix+'5']=['Listen carefully.','Which picture matches the word?']
  scenes[prefix+'7']=['Great job, Jenny!','You earned three stars!',f'For homework, complete Unit {unit}, pages {start} to {end}, in Speed Phonics Book 2!']
  scenes[prefix+'homework']=[f'For homework, complete Unit {unit}, pages {start} to {end}, in Speed Phonics Book 2!']
- for group in range(3):
-  a,b,c=words[group*3:group*3+3]
-  scenes[prefix+'blend-'+families[group]]=[f'Listen: {a}, {b}, {c}.','Keep both beginning sounds together!']
+ for group,family in enumerate(families):
+  group_words=[w for w in words if w.startswith(family)]
+  scenes[prefix+'blend-'+family]=['Listen: '+', '.join(group_words)+'.','Keep both beginning sounds together!']
  for word in words:
   scenes[prefix+'4-'+word]=[f'Jenny, listen to {word}.','Say it with me!']
   scenes['corgi-feedback-'+word]=['Good job! You did it!',f'Listen to {word}. Blend both beginning sounds.',f'Good try! Listen to {word}, then say it again.',"I couldn't hear clearly. Let's try again!"]
 scenes['corgi-feedback-success']=['Good job! You did it!']
 audio={'Yes, Jenny! You found it! Great job!':None,"Let's listen one more time. Try again!":None}
 def speaker(scene,index):
- if not re.match(r'u[89]-',scene):return 'corgi'
+ if not re.match(r'u(?:8|9|10|11|12)-',scene):return 'corgi'
  if scene.endswith('-0'):return 'corgi' if index==2 else 'mimi'
+ match=re.match(r'u(10|11|12)-4-(.+)',scene)
+ if match:
+  return 'mimi' if MOTIONS[match[2]]['actor']=='Mimi' else 'corgi'
  return 'mimi' if index%2==0 else 'corgi'
 def voice_for(scene,index):return MIMI if speaker(scene,index)=='mimi' else VOICE
 items={(word,.8,VOICE) for word in SOUNDS}|{(text,1 if scene.endswith('-0') else .92,voice_for(scene,index)) for scene,lines in scenes.items() for index,text in enumerate(lines)}|{(text,.95,VOICE) for text in audio}
@@ -63,4 +69,4 @@ for text in list(audio):
 Path('app/mimi-segments.json').write_text(json.dumps(segments,ensure_ascii=False,indent=2)+'\n')
 Path('app/corgi-audio.json').write_text(json.dumps(audio,ensure_ascii=False,indent=2)+'\n')
 Path('scripts/corgi-scenes.json').write_text(json.dumps({'voice':VOICE,'scenes':scenes},ensure_ascii=False,indent=2)+'\n')
-print('Kogi Unit 8/9 audio complete.',flush=True)
+print('Kogi Units 8–12 audio complete.',flush=True)

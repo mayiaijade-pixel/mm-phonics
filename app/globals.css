@@ -182,3 +182,14 @@
 .duo-letter-scene .duo-character{height:calc(100% - 85px)}
 .duo-blend-label{font-size:clamp(21px,5vw,30px);line-height:1.15;padding:4px 14px}
 @media(max-height:650px){.duo-letter-scene .duo-character{height:calc(100% - 72px)}}
+
+/* The four S-blends use a separate four-cell Kogi prop atlas. */
+.kogi-letter-window{aspect-ratio:1/2!important}
+.kogi-letter-atlas{position:absolute;top:0;width:400%!important;max-width:none!important;height:100%;object-fit:fill!important}
+.duo-letter-scene:has(.kogi-letter-window) .duo-letter-choices{flex-wrap:wrap}
+.blend-family-picker{flex-wrap:wrap}
+.mimi-dpt-window{aspect-ratio:1/2}
+/* Keep the next sprite row's ears outside the visible card. */
+.new-word-action .word-motion-window{clip-path:inset(0 0 6% 0 round 12px)}
+.kogi-letter-window{clip-path:inset(0 0 0 6%)}
+.mimi-dpt-window{clip-path:inset(0 3% 0 3%)}
