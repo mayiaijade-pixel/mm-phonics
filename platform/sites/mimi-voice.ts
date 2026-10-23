@@ -25,7 +25,8 @@ export async function POST(request:Request){
  if(!template)return fail(400);
  const spoken=letterNamesForSpeech(template.replaceAll('Jenny',name).replace('/eɪ/','ay').replace('/aɪ/','eye'));
  const runtime=env as unknown as Record<string,string>;
- const voice=isCorgiScene(scene)||unit===8||unit===9?CORGI_VOICE_ID:runtime.ELEVENLABS_VOICE_ID||'BlgEcC0TfWpBak7FmvHW';
+ const speaker=scene?(segments as Record<string,{speaker?:string}[]>)[scene]?.[index]?.speaker:undefined;
+ const voice=(speaker?speaker==='corgi':isCorgiScene(scene)||unit===8||unit===9)?CORGI_VOICE_ID:runtime.ELEVENLABS_VOICE_ID||'BlgEcC0TfWpBak7FmvHW';
  if(!runtime.ELEVENLABS_API_KEY)return fail();
  const speed=scene==='greeting'||['u2-0','u3-0','u4-0','u5-0','u6-0','u7-0','u8-0','u9-0'].includes(scene||'')?1:.86;
  const db=getDatabase();const now=Date.now();

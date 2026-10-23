@@ -15,5 +15,5 @@ assert.doesNotMatch(progress,/className="lesson-list"/);
 assert.match(progress,/star-collection/);
 const clips=JSON.parse(readFileSync('app/mimi-segments.json','utf8'));
 for(const [key,lines] of Object.entries(clips))if(/^u[89]-/.test(key))for(const {text,audio} of lines){assert.equal(text.split(/(?<=[.!?])\s+/).length,1,`${key}: ${text}`);assert.ok(readFileSync('public'+audio).length>1000)}
-assert.deepEqual(clips['u8-0'].slice(2).map(x=>x.text),['Two letters, two sounds!','We can blend them together!']);
+assert.deepEqual(clips['u8-0'].slice(2).map(x=>x.text),["I'm Kogi!","We'll blend two letters and two sounds!"]);
 console.log('Practice word consistency, separate lesson menu, and sentence captions passed.');
