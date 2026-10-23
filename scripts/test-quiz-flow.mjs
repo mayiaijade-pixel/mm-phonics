@@ -1,7 +1,7 @@
 import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert/strict';import ts from 'typescript';
 const src=fs.readFileSync('app/lesson.tsx','utf8');
 const extract=(start,end)=>src.slice(src.indexOf(start),src.indexOf(end,src.indexOf(start)));
-const code=ts.transpile(extract(' function cancelQuiz',' useEffect(()=>{\n  quizAnswered.current')+extract(' function selectAnswer',' const recordControls'),{target:ts.ScriptTarget.ES2022});
+const code=ts.transpile(extract(' function cancelQuiz',' useEffect(()=>{\n  quizAnswered.current')+extract(' function selectAnswer',' const nextReady'),{target:ts.ScriptTarget.ES2022});
 function setup(muted=false){
  const clips=[],timers=new Map();let serial=0,progress={quiz:0},praise,correct=false;
  const context={corgi:false,corgiAudio:{hose:'/corgi-hose.mp3'},quizFlow:{current:0},quizTimer:{current:null},quizAnswered:{current:false},quizAutoplayPending:{current:false},playing:{current:null},mounted:{current:true},muted,p:{quiz:0},unitTwo:false,activeUnit:1,unitKey:"unit2",QUESTIONS:[{answer:'hose'},{answer:'pose'},{answer:'note'}],mimiAudio:{hose:'/hose-v2.mp3'},name:'Test',setSpeaking(){},setNotice(){},setQuizHeard(){},setAnswer(){},setCorrect(v){correct=v},setP(fn){progress=fn(progress)},setCourse(fn){progress=fn(progress)},stopAudio(){},speak(...args){praise=args},setTimeout(fn){timers.set(++serial,fn);return serial},clearTimeout(id){timers.delete(id)},Audio:class{constructor(source){this.source=source;clips.push(this)}play(){this.onplaying?.();return Promise.resolve()}}};

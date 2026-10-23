@@ -149,3 +149,15 @@
 .lesson-view .large-mimi-card .lesson-cat-scene:has(>.tutor-duo){width:100%;max-width:440px}
 .finish-mimi>.tutor-duo{width:min(100%,280px);margin-inline:auto}
 .finish-mimi .duo-character img{position:static;inset:auto;transform:none;width:100%;height:100%;object-fit:contain}
+/* Six distinct illustrated poses: action is inside the scene, not whole-card bobbing. */
+.word-motion-window{position:relative;width:100%;height:100%;overflow:hidden;border-radius:inherit;isolation:isolate}
+.word-motion-window>.word-motion-frames{position:absolute;inset:0 auto auto 0;width:300%;height:200%;max-width:none;object-fit:fill;animation:word-action-frames 4.8s steps(1,end) infinite;will-change:transform}
+.action-clap .word-motion-frames{animation-duration:1.5s}
+.action-flap .word-motion-frames{animation-duration:1.2s}
+.action-flute .word-motion-frames{animation-duration:2.4s}
+.action-block .word-motion-frames{animation-duration:5.4s}
+@keyframes word-action-frames{0%{transform:translate(0,0)}16.667%{transform:translate(-33.333333%,0)}33.334%{transform:translate(-66.666667%,0)}50%{transform:translate(0,-50%)}66.667%{transform:translate(-33.333333%,-50%)}83.334%{transform:translate(-66.666667%,-50%)}}
+.lesson-cat-scene.cat-speaking:has(.action-scene){animation:none}
+@media(prefers-reduced-motion:reduce){.word-motion-window>.word-motion-frames{animation:none;transform:translate(-66.666667%,-50%);will-change:auto}.action-clap .word-motion-frames,.action-flap .word-motion-frames{transform:translate(-66.666667%,0)}}
+.action-slide .word-motion-frames,.action-sled .word-motion-frames{animation-duration:4.2s}
+.action-slide .word-motion-window{clip-path:inset(1.2% round 12px)}
