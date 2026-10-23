@@ -67,8 +67,8 @@
       "audio": "/audio/fena/phonics-v3-2307e86262a8b01e.mp3"
     },
     {
-      "text": "You discovered magic e!",
-      "audio": "/audio/fena/phonics-v3-7889274d8c567ccd.mp3"
+      "text": "You earned three stars!",
+      "audio": "/audio/long-ou/reward-a8aaf496f7c6.mp3"
     },
     {
       "text": "For homework, work on Unit 1 in Speed Phonics Book 2.",
@@ -589,8 +589,8 @@
       "audio": "/audio/unit2/dfe672e44f689ac6eafa.mp3"
     },
     {
-      "text": "You learned eight new long a words!",
-      "audio": "/audio/letter-a/21f012b384580a0b767e.mp3"
+      "text": "You earned three stars!",
+      "audio": "/audio/long-ou/reward-a8aaf496f7c6.mp3"
     },
     {
       "text": "For homework, review Unit 2 in Speed Phonics Book 2 with your mom.",
@@ -1143,8 +1143,8 @@
       "audio": "/audio/long-i/dfe672e44f689ac6eafa.mp3"
     },
     {
-      "text": "You learned eight new long i words!",
-      "audio": "/audio/long-i/be9b54c6d0c43c672117.mp3"
+      "text": "You earned three stars!",
+      "audio": "/audio/long-ou/reward-a8aaf496f7c6.mp3"
     },
     {
       "text": "For homework, review Unit 3 in Speed Phonics Book 2 with your mom.",
@@ -1355,8 +1355,8 @@
       "audio": "/audio/long-i/dfe672e44f689ac6eafa.mp3"
     },
     {
-      "text": "You learned eight new long i words!",
-      "audio": "/audio/long-i/be9b54c6d0c43c672117.mp3"
+      "text": "You earned three stars!",
+      "audio": "/audio/long-ou/reward-a8aaf496f7c6.mp3"
     },
     {
       "text": "For homework, review Unit 4 in Speed Phonics Book 2 with your mom.",
@@ -1555,8 +1555,8 @@
       "audio": "/audio/long-ou/dfe672e44f689ac6eafa.mp3"
     },
     {
-      "text": "You earned your star!",
-      "audio": "/audio/long-ou/96cd89a12624a15acbdc.mp3"
+      "text": "You earned three stars!",
+      "audio": "/audio/long-ou/reward-a8aaf496f7c6.mp3"
     },
     {
       "text": "For homework, review Unit 5 in Speed Phonics Book 2 with your mom.",
@@ -1717,8 +1717,8 @@
       "audio": "/audio/long-ou/dfe672e44f689ac6eafa.mp3"
     },
     {
-      "text": "You earned your star!",
-      "audio": "/audio/long-ou/96cd89a12624a15acbdc.mp3"
+      "text": "You earned three stars!",
+      "audio": "/audio/long-ou/reward-a8aaf496f7c6.mp3"
     },
     {
       "text": "For homework, review Unit 6 in Speed Phonics Book 2 with your mom.",
@@ -1883,8 +1883,8 @@
       "audio": "/audio/long-ou/dfe672e44f689ac6eafa.mp3"
     },
     {
-      "text": "You earned your star!",
-      "audio": "/audio/long-ou/96cd89a12624a15acbdc.mp3"
+      "text": "You earned three stars!",
+      "audio": "/audio/long-ou/reward-a8aaf496f7c6.mp3"
     },
     {
       "text": "For homework, review Unit 7 in Speed Phonics Book 2 with your mom.",
@@ -2501,6 +2501,48 @@
     {
       "text": "I couldn't hear clearly. Let's try again!",
       "audio": ""
+    }
+  ],
+  "2-before": [
+    {
+      "text": "Tap magic e and watch the word change!",
+      "audio": "/audio/long-ou/reward-ce91c7883075.mp3"
+    }
+  ],
+  "u2-2-before": [
+    {
+      "text": "Tap magic e and watch the word change!",
+      "audio": "/audio/long-ou/reward-ce91c7883075.mp3"
+    }
+  ],
+  "u3-2-before": [
+    {
+      "text": "Tap magic e and watch the word change!",
+      "audio": "/audio/long-ou/reward-ce91c7883075.mp3"
+    }
+  ],
+  "u4-2-before": [
+    {
+      "text": "Tap magic e and watch the word change!",
+      "audio": "/audio/long-ou/reward-ce91c7883075.mp3"
+    }
+  ],
+  "u5-2-before": [
+    {
+      "text": "Tap magic e and watch the word change!",
+      "audio": "/audio/long-ou/reward-ce91c7883075.mp3"
+    }
+  ],
+  "u6-2-before": [
+    {
+      "text": "Tap magic e and watch the word change!",
+      "audio": "/audio/long-ou/reward-ce91c7883075.mp3"
+    }
+  ],
+  "u7-2-before": [
+    {
+      "text": "Tap magic e and watch the word change!",
+      "audio": "/audio/long-ou/reward-ce91c7883075.mp3"
     }
   ]
 }

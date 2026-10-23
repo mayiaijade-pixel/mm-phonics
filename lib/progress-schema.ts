@@ -1,0 +1,4 @@
+import {z} from 'zod';
+const rewardEntry=z.object({stars:z.number().int().min(0).max(1000000),completions:z.number().int().min(0).max(1000000),awarded:z.boolean()});
+const lesson=(unit:number)=>z.object({step:z.number().int().min(0).max(7),word:z.number().int().min(0).max(7),quiz:z.number().int().min(0).max(3),completed:z.boolean(),homework:z.array(z.literal('book-unit'+unit)).max(1)}).optional();
+export const progressSchema=z.object({unit2:lesson(2),unit3:lesson(3),unit4:lesson(4),unit5:lesson(5),unit6:lesson(6),unit7:lesson(7),rewards:z.record(z.enum(['1','2','3','4','5','6','7']),rewardEntry).optional(),resetVersion:z.literal(1),nameConfirmed:z.boolean().default(false),name:z.string().trim().min(1).max(30),step:z.number().int().min(0).max(7),word:z.number().int().min(0).max(7),quiz:z.number().int().min(0).max(3),completed:z.boolean(),homework:z.array(z.enum(['cake','lake','cape','book-unit1'])).max(4)});
