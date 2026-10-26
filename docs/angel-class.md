@@ -1,6 +1,6 @@
 # Angel class
 
-Homework → Angel class → class password → student / teacher → week.
+Homework → Angel class → class password → student → week. Teacher access is in the top-right **선생님** button, with a separate password prompt.
 
 Students: 지한, 오름, 이서. Weeks: November 1–4 and December 1–2.
 Teacher access requires a separate password. Passwords are server environment variables, never included in client bundles or committed files.
