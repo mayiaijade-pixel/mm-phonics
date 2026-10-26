@@ -1,0 +1,8 @@
+const encoder=new TextEncoder();
+function base64(bytes:Uint8Array){return btoa(String.fromCharCode(...bytes)).replaceAll('+','-').replaceAll('/','_').replaceAll('=','')}
+function bytes(value:string){return Uint8Array.from(atob(value.replaceAll('-','+').replaceAll('_','/')),c=>c.charCodeAt(0))}
+async function key(secret:string){if(secret.length<32)throw Error('Class secret unavailable');return crypto.subtle.importKey('raw',encoder.encode(secret),{name:'HMAC',hash:'SHA-256'},false,['sign','verify'])}
+export async function signToken(payload:Record<string,unknown>,secret:string,seconds=43200){const body=base64(encoder.encode(JSON.stringify({...payload,exp:Math.floor(Date.now()/1000)+seconds})));return body+'.'+base64(new Uint8Array(await crypto.subtle.sign('HMAC',await key(secret),encoder.encode(body))))}
+export async function readToken(value:string,secret:string,purpose:string):Promise<Record<string,unknown>|null>{try{if(value.length>4096)return null;const [body,sig,extra]=value.split('.');if(!body||!sig||extra)return null;if(!await crypto.subtle.verify('HMAC',await key(secret),bytes(sig),encoder.encode(body)))return null;const data=JSON.parse(new TextDecoder().decode(bytes(body)));return data.purpose===purpose&&typeof data.exp==='number'&&data.exp>Math.floor(Date.now()/1000)?data:null}catch{return null}}
+export function sessionCookie(request:Request){const cookie=request.headers.get('cookie')||'';return cookie.split(';').map(s=>s.trim()).find(s=>s.startsWith('angel-class='))?.slice('angel-class='.length)||''}
+export function cookieHeader(token:string,request:Request){return `angel-class=${token}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${token?'43200':'0'}${new URL(request.url).protocol==='https:'?'; Secure':''}`}

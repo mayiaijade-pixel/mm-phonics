@@ -3,3 +3,8 @@ export const progress = sqliteTable('lesson_progress', {userId:text('user_id').p
 export const voiceCache=sqliteTable('mimi_voice_cache',{id:text('id').primaryKey(),userId:text('user_id').notNull(),audio:text('audio').notNull().default(''),createdAt:integer('created_at').notNull()});
 
 export const parentSettings=sqliteTable('parent_settings',{userId:text('user_id').primaryKey(),value:text('value').notNull()});
+
+export const angelAssignments=sqliteTable('angel_assignments',{id:text('id').primaryKey(),week:text('week').notNull(),title:text('title').notNull(),kind:text('kind').notNull(),position:integer('position').notNull(),archived:integer('archived').notNull().default(0),updatedAt:text('updated_at').notNull()});
+export const angelSubmissions=sqliteTable('angel_submissions',{id:text('id').primaryKey(),assignmentId:text('assignment_id').notNull(),student:text('student').notNull(),done:integer('done').notNull().default(0),uploadId:text('upload_id'),updatedAt:text('updated_at').notNull()});
+export const angelUploads=sqliteTable('angel_uploads',{id:text('id').primaryKey(),assignmentId:text('assignment_id').notNull(),student:text('student').notNull(),storageKey:text('storage_key').notNull(),contentType:text('content_type').notNull(),size:integer('size').notNull(),status:text('status').notNull(),createdAt:text('created_at').notNull()});
+export const angelLoginAttempts=sqliteTable('angel_login_attempts',{id:text('id').primaryKey(),failures:integer('failures').notNull().default(0),lockedUntil:integer('locked_until').notNull().default(0)});

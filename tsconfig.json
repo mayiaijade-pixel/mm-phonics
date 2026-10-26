@@ -35,9 +35,14 @@
       "@platform/mimi-voice": [
         "./platform/vercel/mimi-voice.ts"
       ],
-      "@platform/parent": ["./platform/vercel/parent.ts"],
+      "@platform/parent": [
+        "./platform/vercel/parent.ts"
+      ],
       "@platform/key": [
         "./platform/vercel/key.ts"
+      ],
+      "@platform/angel-class": [
+        "./platform/vercel/angel-class.ts"
       ]
     },
     "types": [

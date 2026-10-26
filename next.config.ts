@@ -5,6 +5,7 @@ const nextConfig:NextConfig={
  env:{NEXT_PUBLIC_HOSTING_PLATFORM:process.env.MM_HOSTING_TARGET==='sites'?'sites':'vercel'},
  webpack(config){
   config.resolve.alias={...config.resolve.alias,
+   '@platform/angel-class':path.resolve(process.env.MM_HOSTING_TARGET==='sites'?'platform/sites/angel-class.ts':'platform/vercel/angel-class.ts'),
    '@platform/parent':path.resolve(process.env.MM_HOSTING_TARGET==='sites'?'platform/sites/parent.ts':'platform/vercel/parent.ts'),
    '@platform/key':path.resolve(process.env.MM_HOSTING_TARGET==='sites'?'platform/sites/key.ts':'platform/vercel/key.ts'),
    '@platform/auth':path.resolve(process.env.MM_HOSTING_TARGET==='sites'?'app/chatgpt-auth.ts':'platform/vercel/auth.ts'),
