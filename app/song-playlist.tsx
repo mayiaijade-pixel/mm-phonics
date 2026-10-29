@@ -2,12 +2,12 @@
 import {useEffect,useRef,useState} from 'react';
 import {ArrowLeft,Music,Pause,Play,Repeat,Repeat1,Shuffle,SkipBack,SkipForward,Square,Maximize} from 'lucide-react';
 import videos from './lesson-videos.json';
-const tracks=[{unit:1,title:'Four Seasons',clip:videos.song},{unit:2,title:'The Name Game',clip:videos.unit2.song},{unit:3,title:'Let’s Go Together!',clip:videos.unit3.song}];
+const tracks=[{unit:1,title:'Four Seasons',clip:videos.song},{unit:2,title:'The Name Game',clip:videos.unit2.song},{unit:3,title:'Let’s Go Together!',clip:videos.unit3.song},{unit:4,title:'Camping Time!',clip:videos.unit4.song}];
 const unitLabel=(unit:number)=>`Unit ${unit} · Long ${unit>=3?'i (i+e)':'a (a+e)'}`;
 const clock=(seconds:number)=>`${Math.floor(seconds/60)}:${String(Math.floor(seconds%60)).padStart(2,'0')}`;
 export default function SongPlaylist({onHome}:{onHome:()=>void}){
  const [current,setCurrent]=useState(0),[playing,setPlaying]=useState(false),[repeat,setRepeat]=useState<'off'|'all'|'one'>('off'),[shuffle,setShuffle]=useState(false),[mode,setMode]=useState<'audio'|'video'>('audio'),[time,setTime]=useState(0),[duration,setDuration]=useState(0),[error,setError]=useState('');
- const media=useRef<HTMLMediaElement|null>(null),order=useRef([0,1,2]),currentRef=useRef(0),repeatRef=useRef(repeat),resume=useRef<{time:number;playing:boolean}|null>(null),actions=useRef<{play:()=>void;pause:()=>void;next:()=>void;previous:()=>void}>({play:()=>{},pause:()=>{},next:()=>{},previous:()=>{}});
+ const media=useRef<HTMLMediaElement|null>(null),order=useRef(tracks.map((_,i)=>i)),currentRef=useRef(0),repeatRef=useRef(repeat),resume=useRef<{time:number;playing:boolean}|null>(null),actions=useRef<{play:()=>void;pause:()=>void;next:()=>void;previous:()=>void}>({play:()=>{},pause:()=>{},next:()=>{},previous:()=>{}});
  const track=tracks[current];repeatRef.current=repeat;
  const source=(index:number)=>mode==='audio'?`/videos/unit${tracks[index].unit}-song.m4a`:tracks[index].clip.src;
  function play(){setError('');void media.current?.play().catch(()=>{setPlaying(false);setError('재생 버튼을 다시 눌러주세요.')})}

@@ -38,5 +38,19 @@
       "poster": "/videos/unit3-song.jpg",
       "duration": "28 sec"
     }
+  },
+  "unit4": {
+    "story": {
+      "title": "Story",
+      "src": "/videos/unit4-story.mp4",
+      "poster": "/videos/unit4-story.jpg",
+      "duration": "31 sec"
+    },
+    "song": {
+      "title": "Song",
+      "src": "/videos/unit4-song.mp4",
+      "poster": "/videos/unit4-song.jpg",
+      "duration": "32 sec"
+    }
   }
 }

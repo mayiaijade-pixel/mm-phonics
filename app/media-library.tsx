@@ -3,7 +3,7 @@ import {useState} from 'react';
 import {ArrowLeft,Film,Music,Play} from 'lucide-react';
 import videos from './lesson-videos.json';
 import SongPlaylist from './song-playlist';
-const collections=[{unit:1,title:'Four Seasons',clips:videos},{unit:2,title:'The Name Game',clips:videos.unit2},{unit:3,title:'Let’s Go Together!',clips:videos.unit3}];
+const collections=[{unit:1,title:'Four Seasons',clips:videos},{unit:2,title:'The Name Game',clips:videos.unit2},{unit:3,title:'Let’s Go Together!',clips:videos.unit3},{unit:4,title:'Camping Time!',clips:videos.unit4}];
 export default function MediaLibrary({kind,onHome}:{kind:'story'|'song';onHome:()=>void}){
  const [selected,setSelected]=useState<number|null>(null);
  const unitLabel=(unit:number)=>`Unit ${unit} · Long ${unit>=3?'i (i+e)':'a (a+e)'}`;
