@@ -1,8 +1,143 @@
 {
+  "u8-blend-bl": [
+    {
+      "text": "b, l, bl, black.",
+      "audio": "/audio/blends/bl-user-d9e701541fab.mp3",
+      "speaker": "mimi",
+      "nativePlayback": true,
+      "pauseAfterMs": 0
+    }
+  ],
+  "u8-blend-cl": [
+    {
+      "text": "c, l, cl, clap.",
+      "audio": "/audio/blends/cl-user-fd673ae0150a.mp3",
+      "speaker": "mimi",
+      "nativePlayback": true,
+      "pauseAfterMs": 0
+    }
+  ],
+  "u8-blend-fl": [
+    {
+      "text": "f, l, fl, flag.",
+      "audio": "/audio/blends/fl-user-b9be8f38ee30.mp3",
+      "speaker": "mimi",
+      "nativePlayback": true,
+      "pauseAfterMs": 0
+    }
+  ],
+  "u9-blend-gl": [
+    {
+      "text": "g, l, gl, glass.",
+      "audio": "/audio/blends/gl-user-b16d6b9b42cc.mp3",
+      "speaker": "mimi",
+      "nativePlayback": true,
+      "pauseAfterMs": 0
+    }
+  ],
+  "u9-blend-pl": [
+    {
+      "text": "p, l, pl, plane.",
+      "audio": "/audio/blends/pl-user-9b696063e146.mp3",
+      "speaker": "mimi",
+      "nativePlayback": true,
+      "pauseAfterMs": 0
+    }
+  ],
+  "u9-blend-sl": [
+    {
+      "text": "s, l, sl, sled.",
+      "audio": "/audio/blends/sl-user-8e03486facb8.mp3",
+      "speaker": "mimi",
+      "nativePlayback": true,
+      "pauseAfterMs": 0
+    }
+  ],
   "u10-blend-br": [
     {
       "text": "b, r, br, brave.",
       "audio": "/audio/blends/br-user-c63925381cc3.mp3",
+      "speaker": "mimi",
+      "nativePlayback": true,
+      "pauseAfterMs": 0
+    }
+  ],
+  "u10-blend-cr": [
+    {
+      "text": "c, r, cr, crab.",
+      "audio": "/audio/blends/cr-user-d864c16d9617.mp3",
+      "speaker": "mimi",
+      "nativePlayback": true,
+      "pauseAfterMs": 0
+    }
+  ],
+  "u10-blend-fr": [
+    {
+      "text": "f, r, fr, frame.",
+      "audio": "/audio/blends/fr-user-90deb5253719.mp3",
+      "speaker": "mimi",
+      "nativePlayback": true,
+      "pauseAfterMs": 0
+    }
+  ],
+  "u11-blend-dr": [
+    {
+      "text": "d, r, dr, dragon.",
+      "audio": "/audio/blends/dr-user-86bc37f8eb05.mp3",
+      "speaker": "mimi",
+      "nativePlayback": true,
+      "pauseAfterMs": 0
+    }
+  ],
+  "u11-blend-pr": [
+    {
+      "text": "p, r, pr, press.",
+      "audio": "/audio/blends/pr-user-c58b54ed4029.mp3",
+      "speaker": "mimi",
+      "nativePlayback": true,
+      "pauseAfterMs": 0
+    }
+  ],
+  "u11-blend-tr": [
+    {
+      "text": "t, r, tr, track.",
+      "audio": "/audio/blends/tr-user-877096a10541.mp3",
+      "speaker": "mimi",
+      "nativePlayback": true,
+      "pauseAfterMs": 0
+    }
+  ],
+  "u12-blend-sm": [
+    {
+      "text": "s, m, sm, smell.",
+      "audio": "/audio/blends/sm-user-85d89cc242c2.mp3",
+      "speaker": "mimi",
+      "nativePlayback": true,
+      "pauseAfterMs": 0
+    }
+  ],
+  "u12-blend-sn": [
+    {
+      "text": "s, n, sn, snack.",
+      "audio": "/audio/blends/sn-user-6f672724116f.mp3",
+      "speaker": "mimi",
+      "nativePlayback": true,
+      "pauseAfterMs": 0
+    }
+  ],
+  "u12-blend-st": [
+    {
+      "text": "s, t, st, stone.",
+      "audio": "/audio/blends/st-user-8d3b9179f713.mp3",
+      "speaker": "mimi",
+      "nativePlayback": true,
+      "pauseAfterMs": 0
+    }
+  ],
+  "u12-blend-sw": [
+    {
+      "text": "s, w, sw, swan.",
+      "audio": "/audio/blends/sw-user-09eb4f3de3ea.mp3",
       "speaker": "mimi",
       "nativePlayback": true,
       "pauseAfterMs": 0

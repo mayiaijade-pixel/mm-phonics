@@ -17,7 +17,7 @@ for(const unit of [8,9,10,11,12]){
   groups++;const key=`u${unit}-blend-${family}`,lines=segments[key];
   if(overrides[key]){
    assert.deepEqual(lines,overrides[key]);assert.equal(lines.length,1,'complete recording plays once without synthetic additions');
-   assert.equal(lines[0].text,'b, r, br, brave.');assert.equal(lines[0].nativePlayback,true);assert.equal(lines[0].pauseAfterMs,0);
+   assert.equal(lines[0].text,`${family[0]}, ${family[1]}, ${family}, ${word}.`);assert.equal(lines[0].nativePlayback,true);assert.equal(lines[0].pauseAfterMs,0);
    assert.ok(fs.statSync('public'+lines[0].audio).size>1000);continue;
   }
   assert.equal(lines.length,3);
@@ -31,7 +31,7 @@ for(const unit of [8,9,10,11,12]){
  }
  const first=Object.keys(expected[unit])[0];assert.deepEqual(intro.slice(3),segments[`u${unit}-blend-${first}`],'first picture gets its own example after the explanation');
 }
-assert.equal(groups,16);assert.deepEqual(segments['u12-blend-sn'].map(s=>s.text),['/sn/','/sn/','snack.']);
+assert.equal(groups,16);assert.equal(Object.keys(overrides).length,16);assert.deepEqual(segments['u12-blend-sn'].map(s=>s.text),['s, n, sn, snack.']);
 assert.equal(sounds.sn.phonemes,'S N');assert.equal(sounds.sn.phonemes.match(/[0-2]/),null,'no vowel or letter-name phonemes in sn');
 const lesson=fs.readFileSync('app/lesson.tsx','utf8');assert.match(lesson,/sentence\.pauseAfterMs\?\?tutorGap/);assert.match(lesson,/sentence\.nativePlayback/);assert.match(lesson,/WORDS\.find\(w=>'family' in w&&w.family===family\)\?\.word/);assert.ok(lesson.includes('playGreeting(corgi&&p.step===2?`u${activeUnit}-blend-${config?.families[blendIndex]}`'),'replay follows the displayed family');
 console.log('PASS: 16 groups use matching examples; complete user recordings play once at native speed; first-entry and replay stay aligned');
