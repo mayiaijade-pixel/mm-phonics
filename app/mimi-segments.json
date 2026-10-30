@@ -2570,14 +2570,14 @@
     },
     {
       "text": "/bl/",
-      "audio": "/audio/blends/bl-c5557b94a24f.mp3",
+      "audio": "/audio/blends/bl-29e2b147d26a.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 400
     },
     {
       "text": "/bl/",
-      "audio": "/audio/blends/bl-c5557b94a24f.mp3",
+      "audio": "/audio/blends/bl-29e2b147d26a.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 600
@@ -2645,14 +2645,14 @@
   "u8-blend-bl": [
     {
       "text": "/bl/",
-      "audio": "/audio/blends/bl-c5557b94a24f.mp3",
+      "audio": "/audio/blends/bl-29e2b147d26a.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 400
     },
     {
       "text": "/bl/",
-      "audio": "/audio/blends/bl-c5557b94a24f.mp3",
+      "audio": "/audio/blends/bl-29e2b147d26a.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 600
@@ -2667,14 +2667,14 @@
   "u8-blend-cl": [
     {
       "text": "/kl/",
-      "audio": "/audio/blends/cl-276df30d2306.mp3",
+      "audio": "/audio/blends/cl-3dcb7d72f83d.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 400
     },
     {
       "text": "/kl/",
-      "audio": "/audio/blends/cl-276df30d2306.mp3",
+      "audio": "/audio/blends/cl-3dcb7d72f83d.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 600
@@ -2689,14 +2689,14 @@
   "u8-blend-fl": [
     {
       "text": "/fl/",
-      "audio": "/audio/blends/fl-7bdae6ed91df.mp3",
+      "audio": "/audio/blends/fl-3d1270599916.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 400
     },
     {
       "text": "/fl/",
-      "audio": "/audio/blends/fl-7bdae6ed91df.mp3",
+      "audio": "/audio/blends/fl-3d1270599916.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 600
@@ -3071,14 +3071,14 @@
     },
     {
       "text": "/ɡl/",
-      "audio": "/audio/blends/gl-52c6565311e9.mp3",
+      "audio": "/audio/blends/gl-5bd0b7481213.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 400
     },
     {
       "text": "/ɡl/",
-      "audio": "/audio/blends/gl-52c6565311e9.mp3",
+      "audio": "/audio/blends/gl-5bd0b7481213.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 600
@@ -3146,14 +3146,14 @@
   "u9-blend-gl": [
     {
       "text": "/ɡl/",
-      "audio": "/audio/blends/gl-52c6565311e9.mp3",
+      "audio": "/audio/blends/gl-5bd0b7481213.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 400
     },
     {
       "text": "/ɡl/",
-      "audio": "/audio/blends/gl-52c6565311e9.mp3",
+      "audio": "/audio/blends/gl-5bd0b7481213.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 600
@@ -3168,14 +3168,14 @@
   "u9-blend-pl": [
     {
       "text": "/pl/",
-      "audio": "/audio/blends/pl-6434f4cdbf58.mp3",
+      "audio": "/audio/blends/pl-93fd8232312a.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 400
     },
     {
       "text": "/pl/",
-      "audio": "/audio/blends/pl-6434f4cdbf58.mp3",
+      "audio": "/audio/blends/pl-93fd8232312a.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 600
@@ -3190,14 +3190,14 @@
   "u9-blend-sl": [
     {
       "text": "/sl/",
-      "audio": "/audio/blends/sl-c15816ef59d0.mp3",
+      "audio": "/audio/blends/sl-6da1305102e9.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 400
     },
     {
       "text": "/sl/",
-      "audio": "/audio/blends/sl-c15816ef59d0.mp3",
+      "audio": "/audio/blends/sl-6da1305102e9.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 600
@@ -3579,14 +3579,14 @@
     },
     {
       "text": "/br/",
-      "audio": "/audio/blends/br-43eff75eb864.mp3",
+      "audio": "/audio/blends/br-38124c82f40c.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 400
     },
     {
       "text": "/br/",
-      "audio": "/audio/blends/br-43eff75eb864.mp3",
+      "audio": "/audio/blends/br-38124c82f40c.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 600
@@ -3654,14 +3654,14 @@
   "u10-blend-br": [
     {
       "text": "/br/",
-      "audio": "/audio/blends/br-43eff75eb864.mp3",
+      "audio": "/audio/blends/br-38124c82f40c.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 400
     },
     {
       "text": "/br/",
-      "audio": "/audio/blends/br-43eff75eb864.mp3",
+      "audio": "/audio/blends/br-38124c82f40c.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 600
@@ -3676,14 +3676,14 @@
   "u10-blend-cr": [
     {
       "text": "/kr/",
-      "audio": "/audio/blends/cr-14e5869f6474.mp3",
+      "audio": "/audio/blends/cr-b42f75fb15e5.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 400
     },
     {
       "text": "/kr/",
-      "audio": "/audio/blends/cr-14e5869f6474.mp3",
+      "audio": "/audio/blends/cr-b42f75fb15e5.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 600
@@ -3698,14 +3698,14 @@
   "u10-blend-fr": [
     {
       "text": "/fr/",
-      "audio": "/audio/blends/fr-4458bfc8fa73.mp3",
+      "audio": "/audio/blends/fr-b3541a5d9465.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 400
     },
     {
       "text": "/fr/",
-      "audio": "/audio/blends/fr-4458bfc8fa73.mp3",
+      "audio": "/audio/blends/fr-b3541a5d9465.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 600
@@ -4080,14 +4080,14 @@
     },
     {
       "text": "/dr/",
-      "audio": "/audio/blends/dr-a91e5295cd9b.mp3",
+      "audio": "/audio/blends/dr-31c57a65cda1.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 400
     },
     {
       "text": "/dr/",
-      "audio": "/audio/blends/dr-a91e5295cd9b.mp3",
+      "audio": "/audio/blends/dr-31c57a65cda1.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 600
@@ -4155,14 +4155,14 @@
   "u11-blend-dr": [
     {
       "text": "/dr/",
-      "audio": "/audio/blends/dr-a91e5295cd9b.mp3",
+      "audio": "/audio/blends/dr-31c57a65cda1.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 400
     },
     {
       "text": "/dr/",
-      "audio": "/audio/blends/dr-a91e5295cd9b.mp3",
+      "audio": "/audio/blends/dr-31c57a65cda1.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 600
@@ -4177,14 +4177,14 @@
   "u11-blend-pr": [
     {
       "text": "/pr/",
-      "audio": "/audio/blends/pr-888b909094ee.mp3",
+      "audio": "/audio/blends/pr-88e49f796b98.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 400
     },
     {
       "text": "/pr/",
-      "audio": "/audio/blends/pr-888b909094ee.mp3",
+      "audio": "/audio/blends/pr-88e49f796b98.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 600
@@ -4199,14 +4199,14 @@
   "u11-blend-tr": [
     {
       "text": "/tr/",
-      "audio": "/audio/blends/tr-0d776b1d923b.mp3",
+      "audio": "/audio/blends/tr-6c1b18039319.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 400
     },
     {
       "text": "/tr/",
-      "audio": "/audio/blends/tr-0d776b1d923b.mp3",
+      "audio": "/audio/blends/tr-6c1b18039319.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 600
@@ -4581,14 +4581,14 @@
     },
     {
       "text": "/sm/",
-      "audio": "/audio/blends/sm-be188c36e848.mp3",
+      "audio": "/audio/blends/sm-07694bfe11a0.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 400
     },
     {
       "text": "/sm/",
-      "audio": "/audio/blends/sm-be188c36e848.mp3",
+      "audio": "/audio/blends/sm-07694bfe11a0.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 600
@@ -4656,14 +4656,14 @@
   "u12-blend-sm": [
     {
       "text": "/sm/",
-      "audio": "/audio/blends/sm-be188c36e848.mp3",
+      "audio": "/audio/blends/sm-07694bfe11a0.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 400
     },
     {
       "text": "/sm/",
-      "audio": "/audio/blends/sm-be188c36e848.mp3",
+      "audio": "/audio/blends/sm-07694bfe11a0.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 600
@@ -4678,14 +4678,14 @@
   "u12-blend-sn": [
     {
       "text": "/sn/",
-      "audio": "/audio/blends/sn-d4f10b0ef781.mp3",
+      "audio": "/audio/blends/sn-646358d8de50.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 400
     },
     {
       "text": "/sn/",
-      "audio": "/audio/blends/sn-d4f10b0ef781.mp3",
+      "audio": "/audio/blends/sn-646358d8de50.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 600
@@ -4700,14 +4700,14 @@
   "u12-blend-st": [
     {
       "text": "/st/",
-      "audio": "/audio/blends/st-3da466e681cd.mp3",
+      "audio": "/audio/blends/st-0d24fe69c9e1.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 400
     },
     {
       "text": "/st/",
-      "audio": "/audio/blends/st-3da466e681cd.mp3",
+      "audio": "/audio/blends/st-0d24fe69c9e1.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 600
@@ -4722,14 +4722,14 @@
   "u12-blend-sw": [
     {
       "text": "/sw/",
-      "audio": "/audio/blends/sw-cb3e0f75dd9d.mp3",
+      "audio": "/audio/blends/sw-115300db8871.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 400
     },
     {
       "text": "/sw/",
-      "audio": "/audio/blends/sw-cb3e0f75dd9d.mp3",
+      "audio": "/audio/blends/sw-115300db8871.mp3",
       "speaker": "corgi",
       "nativePlayback": true,
       "pauseAfterMs": 600

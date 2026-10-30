@@ -28,3 +28,9 @@ assert.equal(groups,16);assert.deepEqual(segments['u12-blend-sn'].map(s=>s.text)
 assert.equal(sounds.sn.phonemes,'S N');assert.equal(sounds.sn.phonemes.match(/[0-2]/),null,'no vowel or letter-name phonemes in sn');
 const lesson=fs.readFileSync('app/lesson.tsx','utf8');assert.match(lesson,/sentence\.pauseAfterMs\?\?tutorGap/);assert.match(lesson,/sentence\.nativePlayback/);assert.match(lesson,/WORDS\.find\(w=>'family' in w&&w.family===family\)\?\.word/);assert.ok(lesson.includes('playGreeting(corgi&&p.step===2?`u${activeUnit}-blend-${config?.families[blendIndex]}`'),'replay follows the displayed family');
 console.log('PASS: 16 groups play blend twice + one matching word; no other example names; first-entry and selected-family replay stay aligned');
+
+for(const [family,sound]of Object.entries(sounds)){
+ assert.equal(sound.synthesisPhonemes,sound.phonemes+' AH0');
+ assert.equal(sound.release,'short-schwa');
+ if(family.endsWith('l'))assert.equal(sound.synthesisPhonemes.split(' ').at(-2),'L','keep L before the short release');
+}
