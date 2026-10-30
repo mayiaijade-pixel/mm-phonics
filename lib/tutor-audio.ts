@@ -1,4 +1,7 @@
 import measured from '../app/tutor-timing.json';
+import mobile from '../app/tutor-mobile-audio.json';
+const nativeBlobs=new Set<string>();
+let activeTutor:HTMLAudioElement|null=null;
 export type TutorTiming={start:number;pauses:[number,number][]};
 const dynamicTimings=new Map<string,TutorTiming>();
 export const tutorRate=(corgi:boolean)=>corgi?.8:.9;
@@ -17,15 +20,24 @@ export function timingFromSamples(samples:Float32Array,sampleRate:number):TutorT
  const tail=voiced[voiced.length-1]+.13,duration=samples.length/sampleRate;if(duration-tail>=.08)pauses.push([tail,duration]);
  return {start:Math.max(0,voiced[0]-.06),pauses};
 }
-export async function registerTutorBlob(source:string,blob:Blob){
+export async function registerTutorBlob(source:string,blob:Blob,nativePlayback=false){
+ if(nativePlayback){nativeBlobs.add(source);return}
  try{if(!window.OfflineAudioContext)return;const context=new OfflineAudioContext(1,1,16000);const buffer=await context.decodeAudioData(await blob.arrayBuffer());const timing=timingFromSamples(buffer.getChannelData(0),buffer.sampleRate);if(timing)dynamicTimings.set(source,timing)}catch{/* Decoding support must never prevent playback. */}
 }
 export function createTutorAudio(source:string,corgi:boolean){
- const audio=new Audio(source),rate=tutorRate(corgi);
+ const prepared=(mobile as Record<string,string>)[(corgi?'corgi:':'mimi:')+source];
+ const nativePlayback=!!prepared||nativeBlobs.has(source);
+ const audio=new Audio(prepared||source),rate=nativePlayback?1:tutorRate(corgi);
+ // One owner even when replay/autoplay requests arrive before play() settles.
+ const play=audio.play.bind(audio);
+ audio.play=()=>{if(activeTutor&&activeTutor!==audio)activeTutor.pause();activeTutor=audio;return play()};
+ audio.addEventListener('play',()=>{if(activeTutor!==audio)audio.pause()});
+ const release=()=>{if(activeTutor===audio)activeTutor=null};
+ audio.addEventListener('pause',release);audio.addEventListener('ended',release);audio.addEventListener('error',release);
  audio.defaultPlaybackRate=rate;audio.playbackRate=rate;audio.preservesPitch=true;
  (audio as HTMLAudioElement&{webkitPreservesPitch?:boolean}).webkitPreservesPitch=true;
  const timing=dynamicTimings.get(source)||(measured as unknown as Record<string,TutorTiming>)[source];
- if(timing){
+ if(timing&&!nativePlayback){
   audio.addEventListener('loadedmetadata',()=>{if(timing.start>0&&timing.start<audio.duration)audio.currentTime=timing.start},{once:true});
   let frame=0;
   const stop=()=>cancelAnimationFrame(frame);

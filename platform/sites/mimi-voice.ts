@@ -29,7 +29,8 @@ export async function POST(request:Request){
  const speaker=scene?(segments as Record<string,{speaker?:string}[]>)[scene]?.[index]?.speaker:undefined;
  const voice=(speaker?speaker==='corgi':isCorgiScene(scene)||(unit>=8&&unit<=12))?CORGI_VOICE_ID:runtime.ELEVENLABS_VOICE_ID||'BlgEcC0TfWpBak7FmvHW';
  if(!runtime.ELEVENLABS_API_KEY)return fail();
- const speed=scene==='greeting'||['u2-0','u3-0','u4-0','u5-0','u6-0','u7-0','u8-0','u9-0','u10-0','u11-0','u12-0'].includes(scene||'')?1:.86;
+ const baseSpeed=scene==='greeting'||['u2-0','u3-0','u4-0','u5-0','u6-0','u7-0','u8-0','u9-0','u10-0','u11-0','u12-0'].includes(scene||'')?1:.86;
+ const speed=unit>=8&&unit<=12?Math.max(.7,baseSpeed*(voice===CORGI_VOICE_ID?.8:.9)):baseSpeed;
  const db=getDatabase();const now=Date.now();
  const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify([user.userId,voice,spoken,'flash-v2',speed])));const id=Array.from(new Uint8Array(digest),b=>b.toString(16).padStart(2,'0')).join('');
  try{
