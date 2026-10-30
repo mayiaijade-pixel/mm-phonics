@@ -10,7 +10,7 @@ assert.equal(ready(5,true,false,false,false,2),false);assert.equal(ready(5,true,
 const src=fs.readFileSync('app/lesson.tsx','utf8');
 assert.match(src,/if\(index>=clips.length\)\{setSpeaking\(false\);setNarrationDone\(true\)/);
 assert.match(src,/nextReady&&!speaking\?'guided-glow'/);
-assert.match(src,/disabled=\{!nextReady\|\|recording\}/);
+assert.match(src,/disabled=\{!nextReady\|\|recording\|\|startingRecording\|\|checking\}/);
 console.log('PASS: narration-to-Next cue, activity gating, mute/error escape and quiz completion');
 // Drive actual narration callbacks: no pulse between sentences or after leaving a scene.
 const lesson=fs.readFileSync('app/lesson.tsx','utf8');
