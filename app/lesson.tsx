@@ -6,7 +6,7 @@ import BlendPicture from './blend-picture';
 import TutorDuo from './tutor-duo';
 import {watchSpeechEnd} from '../lib/recording-endpoint';
 import {nextLessonReady} from '../lib/lesson-guidance';
-type NarrationClip={text:string;audio:string;speaker?:'mimi'|'corgi'};
+type NarrationClip={text:string;audio:string;speaker?:'mimi'|'corgi';pauseAfterMs?:number};
 import {createTutorAudio,registerTutorBlob,tutorGap} from '../lib/tutor-audio';
 import {BLEND_UNITS,blendWord,CORGI_IMAGE} from '../lib/blend-units';
 import corgiAudio from './corgi-audio.json';
@@ -122,7 +122,7 @@ export default function Page(){
    }
    const clip=createTutorAudio(source,sentence.speaker?sentence.speaker==='corgi':corgi);greetingAudio.current=clip;clip.preload='auto';playing.current=clip;
    clip.onplaying=()=>{setActiveSpeaker(sentence.speaker||(corgi?'corgi':'mimi'));if(corgi&&p.step===0&&index>=2)setKogiJoined(true);setGreetingLine(index);setSpokenCaption(sentence.text.replaceAll('Jenny',p.name));greetingPending.current=false;setSpeaking(true)};
-   clip.onended=()=>{if(generation!==audioGeneration.current)return;const wait=tutorGap(p.step===0?120:180);setTimeout(()=>playLine(index+1),wait)};
+   clip.onended=()=>{if(generation!==audioGeneration.current)return;const wait=sentence.pauseAfterMs??tutorGap(p.step===0?120:180);setTimeout(()=>playLine(index+1),wait)};
    clip.onerror=()=>{if(generation===audioGeneration.current){setSpeaking(false);setNarrationDone(true);setNotice('안내 음성을 불러오지 못했어요. 다시 듣거나 다음으로 넘어가 주세요.')}};
    clip.play().catch(()=>{if(generation===audioGeneration.current){setSpeaking(false);greetingPending.current=true}});
   }

@@ -12,14 +12,14 @@ for unit,words,families,start,end in [(8,list(SOUNDS)[:9],['bl','cl','fl'],50,55
  prefix=f'u{unit}-';first=words[0]
  scenes[prefix+'0']=['Hi, Jenny!',"I'm Mimi!","I'm Kogi!","We'll blend two letters and two sounds!"]
  scenes[prefix+'1']=[f'Look at {first}!',f'Listen to the first two sounds in {first}.',f'Now say {first} with me!']
- scenes[prefix+'2']=['Keep both sounds.','Blend them smoothly!']
+ scenes[prefix+'2']=['Keep both sounds.','Blend them smoothly!','Keep both beginning sounds together!']
  scenes[prefix+'3']=[f'Listen to {first}.','Blend the first two sounds.',f'Now say {first} with me!']
  scenes[prefix+'5']=['Listen carefully.','Which picture matches the word?']
  scenes[prefix+'7']=['Great job, Jenny!','You earned three stars!',f'For homework, complete Unit {unit}, pages {start} to {end}, in Speed Phonics Book 2!']
  scenes[prefix+'homework']=[f'For homework, complete Unit {unit}, pages {start} to {end}, in Speed Phonics Book 2!']
  for group,family in enumerate(families):
   group_words=[w for w in words if w.startswith(family)]
-  scenes[prefix+'blend-'+family]=['Listen: '+', '.join(group_words)+'.','Keep both beginning sounds together!']
+  scenes[prefix+'blend-'+family]=group_words
  for word in words:
   scenes[prefix+'4-'+word]=[f'Jenny, listen to {word}.','Say it with me!']
   scenes['corgi-feedback-'+word]=['Good job! You did it!',f'Listen to {word}. Blend both beginning sounds.',f'Good try! Listen to {word}, then say it again.',"I couldn't hear clearly. Let's try again!"]
@@ -28,12 +28,14 @@ audio={'Yes, Jenny! You found it! Great job!':None,"Let's listen one more time. 
 def speaker(scene,index):
  if not re.match(r'u(?:8|9|10|11|12)-',scene):return 'corgi'
  if scene.endswith('-0'):return 'corgi' if index==2 else 'mimi'
+ if '-blend-' in scene:return 'corgi'
+ if scene.endswith('-2'):return 'mimi' if index==0 else 'corgi'
  match=re.match(r'u(10|11|12)-4-(.+)',scene)
  if match:
   return 'mimi' if MOTIONS[match[2]]['actor']=='Mimi' else 'corgi'
  return 'mimi' if index%2==0 else 'corgi'
 def voice_for(scene,index):return MIMI if speaker(scene,index)=='mimi' else VOICE
-items={(word,.8,VOICE) for word in SOUNDS}|{(text,1 if scene.endswith('-0') else .92,voice_for(scene,index)) for scene,lines in scenes.items() for index,text in enumerate(lines)}|{(text,.95,VOICE) for text in audio}
+items={(word,.8,VOICE) for word in SOUNDS}|{(text,1 if scene.endswith('-0') else .92,voice_for(scene,index)) for scene,lines in scenes.items() if '-blend-' not in scene for index,text in enumerate(lines)}|{(text,.95,VOICE) for text in audio}
 cfg={}
 for line in Path('.env.local').read_text().splitlines():
  if '=' in line and not line.startswith('#'):
@@ -62,7 +64,9 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
   lookup[item]=url
   if i%10==0:print(f'{i+1}/{len(items)} Kogi recordings ready',flush=True)
 segments=json.loads(Path('app/mimi-segments.json').read_text())
-for scene,lines in scenes.items():segments[scene]=[{'text':text,'audio':lookup[(text,1 if scene.endswith('-0') else .92,voice_for(scene,index))],'speaker':speaker(scene,index)} for index,text in enumerate(lines)]
+for scene,lines in scenes.items():
+ if '-blend-' in scene:segments[scene]=[{'text':word+'.','audio':lookup[(word,.8,VOICE)],'speaker':'corgi','pauseAfterMs':700} for word in lines]
+ else:segments[scene]=[{'text':text,'audio':lookup[(text,1 if scene.endswith('-0') else .92,voice_for(scene,index))],'speaker':speaker(scene,index)} for index,text in enumerate(lines)]
 for word in SOUNDS:audio[word]=lookup[(word,.8,VOICE)]
 for text in list(audio):
  if audio[text] is None:audio[text]=lookup[(text,.95,VOICE)]

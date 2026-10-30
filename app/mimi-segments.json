@@ -2562,6 +2562,11 @@
       "text": "Blend them smoothly!",
       "audio": "/audio/corgi/7e303d2ad08c064c33ca.mp3",
       "speaker": "corgi"
+    },
+    {
+      "text": "Keep both beginning sounds together!",
+      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
+      "speaker": "corgi"
     }
   ],
   "u8-3": [
@@ -2619,38 +2624,62 @@
   ],
   "u8-blend-bl": [
     {
-      "text": "Listen: black, block, blue.",
-      "audio": "/audio/corgi/dee25febf55b574d47dd.mp3",
-      "speaker": "mimi"
+      "text": "black.",
+      "audio": "/audio/corgi/68671acc4e4c137f9bb2.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     },
     {
-      "text": "Keep both beginning sounds together!",
-      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
-      "speaker": "corgi"
+      "text": "block.",
+      "audio": "/audio/corgi/f01ce29f77e0d0725d83.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
+    },
+    {
+      "text": "blue.",
+      "audio": "/audio/corgi/f36be1d660f7bfb02510.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     }
   ],
   "u8-blend-cl": [
     {
-      "text": "Listen: clap, cliff, clock.",
-      "audio": "/audio/corgi/bdff8cd13a7c86a78c33.mp3",
-      "speaker": "mimi"
+      "text": "clap.",
+      "audio": "/audio/corgi/9c7e0cadd6668c3e8baa.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     },
     {
-      "text": "Keep both beginning sounds together!",
-      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
-      "speaker": "corgi"
+      "text": "cliff.",
+      "audio": "/audio/corgi/ba756b1c337d5da1ba02.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
+    },
+    {
+      "text": "clock.",
+      "audio": "/audio/corgi/b8a43296f3b46c1f030b.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     }
   ],
   "u8-blend-fl": [
     {
-      "text": "Listen: flag, flap, flute.",
-      "audio": "/audio/corgi/e68e979c1bccee8df077.mp3",
-      "speaker": "mimi"
+      "text": "flag.",
+      "audio": "/audio/corgi/47508cae8d10f4d45f16.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     },
     {
-      "text": "Keep both beginning sounds together!",
-      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
-      "speaker": "corgi"
+      "text": "flap.",
+      "audio": "/audio/corgi/cf8d2d6254c8fd7f6221.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
+    },
+    {
+      "text": "flute.",
+      "audio": "/audio/corgi/da883eb7a5a4eed35277.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     }
   ],
   "u8-4-black": [
@@ -3008,6 +3037,11 @@
       "text": "Blend them smoothly!",
       "audio": "/audio/corgi/7e303d2ad08c064c33ca.mp3",
       "speaker": "corgi"
+    },
+    {
+      "text": "Keep both beginning sounds together!",
+      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
+      "speaker": "corgi"
     }
   ],
   "u9-3": [
@@ -3065,38 +3099,62 @@
   ],
   "u9-blend-gl": [
     {
-      "text": "Listen: glass, globe, glue.",
-      "audio": "/audio/corgi/323743918395df88d5d8.mp3",
-      "speaker": "mimi"
+      "text": "glass.",
+      "audio": "/audio/corgi/220fd551c90d97ce14d2.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     },
     {
-      "text": "Keep both beginning sounds together!",
-      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
-      "speaker": "corgi"
+      "text": "globe.",
+      "audio": "/audio/corgi/6075482d65d11d0dfa37.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
+    },
+    {
+      "text": "glue.",
+      "audio": "/audio/corgi/2303271c38822e95118f.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     }
   ],
   "u9-blend-pl": [
     {
-      "text": "Listen: plane, plate, plum.",
-      "audio": "/audio/corgi/a1690a103592e4041ca3.mp3",
-      "speaker": "mimi"
+      "text": "plane.",
+      "audio": "/audio/corgi/030bb620041d5c54f6c8.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     },
     {
-      "text": "Keep both beginning sounds together!",
-      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
-      "speaker": "corgi"
+      "text": "plate.",
+      "audio": "/audio/corgi/6c953012cfa5c62e5d40.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
+    },
+    {
+      "text": "plum.",
+      "audio": "/audio/corgi/a3916e39ac2abdfb9d70.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     }
   ],
   "u9-blend-sl": [
     {
-      "text": "Listen: sled, slide, slim.",
-      "audio": "/audio/corgi/0ea2819d10b1cf10de93.mp3",
-      "speaker": "mimi"
+      "text": "sled.",
+      "audio": "/audio/corgi/90f1bc3df1a0e6a2db2f.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     },
     {
-      "text": "Keep both beginning sounds together!",
-      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
-      "speaker": "corgi"
+      "text": "slide.",
+      "audio": "/audio/corgi/fe9da14f0e38ee847fd6.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
+    },
+    {
+      "text": "slim.",
+      "audio": "/audio/corgi/05bb38c6da87ce10082f.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     }
   ],
   "u9-4-glass": [
@@ -3461,6 +3519,11 @@
       "text": "Blend them smoothly!",
       "audio": "/audio/corgi/7e303d2ad08c064c33ca.mp3",
       "speaker": "corgi"
+    },
+    {
+      "text": "Keep both beginning sounds together!",
+      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
+      "speaker": "corgi"
     }
   ],
   "u10-3": [
@@ -3518,38 +3581,62 @@
   ],
   "u10-blend-br": [
     {
-      "text": "Listen: brave, brick, bride.",
-      "audio": "/audio/corgi/b00372b196e4d3940db5.mp3",
-      "speaker": "mimi"
+      "text": "brave.",
+      "audio": "/audio/corgi/3b87e2ad9615d86984e1.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     },
     {
-      "text": "Keep both beginning sounds together!",
-      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
-      "speaker": "corgi"
+      "text": "brick.",
+      "audio": "/audio/corgi/e6516fdc0a4fe73ffde1.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
+    },
+    {
+      "text": "bride.",
+      "audio": "/audio/corgi/03ba70472495b6a03fbc.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     }
   ],
   "u10-blend-cr": [
     {
-      "text": "Listen: crab, crack, crane.",
-      "audio": "/audio/corgi/564b1070a5ca60401687.mp3",
-      "speaker": "mimi"
+      "text": "crab.",
+      "audio": "/audio/corgi/105029455000440b0bef.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     },
     {
-      "text": "Keep both beginning sounds together!",
-      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
-      "speaker": "corgi"
+      "text": "crack.",
+      "audio": "/audio/corgi/5ad147f3da116098ec6c.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
+    },
+    {
+      "text": "crane.",
+      "audio": "/audio/corgi/b47dffd61ce59226be2d.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     }
   ],
   "u10-blend-fr": [
     {
-      "text": "Listen: frame, frog, frost.",
-      "audio": "/audio/corgi/454b71d5907a7ea6683c.mp3",
-      "speaker": "mimi"
+      "text": "frame.",
+      "audio": "/audio/corgi/38d33c4e53845cb4c570.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     },
     {
-      "text": "Keep both beginning sounds together!",
-      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
-      "speaker": "corgi"
+      "text": "frog.",
+      "audio": "/audio/corgi/14f93b94ec75d1ae32b6.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
+    },
+    {
+      "text": "frost.",
+      "audio": "/audio/corgi/aa3cff3b464464936dd7.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     }
   ],
   "u10-4-brave": [
@@ -3907,6 +3994,11 @@
       "text": "Blend them smoothly!",
       "audio": "/audio/corgi/7e303d2ad08c064c33ca.mp3",
       "speaker": "corgi"
+    },
+    {
+      "text": "Keep both beginning sounds together!",
+      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
+      "speaker": "corgi"
     }
   ],
   "u11-3": [
@@ -3964,38 +4056,62 @@
   ],
   "u11-blend-dr": [
     {
-      "text": "Listen: dragon, dress, drum.",
-      "audio": "/audio/corgi/392d7d7cea120f898f40.mp3",
-      "speaker": "mimi"
+      "text": "dragon.",
+      "audio": "/audio/corgi/853bc27e5aa99dc44667.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     },
     {
-      "text": "Keep both beginning sounds together!",
-      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
-      "speaker": "corgi"
+      "text": "dress.",
+      "audio": "/audio/corgi/6c9c7b2dc28813e5d1e3.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
+    },
+    {
+      "text": "drum.",
+      "audio": "/audio/corgi/b130b64f5ae9525334fb.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     }
   ],
   "u11-blend-pr": [
     {
-      "text": "Listen: press, print, prize.",
-      "audio": "/audio/corgi/3e7d6c7ff44dc399bf21.mp3",
-      "speaker": "mimi"
+      "text": "press.",
+      "audio": "/audio/corgi/06d0830a18dff9913f2a.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     },
     {
-      "text": "Keep both beginning sounds together!",
-      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
-      "speaker": "corgi"
+      "text": "print.",
+      "audio": "/audio/corgi/38e52b55cf74f23c49da.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
+    },
+    {
+      "text": "prize.",
+      "audio": "/audio/corgi/d2444c13c4f0a5cf06bd.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     }
   ],
   "u11-blend-tr": [
     {
-      "text": "Listen: track, truck, trumpet.",
-      "audio": "/audio/corgi/36b27e64ae4438ff39c8.mp3",
-      "speaker": "mimi"
+      "text": "track.",
+      "audio": "/audio/corgi/c9b3d22edcd31d17d719.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     },
     {
-      "text": "Keep both beginning sounds together!",
-      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
-      "speaker": "corgi"
+      "text": "truck.",
+      "audio": "/audio/corgi/86e25d9d1df13170c469.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
+    },
+    {
+      "text": "trumpet.",
+      "audio": "/audio/corgi/815133213322dbacd8ee.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     }
   ],
   "u11-4-dragon": [
@@ -4353,6 +4469,11 @@
       "text": "Blend them smoothly!",
       "audio": "/audio/corgi/7e303d2ad08c064c33ca.mp3",
       "speaker": "corgi"
+    },
+    {
+      "text": "Keep both beginning sounds together!",
+      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
+      "speaker": "corgi"
     }
   ],
   "u12-3": [
@@ -4410,50 +4531,58 @@
   ],
   "u12-blend-sm": [
     {
-      "text": "Listen: smell, smile.",
-      "audio": "/audio/corgi/daf4a66ff7c9b2088718.mp3",
-      "speaker": "mimi"
+      "text": "smell.",
+      "audio": "/audio/corgi/c3f9adfcbeac3c28012e.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     },
     {
-      "text": "Keep both beginning sounds together!",
-      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
-      "speaker": "corgi"
+      "text": "smile.",
+      "audio": "/audio/corgi/eb12b3561fbc417dfa61.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     }
   ],
   "u12-blend-sn": [
     {
-      "text": "Listen: snack, snake.",
-      "audio": "/audio/corgi/baf722b2d91d42e7dd8b.mp3",
-      "speaker": "mimi"
+      "text": "snack.",
+      "audio": "/audio/corgi/ec1b2eeef0f0d16e711b.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     },
     {
-      "text": "Keep both beginning sounds together!",
-      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
-      "speaker": "corgi"
+      "text": "snake.",
+      "audio": "/audio/corgi/f3f851b489debcd91b16.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     }
   ],
   "u12-blend-st": [
     {
-      "text": "Listen: stone, stop.",
-      "audio": "/audio/corgi/d1a98bbf5beacc09b908.mp3",
-      "speaker": "mimi"
+      "text": "stone.",
+      "audio": "/audio/corgi/12808511de31ba99136f.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     },
     {
-      "text": "Keep both beginning sounds together!",
-      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
-      "speaker": "corgi"
+      "text": "stop.",
+      "audio": "/audio/corgi/faa597c5cc0eca2fad63.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     }
   ],
   "u12-blend-sw": [
     {
-      "text": "Listen: swan, swim.",
-      "audio": "/audio/corgi/4f21c11380531a4ef57f.mp3",
-      "speaker": "mimi"
+      "text": "swan.",
+      "audio": "/audio/corgi/849855089dcfe8c87e72.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     },
     {
-      "text": "Keep both beginning sounds together!",
-      "audio": "/audio/corgi/ce94889f2e459e021fa7.mp3",
-      "speaker": "corgi"
+      "text": "swim.",
+      "audio": "/audio/corgi/4db1c47afc2a5c31f06a.mp3",
+      "speaker": "corgi",
+      "pauseAfterMs": 700
     }
   ],
   "u12-4-smell": [
