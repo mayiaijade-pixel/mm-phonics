@@ -24,9 +24,9 @@ export async function registerTutorBlob(source:string,blob:Blob,nativePlayback=f
  if(nativePlayback){nativeBlobs.add(source);return}
  try{if(!window.OfflineAudioContext)return;const context=new OfflineAudioContext(1,1,16000);const buffer=await context.decodeAudioData(await blob.arrayBuffer());const timing=timingFromSamples(buffer.getChannelData(0),buffer.sampleRate);if(timing)dynamicTimings.set(source,timing)}catch{/* Decoding support must never prevent playback. */}
 }
-export function createTutorAudio(source:string,corgi:boolean){
+export function createTutorAudio(source:string,corgi:boolean,nativePlaybackOverride=false){
  const prepared=(mobile as Record<string,string>)[(corgi?'corgi:':'mimi:')+source];
- const nativePlayback=!!prepared||nativeBlobs.has(source);
+ const nativePlayback=nativePlaybackOverride||!!prepared||nativeBlobs.has(source);
  const audio=new Audio(prepared||source),rate=nativePlayback?1:tutorRate(corgi);
  // One owner even when replay/autoplay requests arrive before play() settles.
  const play=audio.play.bind(audio);

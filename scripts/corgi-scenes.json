@@ -15,7 +15,10 @@
     "u8-2": [
       "Keep both sounds.",
       "Blend them smoothly!",
-      "Keep both beginning sounds together!"
+      "Keep both beginning sounds together!",
+      "/bl/",
+      "/bl/",
+      "black."
     ],
     "u8-3": [
       "Listen to black.",
@@ -35,19 +38,19 @@
       "For homework, complete Unit 8, pages 50 to 55, in Speed Phonics Book 2!"
     ],
     "u8-blend-bl": [
-      "black",
-      "block",
-      "blue"
+      "/bl/",
+      "/bl/",
+      "black."
     ],
     "u8-blend-cl": [
-      "clap",
-      "cliff",
-      "clock"
+      "/kl/",
+      "/kl/",
+      "clap."
     ],
     "u8-blend-fl": [
-      "flag",
-      "flap",
-      "flute"
+      "/fl/",
+      "/fl/",
+      "flag."
     ],
     "u8-4-black": [
       "Jenny, listen to black.",
@@ -153,7 +156,10 @@
     "u9-2": [
       "Keep both sounds.",
       "Blend them smoothly!",
-      "Keep both beginning sounds together!"
+      "Keep both beginning sounds together!",
+      "/ɡl/",
+      "/ɡl/",
+      "glass."
     ],
     "u9-3": [
       "Listen to glass.",
@@ -173,19 +179,19 @@
       "For homework, complete Unit 9, pages 56 to 61, in Speed Phonics Book 2!"
     ],
     "u9-blend-gl": [
-      "glass",
-      "globe",
-      "glue"
+      "/ɡl/",
+      "/ɡl/",
+      "glass."
     ],
     "u9-blend-pl": [
-      "plane",
-      "plate",
-      "plum"
+      "/pl/",
+      "/pl/",
+      "plane."
     ],
     "u9-blend-sl": [
-      "sled",
-      "slide",
-      "slim"
+      "/sl/",
+      "/sl/",
+      "sled."
     ],
     "u9-4-glass": [
       "Jenny, listen to glass.",
@@ -291,7 +297,10 @@
     "u10-2": [
       "Keep both sounds.",
       "Blend them smoothly!",
-      "Keep both beginning sounds together!"
+      "Keep both beginning sounds together!",
+      "/br/",
+      "/br/",
+      "brave."
     ],
     "u10-3": [
       "Listen to brave.",
@@ -311,19 +320,19 @@
       "For homework, complete Unit 10, pages 62 to 67, in Speed Phonics Book 2!"
     ],
     "u10-blend-br": [
-      "brave",
-      "brick",
-      "bride"
+      "/br/",
+      "/br/",
+      "brave."
     ],
     "u10-blend-cr": [
-      "crab",
-      "crack",
-      "crane"
+      "/kr/",
+      "/kr/",
+      "crab."
     ],
     "u10-blend-fr": [
-      "frame",
-      "frog",
-      "frost"
+      "/fr/",
+      "/fr/",
+      "frame."
     ],
     "u10-4-brave": [
       "Jenny, listen to brave.",
@@ -429,7 +438,10 @@
     "u11-2": [
       "Keep both sounds.",
       "Blend them smoothly!",
-      "Keep both beginning sounds together!"
+      "Keep both beginning sounds together!",
+      "/dr/",
+      "/dr/",
+      "dragon."
     ],
     "u11-3": [
       "Listen to dragon.",
@@ -449,19 +461,19 @@
       "For homework, complete Unit 11, pages 68 to 73, in Speed Phonics Book 2!"
     ],
     "u11-blend-dr": [
-      "dragon",
-      "dress",
-      "drum"
+      "/dr/",
+      "/dr/",
+      "dragon."
     ],
     "u11-blend-pr": [
-      "press",
-      "print",
-      "prize"
+      "/pr/",
+      "/pr/",
+      "press."
     ],
     "u11-blend-tr": [
-      "track",
-      "truck",
-      "trumpet"
+      "/tr/",
+      "/tr/",
+      "track."
     ],
     "u11-4-dragon": [
       "Jenny, listen to dragon.",
@@ -567,7 +579,10 @@
     "u12-2": [
       "Keep both sounds.",
       "Blend them smoothly!",
-      "Keep both beginning sounds together!"
+      "Keep both beginning sounds together!",
+      "/sm/",
+      "/sm/",
+      "smell."
     ],
     "u12-3": [
       "Listen to smell.",
@@ -587,20 +602,24 @@
       "For homework, complete Unit 12, pages 74 to 79, in Speed Phonics Book 2!"
     ],
     "u12-blend-sm": [
-      "smell",
-      "smile"
+      "/sm/",
+      "/sm/",
+      "smell."
     ],
     "u12-blend-sn": [
-      "snack",
-      "snake"
+      "/sn/",
+      "/sn/",
+      "snack."
     ],
     "u12-blend-st": [
-      "stone",
-      "stop"
+      "/st/",
+      "/st/",
+      "stone."
     ],
     "u12-blend-sw": [
-      "swan",
-      "swim"
+      "/sw/",
+      "/sw/",
+      "swan."
     ],
     "u12-4-smell": [
       "Jenny, listen to smell.",

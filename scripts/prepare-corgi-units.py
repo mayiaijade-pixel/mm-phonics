@@ -19,7 +19,7 @@ for unit,words,families,start,end in [(8,list(SOUNDS)[:9],['bl','cl','fl'],50,55
  scenes[prefix+'homework']=[f'For homework, complete Unit {unit}, pages {start} to {end}, in Speed Phonics Book 2!']
  for group,family in enumerate(families):
   group_words=[w for w in words if w.startswith(family)]
-  scenes[prefix+'blend-'+family]=group_words
+  scenes[prefix+'blend-'+family]=group_words[:1]
  for word in words:
   scenes[prefix+'4-'+word]=[f'Jenny, listen to {word}.','Say it with me!']
   scenes['corgi-feedback-'+word]=['Good job! You did it!',f'Listen to {word}. Blend both beginning sounds.',f'Good try! Listen to {word}, then say it again.',"I couldn't hear clearly. Let's try again!"]
@@ -65,12 +65,18 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
   if i%10==0:print(f'{i+1}/{len(items)} Kogi recordings ready',flush=True)
 segments=json.loads(Path('app/mimi-segments.json').read_text())
 for scene,lines in scenes.items():
- if '-blend-' in scene:segments[scene]=[{'text':word+'.','audio':lookup[(word,.8,VOICE)],'speaker':'corgi','pauseAfterMs':700} for word in lines]
+ if '-blend-' in scene:
+  family=scene.split('-')[-1];blend=json.loads(Path('app/blend-sounds.json').read_text())[family]
+  sound={'text':blend['ipa'],'audio':blend['audio'],'speaker':'corgi','nativePlayback':True}
+  segments[scene]=[{**sound,'pauseAfterMs':400},{**sound,'pauseAfterMs':600},{'text':lines[0]+'.','audio':lookup[(lines[0],.8,VOICE)],'speaker':'corgi','pauseAfterMs':0}]
  else:segments[scene]=[{'text':text,'audio':lookup[(text,1 if scene.endswith('-0') else .92,voice_for(scene,index))],'speaker':speaker(scene,index)} for index,text in enumerate(lines)]
+for unit in range(8,13):
+ first_group=next(key for key in segments if key.startswith(f'u{unit}-blend-'))
+ segments[f'u{unit}-2']+=segments[first_group]
 for word in SOUNDS:audio[word]=lookup[(word,.8,VOICE)]
 for text in list(audio):
  if audio[text] is None:audio[text]=lookup[(text,.95,VOICE)]
 Path('app/mimi-segments.json').write_text(json.dumps(segments,ensure_ascii=False,indent=2)+'\n')
 Path('app/corgi-audio.json').write_text(json.dumps(audio,ensure_ascii=False,indent=2)+'\n')
-Path('scripts/corgi-scenes.json').write_text(json.dumps({'voice':VOICE,'scenes':scenes},ensure_ascii=False,indent=2)+'\n')
+Path('scripts/corgi-scenes.json').write_text(json.dumps({'voice':VOICE,'scenes':{scene:[clip['text'] for clip in segments[scene]] for scene in scenes}},ensure_ascii=False,indent=2)+'\n')
 print('Kogi Units 8–12 audio complete.',flush=True)

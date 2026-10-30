@@ -1,0 +1,82 @@
+{
+  "bl": {
+    "phonemes": "B L",
+    "ipa": "/bl/",
+    "audio": "/audio/blends/bl-c5557b94a24f.mp3"
+  },
+  "cl": {
+    "phonemes": "K L",
+    "ipa": "/kl/",
+    "audio": "/audio/blends/cl-276df30d2306.mp3"
+  },
+  "fl": {
+    "phonemes": "F L",
+    "ipa": "/fl/",
+    "audio": "/audio/blends/fl-7bdae6ed91df.mp3"
+  },
+  "gl": {
+    "phonemes": "G L",
+    "ipa": "/ɡl/",
+    "audio": "/audio/blends/gl-52c6565311e9.mp3"
+  },
+  "pl": {
+    "phonemes": "P L",
+    "ipa": "/pl/",
+    "audio": "/audio/blends/pl-6434f4cdbf58.mp3"
+  },
+  "sl": {
+    "phonemes": "S L",
+    "ipa": "/sl/",
+    "audio": "/audio/blends/sl-c15816ef59d0.mp3"
+  },
+  "br": {
+    "phonemes": "B R",
+    "ipa": "/br/",
+    "audio": "/audio/blends/br-43eff75eb864.mp3"
+  },
+  "cr": {
+    "phonemes": "K R",
+    "ipa": "/kr/",
+    "audio": "/audio/blends/cr-14e5869f6474.mp3"
+  },
+  "fr": {
+    "phonemes": "F R",
+    "ipa": "/fr/",
+    "audio": "/audio/blends/fr-4458bfc8fa73.mp3"
+  },
+  "dr": {
+    "phonemes": "D R",
+    "ipa": "/dr/",
+    "audio": "/audio/blends/dr-a91e5295cd9b.mp3"
+  },
+  "pr": {
+    "phonemes": "P R",
+    "ipa": "/pr/",
+    "audio": "/audio/blends/pr-888b909094ee.mp3"
+  },
+  "tr": {
+    "phonemes": "T R",
+    "ipa": "/tr/",
+    "audio": "/audio/blends/tr-0d776b1d923b.mp3"
+  },
+  "sm": {
+    "phonemes": "S M",
+    "ipa": "/sm/",
+    "audio": "/audio/blends/sm-be188c36e848.mp3"
+  },
+  "sn": {
+    "phonemes": "S N",
+    "ipa": "/sn/",
+    "audio": "/audio/blends/sn-d4f10b0ef781.mp3"
+  },
+  "st": {
+    "phonemes": "S T",
+    "ipa": "/st/",
+    "audio": "/audio/blends/st-3da466e681cd.mp3"
+  },
+  "sw": {
+    "phonemes": "S W",
+    "ipa": "/sw/",
+    "audio": "/audio/blends/sw-cb3e0f75dd9d.mp3"
+  }
+}

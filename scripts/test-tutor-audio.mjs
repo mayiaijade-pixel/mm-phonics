@@ -32,3 +32,5 @@ const first=createTutorAudio('/first',true),second=createTutorAudio('/second',fa
 // A late native play event from an old request must not restart the old clip.
 first.paused=false;for(const fn of first.listeners.play)fn();assert.ok(first.paused);assert.ok(!second.paused);
 console.log('PASS: prepared blend voices and personalized names play at 1x; only one tutor clip can own playback');
+
+assert.equal(createTutorAudio('/audio/blends/native.mp3',true,true).playbackRate,1,'new isolated sounds are already prepared at their final speed');

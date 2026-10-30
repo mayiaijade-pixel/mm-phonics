@@ -10,7 +10,8 @@ timings=json.loads((root/'app/tutor-timing.json').read_text())
 items={(source,True) for source in words.values()}
 for key,lines in segments.items():
  if key.startswith(tuple(f'u{n}-' for n in range(8,13))) or key.startswith('corgi-feedback-'):
-  for line in lines:items.add((line['audio'],line.get('speaker','corgi')=='corgi'))
+  for line in lines:
+   if not line.get('nativePlayback'):items.add((line['audio'],line.get('speaker','corgi')=='corgi'))
 folder=root/'public/audio/mobile';folder.mkdir(exist_ok=True)
 ffmpeg=os.environ.get('FFMPEG_EXE','ffmpeg')
 def convert(item):
