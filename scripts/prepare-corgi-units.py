@@ -70,6 +70,9 @@ for scene,lines in scenes.items():
   sound={'text':blend['ipa'],'audio':blend['audio'],'speaker':'corgi','nativePlayback':True}
   segments[scene]=[{**sound,'pauseAfterMs':400},{**sound,'pauseAfterMs':600},{'text':lines[0]+'.','audio':lookup[(lines[0],.8,VOICE)],'speaker':'corgi','pauseAfterMs':0}]
  else:segments[scene]=[{'text':text,'audio':lookup[(text,1 if scene.endswith('-0') else .92,voice_for(scene,index))],'speaker':speaker(scene,index)} for index,text in enumerate(lines)]
+# Complete teacher recordings already include the isolated sounds and example word.
+# Keep them as one native-speed clip when regenerating synthetic narration.
+segments.update(json.loads(Path('app/blend-recording-overrides.json').read_text()))
 for unit in range(8,13):
  first_group=next(key for key in segments if key.startswith(f'u{unit}-blend-'))
  segments[f'u{unit}-2']+=segments[first_group]

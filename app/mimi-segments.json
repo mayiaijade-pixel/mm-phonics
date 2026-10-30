@@ -3578,23 +3578,10 @@
       "speaker": "corgi"
     },
     {
-      "text": "/br/",
-      "audio": "/audio/blends/br-38124c82f40c.mp3",
-      "speaker": "corgi",
+      "text": "b, r, br, brave.",
+      "audio": "/audio/blends/br-user-c63925381cc3.mp3",
+      "speaker": "mimi",
       "nativePlayback": true,
-      "pauseAfterMs": 400
-    },
-    {
-      "text": "/br/",
-      "audio": "/audio/blends/br-38124c82f40c.mp3",
-      "speaker": "corgi",
-      "nativePlayback": true,
-      "pauseAfterMs": 600
-    },
-    {
-      "text": "brave.",
-      "audio": "/audio/corgi/3b87e2ad9615d86984e1.mp3",
-      "speaker": "corgi",
       "pauseAfterMs": 0
     }
   ],
@@ -3653,23 +3640,10 @@
   ],
   "u10-blend-br": [
     {
-      "text": "/br/",
-      "audio": "/audio/blends/br-38124c82f40c.mp3",
-      "speaker": "corgi",
+      "text": "b, r, br, brave.",
+      "audio": "/audio/blends/br-user-c63925381cc3.mp3",
+      "speaker": "mimi",
       "nativePlayback": true,
-      "pauseAfterMs": 400
-    },
-    {
-      "text": "/br/",
-      "audio": "/audio/blends/br-38124c82f40c.mp3",
-      "speaker": "corgi",
-      "nativePlayback": true,
-      "pauseAfterMs": 600
-    },
-    {
-      "text": "brave.",
-      "audio": "/audio/corgi/3b87e2ad9615d86984e1.mp3",
-      "speaker": "corgi",
       "pauseAfterMs": 0
     }
   ],
