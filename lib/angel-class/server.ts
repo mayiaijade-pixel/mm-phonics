@@ -1,4 +1,4 @@
-import {actionSchema,sessionInput,studentSchema,STUDENTS,type ClassSession,type ClassState} from './model';
+import {MAX_WEEKLY_VIDEOS,actionSchema,sessionInput,studentSchema,STUDENTS,type ClassSession,type ClassState} from './model';
 import {signToken,readToken,sessionCookie,cookieHeader} from './tokens';
 export type ClassRuntime={db:D1Database;bucket:R2Bucket;secret:string;password:string;teacherPassword?:string;publicBase?:string};
 const SITES_ORIGIN='https://mimi-magic-e-jenny.aiplane-jade.chatgpt.site';
@@ -37,7 +37,7 @@ async function state(request:Request,r:ClassRuntime){
   r.db.prepare('SELECT s.assignment_id,s.student,s.done,s.updated_at,u.id AS video_id FROM angel_submissions s JOIN angel_assignments a ON a.id=s.assignment_id AND a.archived=0 LEFT JOIN angel_uploads u ON u.id=s.upload_id AND u.status=\'ready\' WHERE s.done=1').all()
  ]);
  const base=r.publicBase||new URL(request.url).origin;
- const submissions=await Promise.all(b.results.map(async(row)=>({assignmentId:String(row.assignment_id),student:String(row.student),done:!!row.done,uploadedAt:row.video_id?String(row.updated_at):null,videoUrl:row.video_id?`${base}/api/angel-class/media?token=${await signToken({purpose:'play',id:row.video_id},r.secret,3600)}`:null})));
+ const submissions=await Promise.all(b.results.map(async(row)=>({videoId:row.video_id?String(row.video_id):null,assignmentId:String(row.assignment_id),student:String(row.student),done:!!row.done,uploadedAt:row.video_id?String(row.updated_at):null,videoUrl:row.video_id?`${base}/api/angel-class/media?token=${await signToken({purpose:'play',id:row.video_id},r.secret,3600)}`:null})));
  return json({...empty,assignments:a.results,submissions});
 }
 async function action(request:Request,r:ClassRuntime){
@@ -58,15 +58,21 @@ async function action(request:Request,r:ClassRuntime){
  }
  if(input.action==='remove-video'){
   if(a.kind!=='video')throw new ClassError('동영상 항목을 선택해 주세요.');
-  const old=await r.db.prepare('SELECT u.id,u.storage_key FROM angel_uploads u JOIN angel_submissions s ON s.upload_id=u.id WHERE s.id=? AND s.student=?').bind(id,student).first<{id:string;storage_key:string}>();
-  if(old){const changed=await r.db.prepare('UPDATE angel_submissions SET upload_id=NULL,done=0,updated_at=? WHERE id=? AND student=? AND upload_id=?').bind(now,id,student,old.id).run();if(!changed.meta.changes)throw new ClassError('영상이 바뀌었어요. 목록을 다시 확인해 주세요.',409);await r.db.prepare('UPDATE angel_uploads SET status=\'deleted\' WHERE id=?').bind(old.id).run();await r.bucket.delete(old.storage_key)}return json({saved:true});
+  // Legacy single-video clients may omit videoId only when unambiguous.
+  const matches=await r.db.prepare("SELECT s.id AS submission_id,u.id,u.storage_key FROM angel_uploads u JOIN angel_submissions s ON s.upload_id=u.id WHERE s.assignment_id=? AND s.student=? AND s.done=1 AND u.status='ready'"+(input.videoId?' AND u.id=?':'')).bind(a.id,student,...(input.videoId?[input.videoId]:[])).all<{submission_id:string;id:string;storage_key:string}>();
+  if(matches.results.length>1)throw new ClassError('삭제할 영상을 선택해 주세요.',409);
+  const old=matches.results[0];
+  if(old){const changed=await r.db.prepare('UPDATE angel_submissions SET upload_id=NULL,done=0,updated_at=? WHERE id=? AND student=? AND upload_id=?').bind(now,old.submission_id,student,old.id).run();if(!changed.meta.changes)throw new ClassError('영상이 바뀌었어요. 목록을 다시 확인해 주세요.',409);await r.db.prepare("UPDATE angel_uploads SET status='deleted' WHERE id=?").bind(old.id).run();await r.bucket.delete(old.storage_key)}return json({saved:true});
  }
  if(a.kind!=='video')throw new ClassError('동영상 숙제 항목을 선택해 주세요.');
+ const count=await r.db.prepare(weeklyVideoCount).bind(student,a.week).first<{n:number}>();if((count?.n||0)>=MAX_WEEKLY_VIDEOS)throw new ClassError('이번 주 영상은 최대 2개까지 올릴 수 있어요. 기존 영상을 삭제하면 다시 올릴 수 있어요.',409);
  const uploadId=crypto.randomUUID(),storageKey='angel-class/'+uploadId;
  const outstanding=await r.db.prepare('SELECT count(*) AS n FROM angel_uploads WHERE student=? AND created_at>?').bind(student,new Date(Date.now()-3600000).toISOString()).first<{n:number}>();if((outstanding?.n||0)>=30)throw new ClassError('업로드가 많아요. 잠시 뒤 다시 제출해 주세요.',429);
  await r.db.prepare('INSERT INTO angel_uploads (id,assignment_id,student,storage_key,content_type,size,status,created_at) VALUES (?,?,?,?,?,?,\'pending\',?)').bind(uploadId,a.id,student,storageKey,input.contentType,input.size,now).run();
  const token=await signToken({purpose:'upload',id:uploadId},r.secret,900);return json({url:`${r.publicBase||new URL(request.url).origin}/api/angel-class/upload?token=${token}`});
 }
+// Existing pre-upgrade videos count toward the weekly allowance too.
+const weeklyVideoCount="SELECT count(*) AS n FROM angel_submissions s JOIN angel_assignments a ON a.id=s.assignment_id AND a.archived=0 AND a.kind='video' JOIN angel_uploads u ON u.id=s.upload_id AND u.status='ready' WHERE s.done=1 AND s.student=? AND a.week=?";
 async function upload(request:Request,r:ClassRuntime){
  mutationOrigin(request);const token=await readToken(new URL(request.url).searchParams.get('token')||'',r.secret,'upload');if(!token)throw new ClassError('업로드 시간이 지났어요. 다시 제출해 주세요.',401);
  const row=await r.db.prepare('SELECT * FROM angel_uploads WHERE id=? AND status=\'pending\'').bind(token.id).first<{id:string;assignment_id:string;student:string;storage_key:string;content_type:string;size:number}>();if(!row)throw new ClassError('이미 처리한 업로드예요. 다시 제출해 주세요.',409);
@@ -77,12 +83,12 @@ async function upload(request:Request,r:ClassRuntime){
  try{
   await r.bucket.put(row.storage_key,request.body,{httpMetadata:{contentType:row.content_type,cacheControl:'private, no-store'}});
   const sample=await r.bucket.get(row.storage_key,{range:{offset:0,length:16}});const header=sample?new Uint8Array(await sample.arrayBuffer()):new Uint8Array();const atom=new TextDecoder().decode(header.slice(4,8));const valid= row.content_type==='video/webm'?header[0]===0x1a&&header[1]===0x45&&header[2]===0xdf&&header[3]===0xa3:['ftyp','moov','mdat','wide','free','skip'].includes(atom);if(!valid)throw new ClassError('재생할 수 있는 동영상 파일을 선택해 주세요.',415);
-  const previous=await r.db.prepare('SELECT u.id,u.storage_key FROM angel_uploads u JOIN angel_submissions s ON s.upload_id=u.id WHERE s.id=?').bind(studentKey(row.assignment_id,row.student)).first<{id:string;storage_key:string}>();
   const now=new Date().toISOString();
+  // D1 batch serializes the capacity check and insertion for concurrent tickets.
   const saved=await r.db.batch([
-   r.db.prepare('UPDATE angel_uploads SET status=\'ready\' WHERE id=?').bind(row.id),
-   r.db.prepare('INSERT INTO angel_submissions (id,assignment_id,student,done,upload_id,updated_at) SELECT ?,?,?,1,?,? WHERE EXISTS(SELECT 1 FROM angel_assignments WHERE id=? AND archived=0 AND kind=\'video\') ON CONFLICT(id) DO UPDATE SET done=1,upload_id=excluded.upload_id,updated_at=excluded.updated_at').bind(studentKey(row.assignment_id,row.student),row.assignment_id,row.student,row.id,now,row.assignment_id)
-  ]);if(!saved[1].meta.changes)throw new ClassError('숙제 항목이 바뀌었어요. 목록을 다시 확인해 주세요.',409);if(previous){await r.db.prepare('UPDATE angel_uploads SET status=\'deleted\' WHERE id=?').bind(previous.id).run().catch(()=>console.error('Old Angel upload cleanup pending'));await r.bucket.delete(previous.storage_key).catch(()=>console.error('Old Angel file cleanup pending'))}return json({saved:true});
+   r.db.prepare("UPDATE angel_uploads SET status='ready' WHERE id=? AND status='uploading' AND ("+weeklyVideoCount+")<? AND EXISTS(SELECT 1 FROM angel_assignments WHERE id=? AND archived=0 AND kind='video')").bind(row.id,row.student,a.week,MAX_WEEKLY_VIDEOS,row.assignment_id),
+   r.db.prepare("INSERT INTO angel_submissions (id,assignment_id,student,done,upload_id,updated_at) SELECT ?,?,?,1,?,? WHERE EXISTS(SELECT 1 FROM angel_uploads WHERE id=? AND status='ready')").bind(row.id,row.assignment_id,row.student,row.id,now,row.id)
+  ]);if(!saved[1].meta.changes)throw new ClassError('이번 주 영상은 최대 2개까지 올릴 수 있어요. 숙제 목록을 다시 확인해 주세요.',409);return json({saved:true});
  }catch(e){await r.bucket.delete(row.storage_key);await r.db.prepare('UPDATE angel_uploads SET status=\'failed\' WHERE id=? AND status=\'uploading\'').bind(row.id).run();throw e}
 }
 async function media(request:Request,r:ClassRuntime){

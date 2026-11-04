@@ -7,7 +7,7 @@ Teacher access requires a separate password. Passwords are server environment va
 
 Teachers select a week, open **숙제 항목 설정**, add titles and choose **동영상 제출** or **완료 버튼**, then publish. **예시 숙제 3개 불러오기** fills an editable draft; it does not publish automatically. Production starts with no announcements. Existing submissions survive title edits. Changing submission type after a student has submitted is rejected; add a new item instead.
 
-Students can mark and undo check tasks, upload an MP4/MOV/WebM video up to 80 MB, cancel an upload, remove their submission, or replace a video. The old video stays available until replacement succeeds. Successful deletion/replacement removes the obsolete object. Teacher view shows each student's status and filterable videos. Peer gallery shows this week's active submissions, names and all-tasks-complete badges.
+Students can mark and undo check tasks and submit up to two MP4/MOV/WebM videos per student per week (80 MB per video), across all active video assignments in that week. Each upload is an independent submission: it never replaces a previous video. Students can cancel an upload, delete an individual video, then upload again in the freed slot. Existing submissions count toward the limit and require no data migration. The server rechecks capacity atomically when accepting files, including concurrent upload tickets. Deleting one video preserves the other. Teacher view shows each student's status and filterable videos. Peer gallery shows this week's active submissions, names and all-tasks-complete badges.
 
 ## Shared storage
 
