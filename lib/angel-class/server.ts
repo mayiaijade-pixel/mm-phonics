@@ -1,4 +1,4 @@
-import {MAX_WEEKLY_VIDEOS,actionSchema,sessionInput,studentSchema,STUDENTS,type ClassSession,type ClassState} from './model';
+import {VIDEO_PART_BYTES,SINGLE_UPLOAD_BYTES,MAX_WEEKLY_VIDEOS,actionSchema,sessionInput,studentSchema,STUDENTS,type ClassSession,type ClassState} from './model';
 import {signToken,readToken,sessionCookie,cookieHeader} from './tokens';
 export type ClassRuntime={db:D1Database;bucket:R2Bucket;secret:string;password:string;teacherPassword?:string;publicBase?:string};
 const SITES_ORIGIN='https://mimi-magic-e-jenny.aiplane-jade.chatgpt.site';
@@ -41,7 +41,7 @@ async function state(request:Request,r:ClassRuntime){
  return json({...empty,assignments:a.results,submissions});
 }
 async function action(request:Request,r:ClassRuntime){
- mutationOrigin(request);const s=need(await session(request,r));const parsed=actionSchema.safeParse(await request.json().catch(()=>null));if(!parsed.success)throw new ClassError('항목과 영상 형식·크기(80MB 이하)를 확인해 주세요.');const input=parsed.data;const now=new Date().toISOString();
+ mutationOrigin(request);const s=need(await session(request,r));const parsed=actionSchema.safeParse(await request.json().catch(()=>null));if(!parsed.success)throw new ClassError('항목과 영상 형식·크기(300MB 이하)를 확인해 주세요.');const input=parsed.data;const now=new Date().toISOString();
  if(input.action==='publish'){
   need(s,'teacher');const existing=await r.db.prepare('SELECT id,week,kind FROM angel_assignments WHERE id IN (SELECT value FROM json_each(?))').bind(JSON.stringify(input.items.map(i=>i.id))).all<{id:string;week:string;kind:string}>();
   if(existing.results.some(a=>a.week!==input.week))throw new ClassError('다른 주차의 항목은 바꿀 수 없어요.',409);
@@ -65,31 +65,60 @@ async function action(request:Request,r:ClassRuntime){
   if(old){const changed=await r.db.prepare('UPDATE angel_submissions SET upload_id=NULL,done=0,updated_at=? WHERE id=? AND student=? AND upload_id=?').bind(now,old.submission_id,student,old.id).run();if(!changed.meta.changes)throw new ClassError('영상이 바뀌었어요. 목록을 다시 확인해 주세요.',409);await r.db.prepare("UPDATE angel_uploads SET status='deleted' WHERE id=?").bind(old.id).run();await r.bucket.delete(old.storage_key)}return json({saved:true});
  }
  if(a.kind!=='video')throw new ClassError('동영상 숙제 항목을 선택해 주세요.');
+ if(input.action==='complete-upload'||input.action==='abort-upload'){
+  const token=await readToken(input.token,r.secret,'multipart');
+  if(!token||typeof token.uploadId!=='string')throw new ClassError('업로드 시간이 지났어요. 다시 제출해 주세요.',401);
+  const row=await r.db.prepare("SELECT * FROM angel_uploads WHERE id=? AND assignment_id=? AND student=? AND status='pending'").bind(token.id,a.id,student).first<UploadRow>();
+  if(!row)throw new ClassError('이미 처리한 업로드예요. 목록을 새로고침해 주세요.',409);
+  const multipart=r.bucket.resumeMultipartUpload(row.storage_key,token.uploadId);
+  if(input.action==='abort-upload'){
+   const claim=await r.db.prepare("UPDATE angel_uploads SET status='failed' WHERE id=? AND status='pending'").bind(row.id).run();
+   if(claim.meta.changes)await multipart.abort();return json({cancelled:true});
+  }
+  const parts=input.parts.slice().sort((x,y)=>x.partNumber-y.partNumber);
+  if(parts.length!==Math.ceil(row.size/VIDEO_PART_BYTES)||parts.some((p,i)=>p.partNumber!==i+1))throw new ClassError('영상 일부가 누락됐어요. 다시 제출해 주세요.');
+  const claim=await r.db.prepare("UPDATE angel_uploads SET status='uploading' WHERE id=? AND status='pending'").bind(row.id).run();if(!claim.meta.changes)throw new ClassError('다른 업로드가 진행 중이에요.',409);
+  try{const object=await multipart.complete(parts);if(object.size!==row.size)throw new ClassError('영상 크기가 일치하지 않아요.');return await acceptUpload(r,row,a.week)}
+  catch(e){await multipart.abort().catch(()=>{});await failUpload(r,row);throw e}
+ }
  const count=await r.db.prepare(weeklyVideoCount).bind(student,a.week).first<{n:number}>();if((count?.n||0)>=MAX_WEEKLY_VIDEOS)throw new ClassError('이번 주 영상은 최대 2개까지 올릴 수 있어요. 기존 영상을 삭제하면 다시 올릴 수 있어요.',409);
  const uploadId=crypto.randomUUID(),storageKey='angel-class/'+uploadId;
  const outstanding=await r.db.prepare('SELECT count(*) AS n FROM angel_uploads WHERE student=? AND created_at>?').bind(student,new Date(Date.now()-3600000).toISOString()).first<{n:number}>();if((outstanding?.n||0)>=30)throw new ClassError('업로드가 많아요. 잠시 뒤 다시 제출해 주세요.',429);
  await r.db.prepare('INSERT INTO angel_uploads (id,assignment_id,student,storage_key,content_type,size,status,created_at) VALUES (?,?,?,?,?,?,\'pending\',?)').bind(uploadId,a.id,student,storageKey,input.contentType,input.size,now).run();
+ if(input.size>SINGLE_UPLOAD_BYTES){
+  const multipart=await r.bucket.createMultipartUpload(storageKey,{httpMetadata:{contentType:input.contentType,cacheControl:'private, no-store'}});
+  const token=await signToken({purpose:'multipart',id:uploadId,uploadId:multipart.uploadId},r.secret,3600);
+  return json({url:`${r.publicBase||new URL(request.url).origin}/api/angel-class/upload?token=${token}`,token,partSize:VIDEO_PART_BYTES});
+ }
  const token=await signToken({purpose:'upload',id:uploadId},r.secret,900);return json({url:`${r.publicBase||new URL(request.url).origin}/api/angel-class/upload?token=${token}`});
 }
 // Existing pre-upgrade videos count toward the weekly allowance too.
 const weeklyVideoCount="SELECT count(*) AS n FROM angel_submissions s JOIN angel_assignments a ON a.id=s.assignment_id AND a.archived=0 AND a.kind='video' JOIN angel_uploads u ON u.id=s.upload_id AND u.status='ready' WHERE s.done=1 AND s.student=? AND a.week=?";
-async function upload(request:Request,r:ClassRuntime){
- mutationOrigin(request);const token=await readToken(new URL(request.url).searchParams.get('token')||'',r.secret,'upload');if(!token)throw new ClassError('업로드 시간이 지났어요. 다시 제출해 주세요.',401);
- const row=await r.db.prepare('SELECT * FROM angel_uploads WHERE id=? AND status=\'pending\'').bind(token.id).first<{id:string;assignment_id:string;student:string;storage_key:string;content_type:string;size:number}>();if(!row)throw new ClassError('이미 처리한 업로드예요. 다시 제출해 주세요.',409);
- const a=await assignment(r,row.assignment_id);if(a.kind!=='video')throw new ClassError('동영상 숙제가 변경됐어요.',409);
- if(!request.body||Number(request.headers.get('content-length'))!==row.size||request.headers.get('content-type')?.split(';')[0]!==row.content_type)throw new ClassError('영상 크기와 형식이 일치하지 않아요.');
- // Atomically consume the ticket so retries cannot replace a previously accepted upload.
- const claim=await r.db.prepare('UPDATE angel_uploads SET status=\'uploading\' WHERE id=? AND status=\'pending\'').bind(row.id).run();if(!claim.meta.changes)throw new ClassError('다른 업로드가 진행 중이에요.',409);
- try{
-  await r.bucket.put(row.storage_key,request.body,{httpMetadata:{contentType:row.content_type,cacheControl:'private, no-store'}});
+type UploadRow={id:string;assignment_id:string;student:string;storage_key:string;content_type:string;size:number};
+async function failUpload(r:ClassRuntime,row:UploadRow){await r.bucket.delete(row.storage_key);await r.db.prepare("UPDATE angel_uploads SET status='failed' WHERE id=? AND status='uploading'").bind(row.id).run()}
+async function acceptUpload(r:ClassRuntime,row:UploadRow,week:string){
   const sample=await r.bucket.get(row.storage_key,{range:{offset:0,length:16}});const header=sample?new Uint8Array(await sample.arrayBuffer()):new Uint8Array();const atom=new TextDecoder().decode(header.slice(4,8));const valid= row.content_type==='video/webm'?header[0]===0x1a&&header[1]===0x45&&header[2]===0xdf&&header[3]===0xa3:['ftyp','moov','mdat','wide','free','skip'].includes(atom);if(!valid)throw new ClassError('재생할 수 있는 동영상 파일을 선택해 주세요.',415);
   const now=new Date().toISOString();
   // D1 batch serializes the capacity check and insertion for concurrent tickets.
   const saved=await r.db.batch([
-   r.db.prepare("UPDATE angel_uploads SET status='ready' WHERE id=? AND status='uploading' AND ("+weeklyVideoCount+")<? AND EXISTS(SELECT 1 FROM angel_assignments WHERE id=? AND archived=0 AND kind='video')").bind(row.id,row.student,a.week,MAX_WEEKLY_VIDEOS,row.assignment_id),
+   r.db.prepare("UPDATE angel_uploads SET status='ready' WHERE id=? AND status='uploading' AND ("+weeklyVideoCount+")<? AND EXISTS(SELECT 1 FROM angel_assignments WHERE id=? AND archived=0 AND kind='video')").bind(row.id,row.student,week,MAX_WEEKLY_VIDEOS,row.assignment_id),
    r.db.prepare("INSERT INTO angel_submissions (id,assignment_id,student,done,upload_id,updated_at) SELECT ?,?,?,1,?,? WHERE EXISTS(SELECT 1 FROM angel_uploads WHERE id=? AND status='ready')").bind(row.id,row.assignment_id,row.student,row.id,now,row.id)
   ]);if(!saved[1].meta.changes)throw new ClassError('이번 주 영상은 최대 2개까지 올릴 수 있어요. 숙제 목록을 다시 확인해 주세요.',409);return json({saved:true});
- }catch(e){await r.bucket.delete(row.storage_key);await r.db.prepare('UPDATE angel_uploads SET status=\'failed\' WHERE id=? AND status=\'uploading\'').bind(row.id).run();throw e}
+}
+async function upload(request:Request,r:ClassRuntime){
+ mutationOrigin(request);const url=new URL(request.url),rawToken=url.searchParams.get('token')||'';
+ const multipartToken=await readToken(rawToken,r.secret,'multipart');
+ const token=multipartToken||await readToken(rawToken,r.secret,'upload');if(!token)throw new ClassError('업로드 시간이 지났어요. 다시 제출해 주세요.',401);
+ const row=await r.db.prepare("SELECT * FROM angel_uploads WHERE id=? AND status='pending'").bind(token.id).first<UploadRow>();if(!row)throw new ClassError('이미 처리한 업로드예요. 다시 제출해 주세요.',409);
+ const a=await assignment(r,row.assignment_id);if(a.kind!=='video')throw new ClassError('동영상 숙제가 변경됐어요.',409);
+ const partNumber=Number(url.searchParams.get('partNumber'));
+ if(multipartToken&&(!Number.isInteger(partNumber)||partNumber<1||partNumber>Math.ceil(row.size/VIDEO_PART_BYTES)||typeof token.uploadId!=='string'))throw new ClassError('영상 조각 번호를 확인해 주세요.');
+ const expected=multipartToken?Math.min(VIDEO_PART_BYTES,row.size-(partNumber-1)*VIDEO_PART_BYTES):row.size;
+ if(!request.body||Number(request.headers.get('content-length'))!==expected||request.headers.get('content-type')?.split(';')[0]!==row.content_type)throw new ClassError('영상 크기와 형식이 일치하지 않아요.');
+ if(multipartToken){const part=await r.bucket.resumeMultipartUpload(row.storage_key,token.uploadId as string).uploadPart(partNumber,request.body);return json(part)}
+ const claim=await r.db.prepare("UPDATE angel_uploads SET status='uploading' WHERE id=? AND status='pending'").bind(row.id).run();if(!claim.meta.changes)throw new ClassError('다른 업로드가 진행 중이에요.',409);
+ try{await r.bucket.put(row.storage_key,request.body,{httpMetadata:{contentType:row.content_type,cacheControl:'private, no-store'}});return await acceptUpload(r,row,a.week)}
+ catch(e){await failUpload(r,row);throw e}
 }
 async function media(request:Request,r:ClassRuntime){
  const token=await readToken(new URL(request.url).searchParams.get('token')||'',r.secret,'play');if(!token)throw new ClassError('영상 링크가 만료됐어요. 목록을 새로고침해 주세요.',401);

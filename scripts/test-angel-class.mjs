@@ -23,7 +23,7 @@ await body(await jihan.request('action',{action:'complete',assignmentId:items[1]
 await body(await jihan.request('action',{action:'complete',assignmentId:items[1].id,done:true}));
 await body(await teacher.request('action',{action:'publish',week:'nov-1',items:items.map((i,index)=>index===1?{...i,kind:'video'}:i)}),409);
 await body(await teacher.request('action',{action:'publish',week:'nov-2',items}),409);
-await body(await jihan.request('action',{action:'upload-ticket',assignmentId:items[0].id,size:81*1024*1024,contentType:'video/mp4'}),400);
+await body(await jihan.request('action',{action:'upload-ticket',assignmentId:items[0].id,size:300_000_001,contentType:'video/mp4'}),400);
 const video=fs.readFileSync('public/videos/unit1-story-v2.mp4');
 async function upload(c,data=video,assignmentId=items[0].id){const ticket=await body(await c.request('action',{action:'upload-ticket',assignmentId,size:data.length,contentType:'video/mp4'}));const r=await fetch(ticket.url,{method:'PUT',headers:{Origin:origin,'Content-Type':'video/mp4'},body:data});return{r,url:ticket.url}}
 const bad=await upload(jihan,Buffer.alloc(300));await body(bad.r,415);

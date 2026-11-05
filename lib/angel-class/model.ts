@@ -1,8 +1,10 @@
 import {z} from 'zod';
 export const STUDENTS=['지한','오름','이서'] as const;
 export const WEEKS=[{id:'nov-1',label:'11월 1주차'},{id:'nov-2',label:'11월 2주차'},{id:'nov-3',label:'11월 3주차'},{id:'nov-4',label:'11월 4주차'},{id:'dec-1',label:'12월 1주차'},{id:'dec-2',label:'12월 2주차'}] as const;
-export const MAX_VIDEO_BYTES=80*1024*1024;
+export const MAX_VIDEO_BYTES=300_000_000;
 export const MAX_WEEKLY_VIDEOS=2;
+export const VIDEO_PART_BYTES=10*1024*1024;
+export const SINGLE_UPLOAD_BYTES=80*1024*1024;
 export const weekSchema=z.enum(['nov-1','nov-2','nov-3','nov-4','dec-1','dec-2']);
 export const studentSchema=z.enum(STUDENTS);
 export const itemSchema=z.object({id:z.string().uuid(),title:z.string().trim().min(1).max(160),kind:z.enum(['video','check'])});
@@ -10,6 +12,8 @@ export const actionSchema=z.discriminatedUnion('action',[
  z.object({action:z.literal('publish'),week:weekSchema,items:z.array(itemSchema).max(20).refine(a=>new Set(a.map(x=>x.id)).size===a.length)}),
  z.object({action:z.literal('complete'),assignmentId:z.string().uuid(),done:z.boolean()}),
  z.object({action:z.literal('remove-video'),assignmentId:z.string().uuid(),videoId:z.string().uuid().optional()}),
+ z.object({action:z.literal('complete-upload'),assignmentId:z.string().uuid(),token:z.string().max(4096),parts:z.array(z.object({partNumber:z.number().int().min(1).max(30),etag:z.string().min(1).max(200)})).min(1).max(30)}),
+ z.object({action:z.literal('abort-upload'),assignmentId:z.string().uuid(),token:z.string().max(4096)}),
  z.object({action:z.literal('upload-ticket'),assignmentId:z.string().uuid(),size:z.number().int().min(200).max(MAX_VIDEO_BYTES),contentType:z.enum(['video/mp4','video/webm','video/quicktime','video/x-m4v'])})
 ]);
 export type Assignment=z.infer<typeof itemSchema>&{week:string;position:number};
